@@ -1,0 +1,215 @@
+\documentclass[oneside,10pt]{book}
+\usepackage{cdtBook}
+\usepackage{usecases}
+\usepackage{amsmath}
+\usepackage{hyperref}
+\usepackage{longtable}
+
+\usepackage{listings}
+\lstset{%
+breaklines=true
+showspaces=false
+showstringspaces=false
+showtabs=false
+}
+
+
+
+\title{Trabajo Terminal 2013-B017}
+\subtitle{Sistema de an\'alisis de texto mediante reconocimiento de patrones. Caso de estudio: \textit{Online grooming}}
+\author{Guerrero Madrigal Andr\'es Emanuel, Hern\'andez Hern\'andez Santos, Ruiz D\'iaz Anah\'i}
+%\organization{Escuela Superior de Cómputo, IPN}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%\usepackage{longtable}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\input{portada}
+
+\thispagestyle{empty}
+
+\frontmatter
+\tableofcontents
+\frontmatter
+\listoffigures % indice de figuras
+\frontmatter
+\listoftables % indice de tablas
+
+\mainmatter
+
+%=========================================================
+\chapter{Antecedentes}
+\input{Antecedentes/Introduccion}
+\input{Antecedentes/Problema}
+\input{Antecedentes/Solucion}
+\input{Antecedentes/EdoArte}
+%\cfinput{Antecedentes/Objetivo}
+\input{Antecedentes/Justificacion}
+%=========================================================
+\chapter{Marco Te\'orico}
+%\cfinput{MarcoTeorico/casodeestudio}
+\input{mineria/mineriatexto}
+\input{MarcoTeorico/LenguajeNatural}
+\input{MarcoTeorico/procesamiento}
+\input{MarcoTeorico/morfologico}
+%\input{MarcoTeorico/sintactico}
+%\input{MarcoTeorico/gramatica}
+%\input{MarcoTeorico/semantico}
+%\input{MarcoTeorico/pragmatico}
+
+%\cfinput{MarcoTeorico/reconocimiento}
+\input{MarcoTeorico/stemming}
+\input{MarcoTeorico/lexematizacion}
+\input{MarcoTeorico/stopwords}
+%\input{MarcoTeorico/grooming}
+
+
+%=========================================================
+
+\chapter{Especificaciones del proyecto}
+\input{especificaciones/Objetivo}
+\input{especificaciones/metodologia}
+\input{especificaciones/descripcion}
+\input{especificaciones/arquitectura}
+
+%\appendix
+%=========================================================
+%\chapter{Prototipo 1: Almacenamiento de fuentes}
+%\input{prototipos/prototipo1}	
+%\input{cu1/cu}
+%\input{cu2/cu}
+%\input{cu5/cu}
+%\input{cu12/cu}
+%\input{cu9/cu}
+%\input{dclases1}
+%\input{minteraccion1}
+%\input{cu1/pantalla1}
+
+%=========================================================
+%=========================================================
+
+\chapter{Prototipo 1: Identificador y clasificador de frases del online grooming}
+\input{prototipos/prototipo2}
+
+\chapter{Prototipo 2:  Generador de Vectores de palabras con denotaci\'on sexual}
+\input{prototipos/prototipo1}
+
+
+
+\chapter{Prototipo 3: Clasificador de conversaciones con denotaci\'on sexual}
+\input{prototipos/prototipo3}
+
+\chapter{Prototipo 4: Clasfificador de comportamiento de conversaciones}
+
+\input{prototipos/prototipo4}
+
+\chapter{Prototipo 5: API de desici\'on}
+\input{prototipos/prototipo5}
+
+\chapter{Prototipo 6: Sistema de Mensajer\'ia}
+\input{prototipos/prototipo6}
+\input{cu1/cu}
+\input{cu2/cu}
+\input{cu5/cu}
+\input{cu12/cu}
+\input{cu9/cu}
+\input{dclases1}
+\section{Diagrama de paquetes}
+La figura \ref{fig:paquetes} muestra c\'omo el chat est\'a conectado con la API de an\'alisis. De esta manera integramos la API que realizamos en los prototipos anteriores con el sistema en general.
+\begin{figure}
+\includegraphics[scale=.4]{images/diagramapaquetes}
+\caption{Diagrama de paquetes del la inetegraci\'on del chat con la API de an\a'lisis}
+\label{fig:paquetes}
+\end{figure}
+
+
+\input{minteraccion1}
+\input{cu1/pantalla1}
+
+\chapter{Conclusiones}
+\input{conclusiones}
+
+
+
+
+\appendix
+\chapter{Conversaciones Peligrosas}\label{app:conversaciones}
+En este ap\'endice se anexan las conversaciones peligrosas con las cuales fueron extraidas las caracter\'isticas para los clasificadores.
+\input{conversaciones/cp1}
+\input{conversaciones/cp2}
+\input{conversaciones/cp3}
+\input{conversaciones/cp4}
+\input{conversaciones/cp5}
+\input{conversaciones/cp6}
+\input{conversaciones/cp7}
+\input{conversaciones/cp8}
+\input{conversaciones/cp9}
+\input{conversaciones/cp10}
+\input{conversaciones/cp11}
+\input{conversaciones/cp12}
+\input{conversaciones/cp13}
+\input{conversaciones/cp14}
+\input{conversaciones/cp15}
+\input{conversaciones/cp16}
+\input{conversaciones/cp17}
+%\input{conversaciones/cp18}
+\input{conversaciones/cp19}
+\input{conversaciones/cp20}
+\input{conversaciones/cp21}
+\input{conversaciones/cp22}
+\input{conversaciones/cp23}
+\input{conversaciones/cp24}
+\input{conversaciones/cp25}
+\input{conversaciones/cp26}
+\input{conversaciones/cp27}
+\input{conversaciones/cp28}
+\input{conversaciones/cp29}
+\input{conversaciones/cp30}
+\input{conversaciones/cp31}
+\input{conversaciones/cp32}
+\input{conversaciones/cp33}
+\input{conversaciones/cp34}
+\input{conversaciones/cp35}
+\input{conversaciones/cp36}
+\input{conversaciones/cp37}
+\input{conversaciones/cp38}
+\input{conversaciones/cp39}
+\input{conversaciones/cp40}
+
+\chapter{Conversaciones No Peligrosas}\label{app:conversacionesnp}
+En este ap\'endice se anexan las conversaciones no peligrosas utulizadas para el entrenamiento de los clasificadores.
+%\input{conversacionesnp/cnp1}
+%\input{conversacionesnp/cnp2}
+\input{conversacionesnp/cnp3}
+\input{conversacionesnp/cnp4}
+\input{conversacionesnp/cnp5}
+\input{conversacionesnp/cnp6}
+\input{conversacionesnp/cnp7}
+\input{conversacionesnp/cnp9}
+\input{conversacionesnp/cnp10}
+%\input{conversacionesnp/cnp11}
+%\input{conversacionesnp/cnp12}
+\input{conversacionesnp/cnp13}
+%\input{conversacionesnp/cnp14}
+%\input{conversacionesnp/cnp15}
+\input{conversacionesnp/cnp16}
+\input{conversacionesnp/cnp17}
+%\input{conversacionesnp/cnp18}
+\input{conversacionesnp/cnp19}
+%\input{conversacionesnp/cnp20}
+\input{conversacionesnp/cnp21}
+
+
+
+\chapter{Lista de Stopwords}
+\label{chap:stop}
+Lista de stop words en el idioma espa\~nol.\cite{stop}
+\cfinput{stop}
+\chapter{Tablas de frecuencias de palabras en el idioma espa\~nol}
+\cfinput{palabras}
+\input{biblio}	
+
+\end{document}
+

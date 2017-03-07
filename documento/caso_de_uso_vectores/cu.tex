@@ -1,0 +1,49 @@
+% \IUref{IUAdmPS}{Administrar Planta de Selección}
+% \IUref{IUModPS}{Modificar Planta de Selección}
+% \IUref{IUEliPS}{Eliminar Planta de Selección}
+
+% 
+
+
+% Copie este bloque por cada caso de uso:
+%-------------------------------------- COMIENZA descripción del caso de uso.
+
+%\begin{UseCase}[archivo de imágen]{UCX}{Nombre del Caso de uso}{
+	\begin{UseCase}{CU1}{Generar Vectores}{El caso de uso permite al Sistema generar vectores de frecuencia de palabras de un diccionario previamente listado.
+	}
+		\UCitem{Versi\'on}{0.1}
+		\UCitem{Actor}{Sistema}
+		\UCitem{Prop\'osito}{Generar Vectores de frecuencia de palabras}
+		\UCitem{Resumen}{
+		El caso de uso permite al sistema generar vectores de frecuencia}
+		\UCitem{Entradas}{Sin entradas}
+		\UCitem{Salidas}{Vector de frecuencia almacenado en archivo de texto.}
+		\UCitem{Autor}{Andr\'es Emanuel Guerrero Madrigal}
+	\end{UseCase}
+
+	\begin{UCtrayectoria}{Principal}
+	
+		\UCpaso El sistema recibe un arhivo de texto plano
+		\UCpaso El sistema preprocesa cada palabra del archivo eliminando stopwords.
+		\UCpaso El sistema obtiene el stem de cada palabra.
+		\UCpaso El sistema compara cada palabra de la conversaci\'on ya procesada con el diccionario de palabras previamente cargado y aumenta en 1 su valor si esta palabra pertenece a la lista.
+		\UCpaso  El sistema guarda el vector en un archivo de texto
+		
+		 \Trayref{A}.
+		\UCpaso[\UCactor] El usuario da clic en el bot\'on \IUbutton{Aceptar}.
+		\UCpaso  El sistema regresa a la p\'agina de inicio.
+	
+		\UCpaso[] Fin del flujo.
+				
+	\end{UCtrayectoria}
+		
+		\begin{UCtrayectoriaA}{A}{Error al cerrar la sesi\'on}
+			\UCpaso El sistema muestra una alerta que notifica al usuario que la sesi\'on no fue cerrada con \'exito.
+			\UCpaso[\UCactor] El usuario da clic en el bot\'on \IUbutton{Aceptar}. 			
+			\UCpaso[] Fin del flujo.
+		\end{UCtrayectoriaA}
+
+		
+		
+				
+%-------------------------------------- TERMINA descripción del caso de uso.

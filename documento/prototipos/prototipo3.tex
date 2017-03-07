@@ -1,0 +1,348 @@
+\section{An\'alisis}
+
+\subsection{Descripci\'on}
+
+Este prototipo se encarga de la clasificaci\'on de conversaciones en peligrosas o no peligrosas de acuerdo al Nivel con denotaci\'on sexual o nivel 5 de la caracterizaci\'on de conversaciones con casos de \textit{Online Grooming}
+
+\subsection{Objetivo}
+Formular un modelo matem\'atico que permitir\'a la clasificaci\'on de conversaciones peligrosas o no peligrosas de acuerdo al nivel con de notaci\'on sexual o nivel 5 de la matriz de caracterizaci\'on de comportameniento.
+
+\subsection{Caracter\'isticas}
+\begin{description}
+\item[FEAT1] Plantear el clasificador mediante un modelo matem\'atico usando regresi\'on log\'istica.
+\item[FEAT2] Entrenar el clasificador con conversaciones etiquetadas como peligrosas.
+\item[FEAT3] Entrenar el clasificador con conversaciones etiquetadas como no peligrosas.
+\item[FEAT3] Verificar la eficiencia del clasificador mediante una matriz de confusi\'on.
+\end{description}			
+
+\subsection{Restricciones}
+
+\begin{itemize}
+\item Clasificador entrenado con aprendizaje supervisado.
+\item Implementaci\'on de clasificador en Octave 3.8
+\end{itemize}
+
+
+\subsection{Marco Te\'orico}
+\subsubsection{Algoritmo de regresi\'on log\'istica}
+
+El algoritmo de regresi\'on log\'istica es un m\'etodo estad\'istico que es usado para determinar la ocurrencia de un evento simple valorando diferentes factores.  
+
+Este m\'etodo es adecuado cuando la variable o vector de respuesta $Y$ admite varias categor\'ias de respuesta, es decir, es polit\'omica. Pero es de mayor utilidad cuando \'unicamente nos encontramos con dos posibles respuestas.
+
+Dicho lo anterior, podemos deducir que la variable dependiente $y$ tomar\'a el valor 1 si ocurre el suceso, y por el contrario el valor 0 si no ocurre. La ecuaci\'on \ref{eq:vectory} muestra del conjunto de posibles valores de un clasificador de 2 clases.
+\begin{equation}\label{eq:vectory}
+y \in {0,1}
+\end{equation}
+
+El objetivo de este algoritmo es dise\~nar un m\'odelo basado en la formulaci\'on de una funci\'on $h_{\theta}(x)$ de tal forma que:
+
+\begin{equation}\label{eq:funcionHipotesis}
+0 \leq h_{\theta}(x) \leq 1
+\end{equation}
+
+La ecuaci\'on \ref{eq:funcionHipotesis} estada dada bajo una relaci\'on de compocici\'on cuyo dominio independiente es el producto matricial del vector de entrada $x$ con un vector de param\'etros $\theta$. La ecucio\'on \ref{eq:composicion}
+
+\begin{equation}\label{eq:composicion}
+h_{\theta}(x) = g(\theta x)
+\end{equation}
+
+La funci\'on $g(z)$ est\'a descrita en relaci\'on a la funci\'on sigmoide descrita en la ecuaci\'on \ref{eq:sigmoide} la cual es utilizada como curva de aprendizaje de sistemas complejos.
+
+
+\begin{equation}\label{eq:sigmoide}
+g(z) = \frac{1}{1+e^{-z}}
+\end{equation}
+donde:
+\begin{equation}
+z = \theta_{0}x_{0}+ \theta_{1}x_{1} + ... +  \theta_{n}x_{n}
+\end{equation}
+
+La figura \ref{fig:sigmoide} muestra la gr\'afica de la funci\'on sigmoide cuyo comportamiento est\'a dado por las ecuaciones \ref{eq:limite1} y \ref{eq:limite2}
+
+\begin{equation}\label{eq:limite1}
+\lim_{z \to \infty} g(z) = 1
+\end{equation}
+
+\begin{equation}\label{eq:limite2}
+\lim_{z \to -\infty} g(z) = 0
+\end{equation}
+donde:
+\begin{equation}
+z = \theta_{0}x_{0}+ \theta_{1}x_{1} + ... +  \theta_{n}x_{n}
+\end{equation}
+
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[scale=.5]{images/sigmoide}
+		\caption{Gr\'afica de la funci\'on sigmoide}
+		\label{fig:sigmoide}
+	\end{center}
+\end{figure}
+
+La manera en que se interpreta el resultado de la funci\'on sinoide es la siguiente.
+
+Sea $x$ un vector donde cada componente indica una caracter\'istica en particular:
+
+\begin{equation}
+x  = 
+\begin{bmatrix}
+x_{0} \\
+x_{1} \\
+\vdots \\
+x_{n}
+\end{bmatrix}
+\end{equation}
+
+Entonces si $h_{\theta}(x) = 0.7$ decimos que hay un 70\% de probabilidad de que el vector $x$ pertenezca a la clase etiquetada con valor 1.
+
+Dentro de este algoritmo podemos definir una frontera de desici\'on la cual indique el umbral de valores para que un vector pertenezca a una clase u otra.
+
+Por ejemplo $y = 1$ si se cumple la condici\'on: 
+\begin{equation}
+h_{\theta}(x) \geq 0.5
+\end{equation}
+De lo contrario $y = 0$ si
+\begin{equation}
+h_{\theta}(x) < 0.5
+\end{equation}
+
+El objetivo del algoritmo es encontrar el vector $\theta$ \'optimo de tal manera de formular un m\'odelo lineal que separe las clases como el ejemplo de la figura \ref{fig:ejemploClases}
+
+\begin{figure}[h!]
+	\begin{center}
+	\includegraphics[scale=.3]{images/clasesejemplo}
+	\caption{Ejemplo de separaci\'on de Clases}
+	\label{fig:ejemploClases}
+	\end{center}
+\end{figure}
+
+Para evaluar el costo de los parametros del vector $\theta$ se tiene la siguiente ecuaci\'on:
+\begin{equation}
+costo(h_{\theta}(x),y) = -yln(h_{\theta}(x))-(1-y)ln(1-h_{\theta}(x))
+\end{equation}
+
+\section{Dise\~no}
+\subsection{Arquitectura}
+La figura \ref{fig:arquitecturaClasificador} muestra la arquitectura del prototipo de clasificaci\'on del Nivel 5.
+\begin{figure}[h]
+	\begin{center}
+	\includegraphics[scale=.5]{images/arquitecturaClasificador}
+	\caption{Ejemplo de separaci\'on de Clases}
+	\label{fig:arquitecturaClasificador}
+	\end{center}
+\end{figure}
+
+\section{Pruebas}
+
+\subsection{Entrenamiento con 3 variables}
+Se realiz\'o el entrenamiento con 3 variables las cuales corresponden a las componentes del vector generado por el prototipo 1 con la siguiente lista de palabras:
+\begin{itemize}
+\item Pene
+\item Vagina
+\item Desnudo
+\end{itemize}
+
+Estas variables generaron un vector $\theta$ con los siguientes valores:
+
+\begin{equation}
+\theta = 
+\begin{bmatrix}
+
+-0.613684 \\
+ 0.904610 \\
+ 1.221655 \\
+ 0.726040
+\end{bmatrix}
+\end{equation}
+
+La tabla \ref{tab:confucion1} muestra la tabla de confusi\'on de este entrenamiento.
+
+
+\begin{table}[h]
+\begin{center}
+\begin{tabular}{c|c|c|c|c|}
+\multicolumn{5}{c}{Predicci\'on} \\
+\cline{2-5}
+& & Conversaci\'on Peligrosa & Conversaci\'on No Peligrosa &  Precisi\'on \\
+\cline{2-5}
+\multirow{2}{*}{Actual} & Conversaci\'on Peligrosa & 37 & 6 & 86\% \\
+\cline{2-5}
+& Conversaci\'on No Peligrosa &  3 & 17 & 84\% \\
+\cline{2-5}
+
+\end{tabular}
+\caption{Matriz de confusi\'on de clasificador de 3 palabras}
+\label{tab:confucion1}
+\end{center}
+\end{table}
+
+Con esto se tiene una precisi\'on de un 86\% del clasificador.
+La figura \ref{fig:separabilidad} muestra de manera gr\'afica un plano que muestra la separabilidad de las clases con vectores de 3 componentes.
+
+\begin{figure}
+	\begin{center}
+	\includegraphics[scale=.4]{images/separavilidad}
+	\caption{Gr\'afica que muestra la separabilidad del clasificador.}
+	\label{fig:separabilidad}
+	\end{center}
+\end{figure}
+
+
+\subsection{Entrenamiento con 14 variables}
+Se realiz\'o el entrenamiento con 14 variables las cuales corresponden a las componentes del vector generado por el prototipo 1 con la siguiente lista de palabras:
+\begin{itemize}
+\item chupar 
+\item coger
+\item follar
+\item lamer
+\item besar
+\item pene 
+\item vagina
+\item masturbar
+\item sexo
+\item pechos
+\item tetas
+\item clitoris
+\item tragar
+\item violar
+\end{itemize}
+
+Estas variables generaron un vector $\theta$ con los siguientes valores:
+
+\begin{equation}
+\theta = 
+\begin{bmatrix}
+
+-1.027760 \\
+ 0.704011 \\
+ 0.907893 \\
+ 0.588279 \\
+ 0.529208 \\
+ 0.203309 \\
+ 0.104863 \\
+ 1.167757 \\
+ 0.975621 \\
+ 0.348992 \\
+ 0.541306 \\
+ 0.622848 \\
+ 0.233392 \\
+ 0.039713 \\
+ -0.066605
+ 
+\end{bmatrix}
+\end{equation}
+
+\subsubsection{Desempe\~no del clasificador con los conjuntos de entrenamiento}
+
+La matriz de resultados \ref{tab:confucion2} muestra el desempe\~no del conjunto de textos con los que el clasificador fue entrenado con el algoritmo de regresi\'on log\'istica. Con este algoritmo y con las palabras seleccionadas se tiene una precisi\'on de 96.72\% y un error del 3.28\% al clasificar ambos conjuntos de conversaciones peligrosas y no peligrosas en la categor\'ia correspondiente. 
+
+\begin{table}[h]
+\begin{center}
+\begin{tabular}{c|c|c|c|c|}
+\multicolumn{5}{c}{Predicci\'on} \\
+\cline{2-5}
+& & Conversaci\'on Peligrosa & Conversaci\'on Peligrosas no peligrosa&  Precisi\'on \\
+\cline{2-5}
+\multirow{2}{*}{Actual} & Conversaci\'on Peligrosa & 41 & 2 & 95\% \\
+\cline{2-5}
+& Conversaci\'on no  Peligrosa &  0 & 20 & 100\% \\
+\cline{2-5}
+
+\end{tabular}
+\caption{Tabla de validaci\'on del conjunto de entrenamiento}
+\label{tab:confucion2}
+\end{center}
+\end{table}
+
+%\begin{equation}
+%\frac{TruePositives}{TruePositiveP + FalseNegatives)
+
+Para interpretar el la eficiencia del clasificador de acuerdo a su precision y error hemos calculado las m\'etricas de \textit{precision} y \textit{recall}.
+
+
+\textbf{Precision} \linebreak
+La m\'etrica de \textit{precision} (Resultados donde nuestra variable y = 1) nos indica la precisi\'on de las conversaciones que son peligrosas y han sido marcadas como peligrosas. La ecuaci\'on \ref{eq:precisionentrenamiento} muestra que dicho valor es de 0.9534 el cual nos calcula una precisi\'on de un 95.34\% en para determinar que una conversaci\'on peligrosa de acuerdo al conjunto de palabras que definimos anteriormente como de car\'acter sexual es realmente peligrosa.
+
+\begin{equation}\label{eq:precisionentrenamiento}
+\frac{TruePositives}{TruePositive + FalsePositives} = \frac{41}{41+2} = 0.9534
+\end{equation}
+
+\textbf{Recall} \linebreak
+La m\'etrica de \textit{Recall} nos indica la fracci\'on de las conversaciones que clasificamos como peligrosas con respescto al total de conversaciones peligrosas. La ecuaci\'on \ref{eq:recallentrenamiento} nos arroja un resultado de 1 el cual representa que todas las conversaciones se clasificaron como peligrosas son peligrosas de acuerdo al conjunto de palabras de car\'acter sexual definido con aterioridad.
+\begin{equation}\label{eq:recallentrenamiento}
+\frac{TruePositives}{TruePositive + FalseNegatives} = \frac{41}{41+
+0} = 1
+\end{equation}
+
+\subsubsection{Desempe\~no del clasificador con pruebas}
+
+La matriz de resultados \ref{tab:confucion3} muestra el desempe\~no del conjunto de textos con los que el clasificador fue entrenado con el algoritmo de regresi\'on log\'istica. Con este algoritmo y con las palabras seleccionadas se tiene una precisi\'on de 84\% y un error del 16\% al clasificar ambos conjuntos de conversaciones peligrosas y no peligrosas en la categor\'ia correspondiente. 
+
+\begin{table}[h]
+\begin{center}
+\begin{tabular}{c|c|c|c|c|}
+\multicolumn{5}{c}{Predicci\'on} \\
+\cline{2-5}
+& & Conversaci\'on Peligrosa & Conversaci\'on Peligrosas no peligrosa&  Precisi\'on \\
+\cline{2-5}
+\multirow{2}{*}{Actual} & Conversaci\'on Peligrosa & 21 & 4 & 84\% \\
+\cline{2-5}
+& Conversaci\'on no  Peligrosa &  2 & 23 & 92\% \\
+\cline{2-5}
+
+\end{tabular}
+\caption{Tabla de validaci\'on del conjunto de pruebas}
+\label{tab:confucion3}
+\end{center}
+\end{table}
+
+%\begin{equation}
+%\frac{TruePositives}{TruePositiveP + FalseNegatives)
+
+
+Al igual que para el conjunto de entrenamiento paara interpretar el la eficiencia del clasificador de acuerdo a su precision y error hemos calculado las m\'etricas de \textit{precision} y \textit{recall}.
+
+
+\textbf{Precision} \linebreak
+La m\'etrica de \textit{precision} (Resultados donde nuestra variable y = 1) nos indica la precisi\'on de las conversaciones que son peligrosas y han sido marcadas como peligrosas. La ecuaci\'on \ref{eq:precisionentrenamiento} muestra que dicho valor es de 0.84 el cual nos calcula una precisi\'on de un 84\% en para determinar que una conversaci\'on peligrosa de acuerdo al conjunto de palabras que definimos anteriormente como de car\'acter sexual es realmente peligrosa.
+
+\begin{equation}\label{eq:precisionentrenamiento}
+\frac{TruePositives}{TruePositive + FalsePositives} = \frac{21}{21+4} = 0.84
+\end{equation}
+
+\textbf{Recall} \linebreak
+La m\'etrica de \textit{Recall} nos indica la fracci\'on de las conversaciones que clasificamos como peligrosas con respescto al total de conversaciones peligrosas. La ecuaci\'on \ref{eq:recallentrenamiento} nos arroja un resultado de .91 el cual representa que todas las conversaciones se clasificaron como peligrosas son peligrosas de acuerdo al conjunto de palabras de car\'acter sexual definido con aterioridad.
+\begin{equation}\label{eq:recallentrenamiento}
+\frac{TruePositives}{TruePositive + FalseNegatives} = \frac{21}{21+2} = 0.91
+\end{equation}
+
+
+Para comparar los valores de Precision(P) y Recall(R), vamos a calcular el promedio(Averange) y la medida $F_1 Score$ descritas en las ecuaciones \ref{eq:average} y \ref{eq:f}
+
+\begin{equation}\label{eq:average}
+	Average = \frac{P + R}{2}
+\end{equation}
+
+\begin{equation}\label{eq:f}
+	F_1 Score = 2 \frac{PR}{P + R}
+\end{equation}
+
+
+La tabla \ref{tab:valores} muestra una compraci\'on del conjunto de conversaciones de entrenamiento y el conjunto de conversaciones de prueba en la cual hemos calculados los valores promedio y $F_1$. Para el caso del conjunto de entrenamiento nos dan valores de 0.975 y 97436 los cuales indican que para ese conjunto se tiene un buen rendimiento. Por otro lado cuando probamos con conversaciones nuevas para la prueba el promedio y el valor de $F_1$ disminuyen en cuanto rendimiento a  0.875 de promedio y 0.8736 de $F_1$ a pesar de que tiene un menor rendimiento ante conversaciones nuevas se tiene un eficiencia por encima del 50\% la cual hemos definido como umbral de aceptaci\'on lo que lo hace un buen clasificador. 
+
+\begin{table}[h]
+\begin{center}
+\begin{tabular}{c|cc|c|c|}
+& Precision & Recall & Average & $F_1 Score$ \\
+\hline
+Conjunto de Entrenamiento & 0.95 & 1 & 0.975 &  0.97436 \\ 
+Conjunto de Pruebas & 0.84 & 0.91 & 0.875 &  0.8736 \\ 
+\end{tabular}
+
+\label{tab:valores}
+\caption{Tabla de Valores de Promedio y $F_1$ para algoritmos de regresi\'on log\'istica}
+\end{center}
+\end{table}
+
+

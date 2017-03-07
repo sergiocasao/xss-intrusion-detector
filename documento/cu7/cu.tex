@@ -1,0 +1,47 @@
+% \IUref{IUAdmPS}{Administrar Planta de Selección}
+% \IUref{IUModPS}{Modificar Planta de Selección}
+% \IUref{IUEliPS}{Eliminar Planta de Selección}
+
+% 
+
+
+% Copie este bloque por cada caso de uso:
+%-------------------------------------- COMIENZA descripción del caso de uso.
+
+%\begin{UseCase}[archivo de imágen]{UCX}{Nombre del Caso de uso}{
+	
+
+	\begin{UseCase}{CU7}{Visualizar informaci\'on de Contacto}{El caso de uso permite al Administrador consultarla la informaci\'on de alg\'un Contacto.
+	}
+		\UCitem{Versi\'on}{0.1}
+		\UCitem{Actor}{Administrador}
+		\UCitem{Prop\'osito}{Permitir que el Administrador consulte los datos vinculados con alg\'un Contacto en espec\'ifico para que pueda hacer uso de esa informaci\'on.}
+		\UCitem{Resumen}{
+		El caso de uso permite al Administrador visualizar la informaci\'on que se encuentra registrada acerca de alg\'un Contacto dentro de la base de datos.}
+		\UCitem{Entradas}{Contacto seleccionado.
+}
+		\UCitem{Salidas}{Mensaje de alerta que notifique al Administrador que la consulta fue realizada exitosamente o no fue realizada exitosamente. }
+		\UCitem{Precondiciones}{El usuario debe tener permisos de Administrador.}
+		\UCitem{Postcondiciones}{El Administrador podr\'a visualizar los datos vinculados al Contacto y hacer uso de esa informaci\'on de acuerdo a su conveniencia.
+		}		
+		\UCitem{Autor}{Anahi Ruiz Diaz}
+	\end{UseCase}
+
+	\begin{UCtrayectoria}{Principal}
+		\UCpaso[\UCactor] El Administrador ingresa al sistema.
+		\UCpaso[\UCactor] El Administrador realiza la consulta de toda la lista de contactos registrados en el sistema.
+		\UCpaso  El sistema muestra la opci\'on \IUbutton{Visualizar informaci\'on de Contacto} y \IUbutton{Eliminar Contacto} .
+		\UCpaso[\UCactor] El Administrador da clic en el bot\'on \IUbutton{Visualizar informaci\'on de Contacto}. 
+		\UCpaso  El sistema muestra la informaci\'on, relacionada con el Contacto seleccionado, que encontr\'o dentro de la base de datos. \Trayref{A}.
+		\UCpaso El sistema muestra al Administrador un mensaje de alerta que notifica que la consulta fue realizada exitosamente.
+		\UCpaso[\UCactor] El Administrador da clic en el bot\'on \IUbutton{Aceptar}. 	
+		\UCpaso[] Fin del flujo.
+				
+	\end{UCtrayectoria}
+		
+		\begin{UCtrayectoriaA}{A}{Error al consultar informaci\'on de Contacto.}
+			\UCpaso El sistema muestra una alerta que notifica Administrador que ocurri\'o un error inesperado y que la consulta no se realiz\'o.
+			\UCpaso[\UCactor] El Administrador da clic en el bot\'on \IUbutton{Aceptar}. 			
+			\UCpaso[] Fin del flujo.
+		\end{UCtrayectoriaA}		
+%-------------------------------------- TERMINA descripción del caso de uso.

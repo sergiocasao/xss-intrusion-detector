@@ -1,0 +1,182 @@
+\BOOKMARK [0][-]{chapter.1}{Antecedentes}{}% 1
+\BOOKMARK [1][-]{section.1.1}{Introducci\363n}{chapter.1}% 2
+\BOOKMARK [1][-]{section.1.2}{Descripci\363n del problema}{chapter.1}% 3
+\BOOKMARK [1][-]{section.1.3}{Soluci\363n propuesta}{chapter.1}% 4
+\BOOKMARK [1][-]{section.1.4}{Estado del arte}{chapter.1}% 5
+\BOOKMARK [1][-]{section.1.5}{Justificaci\363n}{chapter.1}% 6
+\BOOKMARK [0][-]{chapter.2}{Marco Te\363rico}{}% 7
+\BOOKMARK [1][-]{section.2.1}{Miner\355a de texto}{chapter.2}% 8
+\BOOKMARK [1][-]{section.2.2}{Lenguaje natural}{chapter.2}% 9
+\BOOKMARK [1][-]{section.2.3}{Procesamiento del lenguaje natural}{chapter.2}% 10
+\BOOKMARK [1][-]{section.2.4}{An\341lisis morfol\363gico}{chapter.2}% 11
+\BOOKMARK [1][-]{section.2.5}{Stemming}{chapter.2}% 12
+\BOOKMARK [1][-]{section.2.6}{Lematizaci\363n}{chapter.2}% 13
+\BOOKMARK [1][-]{section.2.7}{Stopwords}{chapter.2}% 14
+\BOOKMARK [0][-]{chapter.3}{Especificaciones del proyecto}{}% 15
+\BOOKMARK [1][-]{section.3.1}{Objetivo}{chapter.3}% 16
+\BOOKMARK [2][-]{subsection.3.1.1}{Objetivo general}{section.3.1}% 17
+\BOOKMARK [2][-]{subsection.3.1.2}{Objetivos espec\355ficos}{section.3.1}% 18
+\BOOKMARK [1][-]{section.3.2}{Metodolog\355a}{chapter.3}% 19
+\BOOKMARK [1][-]{section.3.3}{Descripci\363n de prototipos}{chapter.3}% 20
+\BOOKMARK [1][-]{section.3.4}{Arquitectura del sistema}{chapter.3}% 21
+\BOOKMARK [0][-]{chapter.4}{Prototipo 1: Identificador y clasificador de frases del online grooming}{}% 22
+\BOOKMARK [1][-]{section.4.1}{Marco Te\363rico del prototipo}{chapter.4}% 23
+\BOOKMARK [2][-]{subsection.4.1.1}{Online Grooming}{section.4.1}% 24
+\BOOKMARK [2][-]{subsection.4.1.2}{Caracterizaci\363n del Online Grooming}{section.4.1}% 25
+\BOOKMARK [1][-]{section.4.2}{Descripci\363n}{chapter.4}% 26
+\BOOKMARK [1][-]{section.4.3}{Objetivo}{chapter.4}% 27
+\BOOKMARK [1][-]{section.4.4}{An\341lisis}{chapter.4}% 28
+\BOOKMARK [2][-]{subsection.4.4.1}{Caracter\355sticas}{section.4.4}% 29
+\BOOKMARK [2][-]{subsection.4.4.2}{Restricciones}{section.4.4}% 30
+\BOOKMARK [1][-]{section.4.5}{Dise\361o}{chapter.4}% 31
+\BOOKMARK [2][-]{subsection.4.5.1}{Diagrama de Clases}{section.4.5}% 32
+\BOOKMARK [2][-]{subsection.4.5.2}{M\351todo para la identificaci\363n y conteo de frases del nivel de formaci\363n de amistad}{section.4.5}% 33
+\BOOKMARK [2][-]{subsection.4.5.3}{Lista de frases de nivel formaci\363n de una relaci\363n}{section.4.5}% 34
+\BOOKMARK [2][-]{subsection.4.5.4}{Lista de frases de nivel evaluaci\363n de riesgos}{section.4.5}% 35
+\BOOKMARK [2][-]{subsection.4.5.5}{Lista de frases de nivel exclusividad}{section.4.5}% 36
+\BOOKMARK [2][-]{subsection.4.5.6}{Lista de frases de nivel conclusi\363n}{section.4.5}% 37
+\BOOKMARK [1][-]{section.4.6}{Pruebas}{chapter.4}% 38
+\BOOKMARK [0][-]{chapter.5}{Prototipo 2: Generador de Vectores de palabras con denotaci\363n sexual}{}% 39
+\BOOKMARK [1][-]{section.5.1}{Marco Te\363rico}{chapter.5}% 40
+\BOOKMARK [1][-]{section.5.2}{Descripci\363n}{chapter.5}% 41
+\BOOKMARK [1][-]{section.5.3}{Objetivo}{chapter.5}% 42
+\BOOKMARK [1][-]{section.5.4}{An\341lisis}{chapter.5}% 43
+\BOOKMARK [2][-]{subsection.5.4.1}{Caracter\355sticas}{section.5.4}% 44
+\BOOKMARK [2][-]{subsection.5.4.2}{Restricciones}{section.5.4}% 45
+\BOOKMARK [1][-]{section.5.5}{Dise\361o}{chapter.5}% 46
+\BOOKMARK [1][-]{section.5.6}{Resultados}{chapter.5}% 47
+\BOOKMARK [2][-]{subsection.5.6.1}{Pruebas}{section.5.6}% 48
+\BOOKMARK [0][-]{chapter.6}{Prototipo 3: Clasificador de conversaciones con denotaci\363n sexual}{}% 49
+\BOOKMARK [1][-]{section.6.1}{An\341lisis}{chapter.6}% 50
+\BOOKMARK [2][-]{subsection.6.1.1}{Descripci\363n}{section.6.1}% 51
+\BOOKMARK [2][-]{subsection.6.1.2}{Objetivo}{section.6.1}% 52
+\BOOKMARK [2][-]{subsection.6.1.3}{Caracter\355sticas}{section.6.1}% 53
+\BOOKMARK [2][-]{subsection.6.1.4}{Restricciones}{section.6.1}% 54
+\BOOKMARK [2][-]{subsection.6.1.5}{Marco Te\363rico}{section.6.1}% 55
+\BOOKMARK [1][-]{section.6.2}{Dise\361o}{chapter.6}% 56
+\BOOKMARK [2][-]{subsection.6.2.1}{Arquitectura}{section.6.2}% 57
+\BOOKMARK [1][-]{section.6.3}{Pruebas}{chapter.6}% 58
+\BOOKMARK [2][-]{subsection.6.3.1}{Entrenamiento con 3 variables}{section.6.3}% 59
+\BOOKMARK [2][-]{subsection.6.3.2}{Entrenamiento con 14 variables}{section.6.3}% 60
+\BOOKMARK [0][-]{chapter.7}{Prototipo 4: Clasfificador de comportamiento de conversaciones}{}% 61
+\BOOKMARK [1][-]{section.7.1}{An\341lisis}{chapter.7}% 62
+\BOOKMARK [2][-]{subsection.7.1.1}{Objetivo}{section.7.1}% 63
+\BOOKMARK [2][-]{subsection.7.1.2}{Caracter\355sticas}{section.7.1}% 64
+\BOOKMARK [2][-]{subsection.7.1.3}{Restricciones}{section.7.1}% 65
+\BOOKMARK [2][-]{subsection.7.1.4}{Marco Te\363rico}{section.7.1}% 66
+\BOOKMARK [1][-]{section.7.2}{Dise\361o}{chapter.7}% 67
+\BOOKMARK [2][-]{subsection.7.2.1}{Dise\361o de la red neuronal}{section.7.2}% 68
+\BOOKMARK [1][-]{section.7.3}{Pruebas}{chapter.7}% 69
+\BOOKMARK [0][-]{chapter.8}{Prototipo 5: API de decisi\363n}{}% 70
+\BOOKMARK [1][-]{section.8.1}{An\341lisis}{chapter.8}% 71
+\BOOKMARK [2][-]{subsection.8.1.1}{Descripci\363n}{section.8.1}% 72
+\BOOKMARK [2][-]{subsection.8.1.2}{Objetivo}{section.8.1}% 73
+\BOOKMARK [2][-]{subsection.8.1.3}{Caracter\355sticas}{section.8.1}% 74
+\BOOKMARK [2][-]{subsection.8.1.4}{Restricciones}{section.8.1}% 75
+\BOOKMARK [1][-]{section.8.2}{Dise\361o}{chapter.8}% 76
+\BOOKMARK [1][-]{section.8.3}{Arquitectura}{chapter.8}% 77
+\BOOKMARK [2][-]{subsection.8.3.1}{Diagrama de clases}{section.8.3}% 78
+\BOOKMARK [1][-]{section.8.4}{Pruebas}{chapter.8}% 79
+\BOOKMARK [0][-]{chapter.9}{Prototipo 6: Sistema de Mensajer\355a}{}% 80
+\BOOKMARK [1][-]{section.9.1}{An\341lisis}{chapter.9}% 81
+\BOOKMARK [2][-]{subsection.9.1.1}{Descripci\363n}{section.9.1}% 82
+\BOOKMARK [2][-]{subsection.9.1.2}{Objetivo}{section.9.1}% 83
+\BOOKMARK [2][-]{subsection.9.1.3}{Caracter\355sticas}{section.9.1}% 84
+\BOOKMARK [2][-]{subsection.9.1.4}{Restricciones}{section.9.1}% 85
+\BOOKMARK [2][-]{subsection.9.1.5}{Casos de uso}{section.9.1}% 86
+\BOOKMARK [1][-]{section.9.2}{Modelo de casos de uso del sistema de mensajer\355a}{chapter.9}% 87
+\BOOKMARK [1][-]{section.9.3}{CU1 Registrar Contacto}{chapter.9}% 88
+\BOOKMARK [2][-]{subsection.9.3.1}{Descripci\363n completa}{section.9.3}% 89
+\BOOKMARK [2][-]{subsection.9.3.2}{Atributos importantes}{section.9.3}% 90
+\BOOKMARK [2][-]{subsection.9.3.3}{Trayectorias del Caso de Uso}{section.9.3}% 91
+\BOOKMARK [1][-]{section.9.4}{CU2 Iniciar sesi\363n}{chapter.9}% 92
+\BOOKMARK [2][-]{subsection.9.4.1}{Descripci\363n completa}{section.9.4}% 93
+\BOOKMARK [2][-]{subsection.9.4.2}{Atributos importantes}{section.9.4}% 94
+\BOOKMARK [2][-]{subsection.9.4.3}{Trayectorias del Caso de Uso}{section.9.4}% 95
+\BOOKMARK [1][-]{section.9.5}{CU3 Enviar mensaje}{chapter.9}% 96
+\BOOKMARK [2][-]{subsection.9.5.1}{Descripci\363n completa}{section.9.5}% 97
+\BOOKMARK [2][-]{subsection.9.5.2}{Atributos importantes}{section.9.5}% 98
+\BOOKMARK [2][-]{subsection.9.5.3}{Trayectorias del Caso de Uso}{section.9.5}% 99
+\BOOKMARK [1][-]{section.9.6}{CU4 Agregar contacto}{chapter.9}% 100
+\BOOKMARK [2][-]{subsection.9.6.1}{Descripci\363n completa}{section.9.6}% 101
+\BOOKMARK [2][-]{subsection.9.6.2}{Atributos importantes}{section.9.6}% 102
+\BOOKMARK [2][-]{subsection.9.6.3}{Trayectorias del Caso de Uso}{section.9.6}% 103
+\BOOKMARK [1][-]{section.9.7}{CU5 Cerrar sesi\363n}{chapter.9}% 104
+\BOOKMARK [2][-]{subsection.9.7.1}{Descripci\363n completa}{section.9.7}% 105
+\BOOKMARK [2][-]{subsection.9.7.2}{Atributos importantes}{section.9.7}% 106
+\BOOKMARK [2][-]{subsection.9.7.3}{Trayectorias del Caso de Uso}{section.9.7}% 107
+\BOOKMARK [1][-]{section.9.8}{CU6 Analizar conversaci\363n}{chapter.9}% 108
+\BOOKMARK [2][-]{subsection.9.8.1}{Descripci\363n completa}{section.9.8}% 109
+\BOOKMARK [2][-]{subsection.9.8.2}{Atributos importantes}{section.9.8}% 110
+\BOOKMARK [2][-]{subsection.9.8.3}{Trayectorias del Caso de Uso}{section.9.8}% 111
+\BOOKMARK [1][-]{section.9.9}{Diagrama de clases del sistema de mensajer\355a}{chapter.9}% 112
+\BOOKMARK [1][-]{section.9.10}{Diagrama de paquetes}{chapter.9}% 113
+\BOOKMARK [1][-]{section.9.11}{Modelo de la interacci\363n del Contacto con el sistema de mensajer\355a }{chapter.9}% 114
+\BOOKMARK [2][-]{subsection.9.11.1}{Diagrama de secuencia del sistema de mensajer\355a \(Iniciar sesi\363n\)}{section.9.11}% 115
+\BOOKMARK [2][-]{subsection.9.11.2}{Diagrama de secuencia del sistema de mensajer\355a \(Registro de Contacto\)}{section.9.11}% 116
+\BOOKMARK [2][-]{subsection.9.11.3}{Diagrama de secuencia del sistema de mensajer\355a \(Agregar Contacto\)}{section.9.11}% 117
+\BOOKMARK [2][-]{subsection.9.11.4}{Diagrama de secuencia del sistema de mensajer\355a \(Enviar mensaje\)}{section.9.11}% 118
+\BOOKMARK [2][-]{subsection.9.11.5}{Diagrama de secuencia del sistema de mensajer\355a \(Cerrar sesi\363n\)}{section.9.11}% 119
+\BOOKMARK [2][-]{subsection.9.11.6}{IU1 Pantalla de Iniciar sesi\363n}{section.9.11}% 120
+\BOOKMARK [2][-]{subsection.9.11.7}{IU2 Pantalla de Registro de usuario}{section.9.11}% 121
+\BOOKMARK [2][-]{subsection.9.11.8}{IU3 Pantalla de Conversaciones}{section.9.11}% 122
+\BOOKMARK [2][-]{subsection.9.11.9}{IU4 Pantalla del Sistema de Mensajer\355a}{section.9.11}% 123
+\BOOKMARK [2][-]{subsection.9.11.10}{IU5 Pantalla del An\341lisis \(Gr\341fica\)}{section.9.11}% 124
+\BOOKMARK [0][-]{chapter.10}{Conclusiones}{}% 125
+\BOOKMARK [1][-]{section.10.1}{Trabajo a Futuro}{chapter.10}% 126
+\BOOKMARK [0][-]{appendix.Alph1}{Conversaciones Peligrosas}{}% 127
+\BOOKMARK [1][-]{section.Alph1.1}{Conversaci\363n 1.txt}{appendix.Alph1}% 128
+\BOOKMARK [1][-]{section.Alph1.2}{Conversaci\363n 2.txt}{appendix.Alph1}% 129
+\BOOKMARK [1][-]{section.Alph1.3}{Conversaci\363n 3.txt}{appendix.Alph1}% 130
+\BOOKMARK [1][-]{section.Alph1.4}{Conversaci\363n 4.txt}{appendix.Alph1}% 131
+\BOOKMARK [1][-]{section.Alph1.5}{Conversaci\363n 5.txt}{appendix.Alph1}% 132
+\BOOKMARK [1][-]{section.Alph1.6}{Conversaci\363n 6.txt}{appendix.Alph1}% 133
+\BOOKMARK [1][-]{section.Alph1.7}{Conversaci\363n 7.txt}{appendix.Alph1}% 134
+\BOOKMARK [1][-]{section.Alph1.8}{Conversaci\363n 8.txt}{appendix.Alph1}% 135
+\BOOKMARK [1][-]{section.Alph1.9}{Conversaci\363n 9.txt}{appendix.Alph1}% 136
+\BOOKMARK [1][-]{section.Alph1.10}{Conversaci\363n 10.txt}{appendix.Alph1}% 137
+\BOOKMARK [1][-]{section.Alph1.11}{Conversaci\363n 11.txt}{appendix.Alph1}% 138
+\BOOKMARK [1][-]{section.Alph1.12}{Conversaci\363n 12.txt}{appendix.Alph1}% 139
+\BOOKMARK [1][-]{section.Alph1.13}{Conversaci\363n 13.txt}{appendix.Alph1}% 140
+\BOOKMARK [1][-]{section.Alph1.14}{Conversaci\363n 14.txt}{appendix.Alph1}% 141
+\BOOKMARK [1][-]{section.Alph1.15}{Conversaci\363n 15.txt}{appendix.Alph1}% 142
+\BOOKMARK [1][-]{section.Alph1.16}{Conversaci\363n 16.txt}{appendix.Alph1}% 143
+\BOOKMARK [1][-]{section.Alph1.17}{Conversaci\363n 17.txt}{appendix.Alph1}% 144
+\BOOKMARK [1][-]{section.Alph1.18}{Conversaci\363n 19.txt}{appendix.Alph1}% 145
+\BOOKMARK [1][-]{section.Alph1.19}{Conversaci\363n 20.txt}{appendix.Alph1}% 146
+\BOOKMARK [1][-]{section.Alph1.20}{Conversaci\363n 21.txt}{appendix.Alph1}% 147
+\BOOKMARK [1][-]{section.Alph1.21}{Conversaci\363n 22.txt}{appendix.Alph1}% 148
+\BOOKMARK [1][-]{section.Alph1.22}{Conversaci\363n 23.txt}{appendix.Alph1}% 149
+\BOOKMARK [1][-]{section.Alph1.23}{Conversaci\363n 24.txt}{appendix.Alph1}% 150
+\BOOKMARK [1][-]{section.Alph1.24}{Conversaci\363n 25.txt}{appendix.Alph1}% 151
+\BOOKMARK [1][-]{section.Alph1.25}{Conversaci\363n 25.txt}{appendix.Alph1}% 152
+\BOOKMARK [1][-]{section.Alph1.26}{Conversaci\363n 27.txt}{appendix.Alph1}% 153
+\BOOKMARK [1][-]{section.Alph1.27}{Conversaci\363n 28.txt}{appendix.Alph1}% 154
+\BOOKMARK [1][-]{section.Alph1.28}{Conversaci\363n 29.txt}{appendix.Alph1}% 155
+\BOOKMARK [1][-]{section.Alph1.29}{Conversaci\363n 30.txt}{appendix.Alph1}% 156
+\BOOKMARK [1][-]{section.Alph1.30}{Conversaci\363n 31.txt}{appendix.Alph1}% 157
+\BOOKMARK [1][-]{section.Alph1.31}{Conversaci\363n 32.txt}{appendix.Alph1}% 158
+\BOOKMARK [1][-]{section.Alph1.32}{Conversaci\363n 33.txt}{appendix.Alph1}% 159
+\BOOKMARK [1][-]{section.Alph1.33}{Conversaci\363n 34.txt}{appendix.Alph1}% 160
+\BOOKMARK [1][-]{section.Alph1.34}{Conversaci\363n 35.txt}{appendix.Alph1}% 161
+\BOOKMARK [1][-]{section.Alph1.35}{Conversaci\363n 36.txt}{appendix.Alph1}% 162
+\BOOKMARK [1][-]{section.Alph1.36}{Conversaci\363n 37.txt}{appendix.Alph1}% 163
+\BOOKMARK [1][-]{section.Alph1.37}{Conversaci\363n 38.txt}{appendix.Alph1}% 164
+\BOOKMARK [1][-]{section.Alph1.38}{Conversaci\363n 39.txt}{appendix.Alph1}% 165
+\BOOKMARK [1][-]{section.Alph1.39}{Conversaci\363n 40.txt}{appendix.Alph1}% 166
+\BOOKMARK [0][-]{appendix.Alph2}{Conversaciones No Peligrosas}{}% 167
+\BOOKMARK [1][-]{section.Alph2.1}{Conversaci\363n cnp3.txt}{appendix.Alph2}% 168
+\BOOKMARK [1][-]{section.Alph2.2}{Conversaci\363n cnp4.txt}{appendix.Alph2}% 169
+\BOOKMARK [1][-]{section.Alph2.3}{Conversaci\363n cnp5.txt}{appendix.Alph2}% 170
+\BOOKMARK [1][-]{section.Alph2.4}{Conversaci\363n cnp6.txt}{appendix.Alph2}% 171
+\BOOKMARK [1][-]{section.Alph2.5}{Conversaci\363n cnp7.txt}{appendix.Alph2}% 172
+\BOOKMARK [1][-]{section.Alph2.6}{Conversaci\363n cnp9.txt}{appendix.Alph2}% 173
+\BOOKMARK [1][-]{section.Alph2.7}{Conversaci\363n cnp10.txt}{appendix.Alph2}% 174
+\BOOKMARK [1][-]{section.Alph2.8}{Conversaci\363n cnp13.txt}{appendix.Alph2}% 175
+\BOOKMARK [1][-]{section.Alph2.9}{Conversaci\363n cnp16.txt}{appendix.Alph2}% 176
+\BOOKMARK [1][-]{section.Alph2.10}{Conversaci\363n cnp17.txt}{appendix.Alph2}% 177
+\BOOKMARK [1][-]{section.Alph2.11}{Conversaci\363n cnp19.txt}{appendix.Alph2}% 178
+\BOOKMARK [1][-]{section.Alph2.12}{Conversaci\363n cnp21.txt}{appendix.Alph2}% 179
+\BOOKMARK [0][-]{appendix.Alph3}{Lista de Stopwords}{}% 180
+\BOOKMARK [0][-]{appendix.Alph4}{Tablas de frecuencias de palabras en el idioma espa\361ol}{}% 181
+\BOOKMARK [1][-]{section.Alph4.1}{Palabras usadas con mayor frecuencia en el espa\361ol}{appendix.Alph4}% 182

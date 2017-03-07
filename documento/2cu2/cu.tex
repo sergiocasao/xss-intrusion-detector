@@ -1,0 +1,43 @@
+% \IUref{IUAdmPS}{Administrar Planta de Selección}
+% \IUref{IUModPS}{Modificar Planta de Selección}
+% \IUref{IUEliPS}{Eliminar Planta de Selección}
+
+% 
+
+
+% Copie este bloque por cada caso de uso:
+%-------------------------------------- COMIENZA descripción del caso de uso.
+
+%\begin{UseCase}[archivo de imágen]{UCX}{Nombre del Caso de uso}{
+	
+
+	\begin{UseCase}{CU2}{Steeming}{El caso de uso aplicar\'a el algoritmo Snowball a una lista de palabras.
+	}
+		\UCitem{Versi\'on}{0.1}
+		%\UCitem{Actor}{}
+		\UCitem{Prop\'osito}{Obtener la ra\'iz de un conjunto de palabras.}
+		\UCitem{Resumen}{
+		El caso de uso permite obtener la ra\'iz de un conjunto de palabras para as\'i disminuir nuestro diccionario.}
+		\UCitem{Entradas}{Lista de palabras}
+		\UCitem{Salidas}{Lista de ra\'ices de palabras}
+		\UCitem{Precondiciones}{Existencia de un archivo llamado que contenga la lista de palabras}
+		\UCitem{Postcondiciones}{Se generar\'a un archivo que contenga la lista de las ra\'ices de las palabras de la lista.}		
+		%\UCitem{Autor}{Anahi Ruiz Diaz}
+	\end{UseCase}
+
+	\begin{UCtrayectoria}{Principal}
+	
+		\UCpaso  El sistema abre un archivo de texto el cual contiene la lista de palabras que se obtuvo previamente de: archivo.txt. \Trayref{A}
+                \UCpaso El sistema aplica el algoritmo Snowball a la lista de palabras.
+		\UCpaso El sistema verifica palabra por palabra si se trata o no de una Stopword y en caso de ser Stopword la ignora.
+		\UCpaso  El sistema genera un nuevo archivo de texto \'unicamente con las ra\'ices de la lista de palabras previamente procesadas.
+				    \UCpaso[] Fin del flujo.
+	\end{UCtrayectoria}
+	
+			\begin{UCtrayectoriaA}{A}{Datos obligatorios}
+		    \UCpaso El fichero con la lista de palabras del archivo.txt no existe.
+		    \UCpaso[] Fin del flujo.
+    		\end{UCtrayectoriaA}
+
+		
+%-------------------------------------- TERMINA descripción del caso de uso.

@@ -1,0 +1,40 @@
+% \IUref{IUAdmPS}{Administrar Planta de Selección}
+% \IUref{IUModPS}{Modificar Planta de Selección}
+% \IUref{IUEliPS}{Eliminar Planta de Selección}
+
+% 
+
+
+% Copie este bloque por cada caso de uso:
+%-------------------------------------- COMIENZA descripción del caso de uso.
+
+%\begin{UseCase}[archivo de imágen]{UCX}{Nombre del Caso de uso}{
+	
+
+	\begin{UseCase}{CU6}{Analizar conversaci\'on}{El caso de uso permite al Contacto revisar si la conversaci\'on que est\'a teniendo puede ser peligrosa}
+		\UCitem{Versi\'on}{0.1}
+		\UCitem{Actor}{Contacto}
+		\UCitem{Prop\'osito}{Analizar la conversaci\'on para poder categorizarla como peligrosa o no peligrosa.}
+		\UCitem{Resumen}{Este caso de uso permite analizar la conversaci\'on del Contacto para as\'i determinar su peligrosidad.}
+		\UCitem{Precondiciones}{El usuario debe haber tenido una conversaci\'on para ser analizada.}
+		\UCitem{Postcondiciones}{El usuario podr\'a visualizar la peligrosidad de su conversaci\'on.}		
+		\UCitem{Autor}{Anah\'i Ruiz D\'iaz}
+	\end{UseCase}
+
+	\begin{UCtrayectoria}{Principal}
+	
+		\UCpaso  El sistema muestra la conversaci\'on que se llev\'o acabo dentro de \'este.
+
+		\UCpaso[\UCactor]  El usuario da click al boton  \IUbutton{Analizar conversaci\'on}.
+		
+		\UCpaso El sistema hace uso de la API de an\'alisis y muestra el resultado del an\'alisis.
+
+
+		\UCpaso[] Fin del flujo.
+				
+	\end{UCtrayectoria}
+		
+
+		
+		
+%-------------------------------------- TERMINA descripción del caso de uso.

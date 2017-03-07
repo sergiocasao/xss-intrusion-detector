@@ -1,0 +1,46 @@
+% \IUref{IUAdmPS}{Administrar Planta de Selección}
+% \IUref{IUModPS}{Modificar Planta de Selección}
+% \IUref{IUEliPS}{Eliminar Planta de Selección}
+
+% 
+
+
+% Copie este bloque por cada caso de uso:
+%-------------------------------------- COMIENZA descripción del caso de uso.
+
+%\begin{UseCase}[archivo de imágen]{UCX}{Nombre del Caso de uso}{
+	\begin{UseCase}{CU3}{Buscar Contacto}{El caso de uso permite al Contacto encontrar a alg\'un Contacto que se haya registrado previamente en el sistema.
+	}
+		\UCitem{Versi\'on}{0.1}
+		\UCitem{Actor}{Contacto}
+		\UCitem{Prop\'osito}{Permitir que los usuarios encuentren a Contactos registrados en el sistema de mensajer\'ia, para que puedan agregarlos a su lista de Contactos, as\'i como enviar y recibir mensajes de ellos.}
+		\UCitem{Resumen}{
+		El caso de uso permite al usuario buscar un Contacto registrado previamente en el sistema para poder interactuar con \'el.}
+		\UCitem{Entradas}{
+Username del Contacto buscado char (obligatorio)
+}
+		\UCitem{Salidas}{Mensaje de alerta que notifique al usuario que el username del Contacto buscado no fue encontrado dentro de la base de datos. }
+		\UCitem{Precondiciones}{El usuario debe haberse registrado e iniciado sesi\'on. El usuario debe conocer el Username del Contacto que busca.
+El Contacto buscado debe haberse registrado previamente en el sistema de mensajer\'ia.}
+		\UCitem{Postcondiciones}{El usuario podr\'a interactuar con el Contacto buscado.}		
+		\UCitem{Autor}{Anahi Ruiz Diaz}
+	\end{UseCase}
+
+	\begin{UCtrayectoria}{Principal}
+	
+		\UCpaso  El sistema muestra la opci\'on Buscar Contacto.
+		\UCpaso[\UCactor] El usuario ingresa el Username del Contacto que desea buscar dentro de la caja de texto.
+		\UCpaso[\UCactor] El usuario da clic en el bot\'on \IUbutton{Buscar}. 
+		\UCpaso  El sistema verifica que el Username se encuentre registrado anteriormente en su base de datos.\Trayref{A}.
+		\UCpaso El sistema muestra al usuario el Contacto encontrado.
+		\UCpaso[] Fin del flujo.
+				
+	\end{UCtrayectoria}
+		
+		\begin{UCtrayectoriaA}{A}{Contacto no registrado}
+			\UCpaso El sistema muestra una alerta que notifica al usuario que el Contacto buscado no se encontr\'o registrado dentro de la base de datos.
+			\UCpaso[\UCactor] El usuario da clic en el bot\'on \IUbutton{Aceptar}. 			
+			\UCpaso[] Fin del flujo alterno.
+		\end{UCtrayectoriaA}
+		
+%-------------------------------------- TERMINA descripción del caso de uso.

@@ -1,0 +1,48 @@
+% \IUref{IUAdmPS}{Administrar Planta de Selección}
+% \IUref{IUModPS}{Modificar Planta de Selección}
+% \IUref{IUEliPS}{Eliminar Planta de Selección}
+
+% 
+
+
+% Copie este bloque por cada caso de uso:
+%-------------------------------------- COMIENZA descripción del caso de uso.
+
+%\begin{UseCase}[archivo de imágen]{UCX}{Nombre del Caso de uso}{
+	
+
+	\begin{UseCase}{CU4}{Agregar contacto}{El caso de uso permite a un contacto agregar un elemento a su lista de Contactos}
+		\UCitem{Versi\'on}{0.1}
+		\UCitem{Actor}{Contacto}
+		\UCitem{Prop\'osito}{Visualizar en la lista a un Contacto para poder enviarle mensajes}
+		\UCitem{Resumen}{Este caso de uso permite a un Contacto agregar a su lista de contactos un elemento m\'as que \'el elija.}
+		\UCitem{Precondiciones}{El Contacto debe haberse registrado e iniciado sesi\'on. El Contacto que busque debe existir en la base de datos.}
+		\UCitem{Postcondiciones}{El usuario visualizar\'a en su lista de contactos un nuevo elemento que corresponder\'a al Contacto que seleccion\'o y ser\'a capaz de enviarle mensajes.}		
+		\UCitem{Autor}{Anah\'i Ruiz D\'iaz}
+	\end{UseCase}
+
+	\begin{UCtrayectoria}{Principal}
+	
+			\UCpaso[\UCactor] El usuario entra a la p\'agina del sistema de mensajer\'ia e inicia sesi\'on.
+
+		\UCpaso El sistema muestra al usuario la p\'agina principal.
+		\UCpaso[\UCactor] El usuario escribe el nombre de un Contacto.
+		\UCpaso[\UCactor] El usuario da clic en el bot\'on \IUbutton{Add}.
+		\UCpaso El sistema verifica que el campo donde se escribe el nombre del Contacto a agregar est\'a lleno.\Trayref{A}
+		\UCpaso El sistema verifica que el Contacto por agregar exista en la base de datos.\Trayref{B}
+		\UCpaso El sistema agrega un nuevo elemento a la lista del Contacto que corresponde al Contacto seleccionado para ser agregado.
+		\UCpaso[] Fin del flujo.
+				
+	\end{UCtrayectoria}
+		
+		\begin{UCtrayectoriaA}{A}{Campo de contacto vac\'io}
+			\UCpaso El sistema muestra una alerta que notifica al usuario que debe escribir el nombre del Contacto que desea agregar.
+			\UCpaso[] Fin del flujo.
+		\end{UCtrayectoriaA}
+
+		\begin{UCtrayectoriaA}{B}{Contacto no existente}
+			\UCpaso El sistema muestra una alerta que notifica al usuario que el Contacto que desea agregar no existe.			\UCpaso[] Fin del flujo.
+		\end{UCtrayectoriaA}
+
+		
+%-------------------------------------- TERMINA descripción del caso de uso.

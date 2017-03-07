@@ -1,0 +1,43 @@
+% \IUref{IUAdmPS}{Administrar Planta de Selección}
+% \IUref{IUModPS}{Modificar Planta de Selección}
+% \IUref{IUEliPS}{Eliminar Planta de Selección}
+
+% 
+
+
+% Copie este bloque por cada caso de uso:
+%-------------------------------------- COMIENZA descripción del caso de uso.
+
+%\begin{UseCase}[archivo de imágen]{UCX}{Nombre del Caso de uso}{
+	\begin{UseCase}{CU3}{Enviar mensaje}{El caso de uso permite al Contacto enviar mensajes de texto a trav\'es de un canal abierto de comunicaci\'on.
+	}
+		\UCitem{Versi\'on}{0.2}
+		\UCitem{Actor}{Contacto}
+		\UCitem{Prop\'osito}{Enviar y Almacenar los mensajes escritos enviados entre los usuarios del sistema de mensajer\'ia, para su an\'alisis en el desarrollo de los m\'odulos posteriores.}
+		\UCitem{Resumen}{
+		El caso de uso permite al usuario enviar mensajes atrav\'es del un canal de comunicacion abierto}
+		\UCitem{Entradas}{Mensaje string  (obligatorio)}
+		\UCitem{Salidas}{Historial de mensajes enviados y recibidos }
+		\UCitem{Precondiciones}{El usuario debera tener un canal de comunicaci\'on abierto.El mensaje no puede estar vac\'io.}
+		\UCitem{Postcondiciones}{Los mensajes enviados y recibidos podr\'an ser visualidaos por ambos usuarios que comparten el mismo canal}		
+		\UCitem{Autor}{Anah\'i Ruiz D\'iaz}
+	\end{UseCase}
+
+	\begin{UCtrayectoria}{Principal}
+	
+		\UCpaso[\UCactor] El usuario escribe un mensaje dentro de una caja de textos.
+		\UCpaso[\UCactor] El usuario da clic en el bot\'on \IUbutton{Enviar} para enviar el mensaje. 
+
+		\UCpaso  El sistema env\'ia y muestra al otro Contacto el mensaje enviado por el usuario.  \Trayref{A}.
+		\UCpaso[] Fin del flujo.
+				
+	\end{UCtrayectoria}
+		
+		\begin{UCtrayectoriaA}{A}{Mensaje no enviado}
+			\UCpaso El sistema muestra una alerta que notifica al usuario que ocurri\'o un error y su mensaje no fue enviado.
+			\UCpaso[] El usuario da clic en el bot\'on \IUbutton{Aceptar}.
+			\UCpaso[] Fin del flujo.
+		\end{UCtrayectoriaA}
+
+
+%-------------------------------------- TERMINA descripción del caso de uso.

@@ -1,0 +1,22 @@
+
+\section{\textit{Stopwords}}
+Las palabras que aparecen con frecuencia entre los documentos no son buenas para la recuperaci\'on de informaci\'on. As\'i palabras que aparecen en m\'as del 80 porciento de documentos no son consideradas y se les llama \textit{stopwords} \cite{sw} : 
+ \begin{itemize}
+ \item Los art\'iculos, los pronombres, las preposiciones, y las conjunciones son candidatos naturales. 
+ \item Algunos verbos, adverbios, y adjetivos se pod\'ian tratar como \textit{stopwords}. 
+ \item Los t\'erminos espec\'ificos de un dominio se pod\'ian tratar como \textit{stopwords}.
+Se suele tener una lista de palabras que no son buenos t\'erminos de indexaci\'on llamada STOPLIST, Lista de Palabras Vac\'ias o Diccionario Negativo. La salida del analizador l\'exico es comprobada con la STOPLIST y se eliminan los t\'erminos que aparecen en ella. Tambi\'en se puede realizar la comprobaci\'on durante la etapa del an\'alisis l\'exico (esto para mejorar el rendimiento) pero no suele ser muy usado en muchos casos.
+\end{itemize}
+
+Ventajas: 
+ \begin{itemize}
+ \item Las palabras vac\'ias aparecen mucho y su lista de referencias es muy grande: 
+ \item Si las quitamos el archivo invertido ser\'a m\'as peque\~no. 
+ \item El archivo invertido se reduce en un 30 \'o 40 porciento. 
+ \item Mejora la eficiencia, porque hay una mejor selecci\'on de palabras claves. 
+ \item La indexaci\'on es m\'as r\'apida.
+ \end{itemize}
+Desventajas: 
+ \begin{itemize}
+ \item Por otro lado, la eliminaci\'on de \textit{stopwords} puede reducir el recall, lo que hace que sea interesante la indexaci\'on del texto completo.
+ \end{itemize}

@@ -1,0 +1,266 @@
+\section{An\'alisis}
+
+\subsection{Descripci\'on}
+Este prototipo se encarga de la toma de decisiones del clasificador de nivel 5 y el clasificador de niveles  1, 2, 3, 4 y 6.
+
+\subsection{Objetivo}
+Desarrollar el API de decisi\'on a partir de la uni\'on de los clasificadores de nivel 5 y niveles 1, 2, 3, 4 y 6.
+
+\subsection{Caracter\'isticas}
+\begin{description}
+\item[FEAT1:] La API recibe como entrada conversaciones en archivos de texto plano.
+\item[FEAT2:] La API recibe como entrada conversaciones en archivos con formato xml.
+\item[FEAT4:] La API preprocesa textos.
+\item[FEAT4:] La API genera vectores de nivel 5.
+\item[FEAT5:] La API genera vectores de nivel  1, 2, 3, 4 y 6.
+\item[FEAT6:] El API dar\'a como salida la decisi\'on del clasificador del prototipo 4.
+
+\end{description}
+
+\section{Dise\~no}
+
+
+\section{Arquitectura}
+
+La figura \ref{fig:arquitecturap5} muestra la arquitectura de la API de an\'alisis.
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[scale=.3]{images/api}
+\caption{Arquitectura de la API de an\'alisis}
+\label{fig:arquitecturap5}
+\end{center}
+\end{figure}
+
+
+\subsection{Diagrama de clases}
+
+
+La figura \ref{fig:dclasesp5} muestra el diagrama de clases de la API de an\'alisis.
+\begin{figure}[h]
+\begin{center}
+\includegraphics[scale=.5]{images/clasesnivel5}
+\caption{Diagrama de clases de la API de an\'alisis}
+\label{fig:dclasesp5}
+\end{center}
+\end{figure}
+
+\section{Pruebas}
+
+
+La tabla  \ref{tab:resultadasapi} muestra la tabla de resultados de conversaciones nuevas y su respectivo resultado.
+
+\begin{table}
+\begin{center}
+
+
+\begin{tabular}{|l|c|c|c|c|c|c|c|c|}
+
+\hline
+Conversaci\'on & N1 & N2 & N3 & N\_3 & N4 & N5 & N6 & Decisi\'on \\
+\hline
+pruebas/pr10.txt &
+ 0 &
+ 3 &
+ 0 &
+ 0 &
+ 0 &
+ 1 &
+ 1 &
+Muy Peligrosa \\
+pruebas/pr11.txt &
+ 0 &
+ 4 &
+ 0 &
+ 0 &
+ 0 &
+ 1 &
+ 0 &
+Muy Peligrosa \\ 
+pruebas/pr12.txt &
+ 0 &
+ 0 &
+ 6 &
+ 4 &
+ 0 &
+ 1 &
+ 0 &
+Muy Peligrosa \\ 
+pruebas/pr13np.txt &
+ 0 &
+ 1 &
+ 0 &
+  0 &
+ 0 &
+ 0 &
+ 0 &
+No Peligrosa \\ 
+pruebas/pr14.txt &
+ 0 &
+ 2 &
+ 0 &
+ 0 &
+ 0 &
+ 0 &
+ 0 &
+No Peligrosa \\ 
+pruebas/pr15.txt &
+ 0 &
+ 13 &
+ 4 &
+ 2 &
+ 1 &
+ 0 &
+ 0 &
+Peligrosa \\
+pruebas/pr16.txt &
+ 1 &
+ 4 &
+ 1 &
+ 0 &
+ 0 &
+ 1 &
+ 0 &
+Muy Peligrosa \\ 
+pruebas/pr17.txt &
+ 1 &
+ 0 &
+ 0 &
+ 0 &
+ 1 &
+ 1 &
+ 0 &
+Muy Peligrosa \\ 
+pruebas/pr18.txt &
+ 4 &
+ 7 &
+ 5 &
+ 3 &
+ 0 &
+ 1 &
+ 0 &
+Muy Peligrosa \\ 
+pruebas/pr19np.txt &
+ 0 &
+ 2 &
+ 0 &
+ 0 &
+ 0 &
+ 0 &
+ 0 &
+No Peligrosa \\ 
+pruebas/pr1.txt &
+ 2 &
+ 10 &
+ 0 &
+ 0 &
+ 1 &
+ 1 &
+ 3 &
+Muy Peligrosa \\ 
+pruebas/pr20np.txt &
+ 0 &
+ 2 &
+ 0 & 
+ 0 &
+ 0 &
+ 0 &
+ 0 &
+No Peligrosa \\ 
+pruebas/pr21.txt &
+ 1 &
+ 1 &
+ 0 &
+ 0 &
+ 0 &
+ 1 &
+ 0 &
+Muy Peligrosa \\ 
+pruebas/pr22.txt &
+ 0 &
+ 4 &
+ 0 &
+ 0 &
+ 0 & 
+ 1 &
+ 0 &
+Muy Peligrosa \\ 
+pruebas/pr2np.txt &
+ 0 &
+ 1 & 
+ 1 &
+ 0 &
+ 0 &
+ 0 &
+ 0 &
+No Peligrosa \\
+pruebas/pr3np.txt &
+ 1 &
+ 2 &
+ 0 &
+ 0 &
+ 0 &
+ 0 &
+ 0 &
+No Peligrosa \\
+pruebas/pr4.txt &
+ 0 &
+ 1 &
+ 0 &
+ 0 &
+ 0 &
+ 1 &
+ 0 &
+Muy Peligrosa \\
+pruebas/pr5.txt &
+ 0 &
+ 0 &
+ 0 &
+ 0 &
+ 0 &
+ 1 &
+ 0 &
+Muy Peligrosa \\
+pruebas/pr6.txt &
+ 0 &
+ 1 &
+ 3 &
+ 1 &
+ 0 &
+ 1 &
+ 0 &
+Muy Peligrosa \\ 
+pruebas/pr7.txt &
+ 1 &
+ 6 &
+ 4 &
+ 2 &
+ 0 &
+ 1 &
+ 0 &
+Muy Peligrosa \\ 
+pruebas/pr8.txt &
+ 0 &
+ 1 &
+ 1 &
+ 0 &
+ 1 &
+ 1 &
+ 0 &
+Muy Peligrosa \\
+pruebas/pr9.txt &
+ 0 &
+ 0 &
+ 0 &
+ 0 &
+ 0 &
+ 1 &
+ 0 &
+Muy Peligrosa \\ 
+\hline
+\end{tabular}
+
+\caption{Tabla de resultados de la Api}
+\label{tab:resultadasapi}
+\end{center}
+\end{table}

@@ -1,0 +1,34 @@
+\section{An\'alisis de requerimientos}
+Los requisitos planteados para la implementaci\'on del sistema son los siguientes.
+
+\subsection{Requerimientos Funcionales}
+
+\begin{itemize}
+\item{RF01:} Permitir el ingreso de usuarios al sistema por medio de una verificaci\'on. 
+\item{RF02:} Clasificar la conversaci\'on a partir de diversos patrones presentados.
+\item{RF03:} Las conversaciones se guardan en archivos xml.
+\item{RF04:} El sistema realiza el pre-procesamiento mediante el stemming, la lematisaci\'n y eliminar  stop words para crear una lista de palabras junto con su frecuencia. 
+\item{RF05:} El sistema realizara la clasificaci\'on de la conversaci\'on mediante un metodo de toma de decisiones.
+\end{itemize}
+
+\subsection{Requerimientos No Funcionales}
+
+\begin{itemize}
+\item{RNF01:} El modulo del chat debe accederse a trav\'es de un ambiente Web. 
+\item{RNF02:} El sistema debe estar separado en modulos independientes.
+\item{RNF03:} El sistema debe ser altamente escalable, es decir debe de poderse agregar nueva funcionalidad sin perder la calidad y el funcionamiento que ya se ha alcanzado.
+\end{itemize}
+
+\subsection{Especificaciones Suplementarias (No Funcionales)}
+ 
+Confiabilidad
+ 
+El sistema debe asegurar al usuario un funcionamiento adecuado, ya que no puede permitirse ning\'un tipo de error cuando se clasifica la conversaci\'on. 
+
+Adaptabilidad 
+
+El sistema que se desea implementar debe ser lo suficientemente adaptable a cualquier navegador Web y sistema operativo sobre el que se corra la aplicaci\'on. 
+
+Escalabilidad 
+
+Debe de aceptar cualquier tipo de extensi\'on de la funcionalidad. Adem\'as de aceptar en el futuro integraci\'on con sistemas ya existentes.

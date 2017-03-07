@@ -1,0 +1,339 @@
+\section{An\'alisis}
+
+\subsection{Descripci\'on}
+Este prototipo se encarga de la toma de desiciones del clasificador de nivel 5 y el clasificador de niveles  1, 2, 3, 4 y 6.
+
+\subsection{Objetivo}
+Desarrollar el API de desici\'on a partir de la uni\'on de los clasificadores de nivel 5 y niveles 1, 2, 3, 4 y 6.
+
+\subsection{Caracter\'isticas}
+\begin{description}
+\item[FEAT1:] La API recibe como entrada conversaciones en archivos de texto plano.
+\item[FEAT2:] La API recibe como entrada conversaciones en archivos con formato xml.
+\item[FEAT4:] La API preprocesa textos.
+\item[FEAT4:] La API genera vectores de nivel 5.
+\item[FEAT5:] La API genera vectores de nivel  1, 2, 3, 4 y 6.
+\item[FEAT6:] El API dar\'a como salida la desici\'on del clasificador dle prototipo4.
+
+\end{description}
+
+\section{Dise\~no}
+
+
+\section{Arquitectura}
+
+La figura \ref{fig:arquitecturap5} muestra la arquitectura de la API de an\'alisis.
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[scale=.3]{images/api}
+\caption{Arquitectura de la API de ana\'alisis}
+\label{fig:arquitecturap5}
+\end{center}
+\end{figure}
+
+
+\subsection{Diagrama de clases}
+
+
+La figura \ref{fig:dclasesp5} muestra el diagrama de clases de la API de an\'alisis.
+\begin{figure}[h]
+\begin{center}
+\includegraphics[scale=.5]{images/clasesnivel5}
+\caption{Diagrama de clases de la API de ana\'alisis}
+\label{fig:dclasesp5}
+\end{center}
+\end{figure}
+
+\section{Pruebas}
+
+
+La tabla  \ref{tab:resultadasapi} muestra la tabla de resultados de conversaciones nuevas y su respectivo resultado.
+
+\begin{table}
+\begin{center}
+
+
+\begin{tabular}{|l|c|c|c|c|c|c|c|c|}
+
+\hline
+Conversaci\'on & N1 & N2 & N3 & N\_3 & N4 & N5 & N6 & Decisi\'on \\
+\hline
+pruebas/pr10.txt &
+ 0 &
+ 3 &
+ 0 &
+ 0 &
+ 0 &
+ 1 &
+ 1 &
+Muy Peligrosa \\
+pruebas/pr11.txt &
+ 0 &
+ 4 &
+ 0 &
+ 0 &
+ 0 &
+ 1 &
+ 0 &
+Muy Peligrosa \\ 
+pruebas/pr12.txt &
+ 0 &
+ 0 &
+ 6 &
+ 4 &
+ 0 &
+ 1 &
+ 0 &
+Muy Peligrosa \\ 
+pruebas/pr13np.txt &
+ 0 &
+ 1 &
+ 0 &
+  0 &
+ 0 &
+ 0 &
+ 0 &
+No Peligrosa \\ 
+pruebas/pr14.txt &
+ 0 &
+ 2 &
+ 0 &
+ 0 &
+ 0 &
+ 0 &
+ 0 &
+No Peligrosa \\ 
+pruebas/pr15.txt &
+ 0 &
+ 13 &
+ 4 &
+ 2 &
+ 1 &
+ 0 &
+ 0 &
+Peligrosa \\
+pruebas/pr16.txt &
+ 1 &
+ 4 &
+ 1 &
+ 0 &
+ 0 &
+ 1 &
+ 0 &
+Muy Peligrosa \\ 
+pruebas/pr17.txt &
+ 1 &
+ 0 &
+ 0 &
+ 0 &
+ 1 &
+ 1 &
+ 0 &
+Muy Peligrosa \\ 
+pruebas/pr18.txt &
+ 4 &
+ 7 &
+ 5 &
+ 3 &
+ 0 &
+ 1 &
+ 0 &
+Muy Peligrosa \\ 
+pruebas/pr19np.txt &
+ 0 &
+ 2 &
+ 0 &
+ 0 &
+ 0 &
+ 0 &
+ 0 &
+No Peligrosa \\ 
+pruebas/pr1.txt &
+ 2 &
+ 10 &
+ 0 &
+ 0 &
+ 1 &
+ 1 &
+ 3 &
+Muy Peligrosa \\ 
+pruebas/pr20np.txt &
+ 0 &
+ 2 &
+ 0 & 
+ 0 &
+ 0 &
+ 0 &
+ 0 &
+No Peligrosa \\ 
+pruebas/pr21.txt &
+ 1 &
+ 1 &
+ 0 &
+ 0 &
+ 0 &
+ 1 &
+ 0 &
+Muy Peligrosa \\ 
+pruebas/pr22.txt &
+ 0 &
+ 4 &
+ 0 &
+ 0 &
+ 0 & 
+ 1 &
+ 0 &
+Muy Peligrosa \\ 
+pruebas/pr2np.txt &
+ 0 &
+ 1 & 
+ 1 &
+ 0 &
+ 0 &
+ 0 &
+ 0 &
+No Peligrosa \\
+pruebas/pr3np.txt &
+ 1 &
+ 2 &
+ 0 &
+ 0 &
+ 0 &
+ 0 &
+ 0 &
+No Peligrosa \\
+pruebas/pr4.txt &
+ 0 &
+ 1 &
+ 0 &
+ 0 &
+ 0 &
+ 1 &
+ 0 &
+Muy Peligrosa \\
+pruebas/pr5.txt &
+ 0 &
+ 0 &
+ 0 &
+ 0 &
+ 0 &
+ 1 &
+ 0 &
+Muy Peligrosa \\
+pruebas/pr6.txt &
+ 0 &
+ 1 &
+ 3 &
+ 1 &
+ 0 &
+ 1 &
+ 0 &
+Muy Peligrosa \\ 
+pruebas/pr7.txt &
+ 1 &
+ 6 &
+ 4 &
+ 2 &
+ 0 &
+ 1 &
+ 0 &
+Muy Peligrosa \\ 
+pruebas/pr8.txt &
+ 0 &
+ 1 &
+ 1 &
+ 0 &
+ 1 &
+ 1 &
+ 0 &
+Muy Peligrosa \\
+pruebas/pr9.txt &
+ 0 &
+ 0 &
+ 0 &
+ 0 &
+ 0 &
+ 1 &
+ 0 &
+Muy Peligrosa \\ 
+pruebas/pr23.txt &
+ 1 &
+ 2 &
+ 0 &
+ 1 &
+ 0 &
+ 0 &
+ 0 &
+No Peligrosa \\ 
+pruebas/pr24.txt &
+ 0 &
+ 1 &
+ 0 &
+ 0 &
+ 0 &
+ 1 &
+ 1 &
+No Peligrosa \\ 
+pruebas/pr25.txt &
+ 0 &
+ 0 &
+ 0 &
+ 0 &
+ 0 &
+ 1 &
+ 0 &
+Muy Peligrosa \\ 
+\hline
+\end{tabular}
+
+\caption{Tabla de resultados de la Api}
+\label{tab:resultadasapi}
+\end{center}
+\end{table}
+
+En la figura \ref{fig:ClasificacionNiv} podemos observar el resultado de las pruebas realizadas en 25 conversaciones distintas. Los resultados muestran el n\'umero de incidencias de las frases categorizadas anteriormente en los niveles 1, 2 ,3, 4 y 6; as\'i como el n\'umero de conversaciones que conten\'ian palagras de car\'acter sexual.
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[scale=.3]{images/grafica/ClasificacionNiv}
+\caption{Resultados del muestro de 25 conversaciones}
+\label{fig:ClasificacionNiv}
+\end{center}
+\end{figure}
+
+
+En la tabla \ref{tab:resultadosM} se muestran los resultados que obtuvimos de las 25 conversaciones anteriormente mencionadas. La tabla contiene el n\'umero de conversaciones que se encontraron de las 4 diferentes categor\'ias: No peligrosa, Poco peligrosa, Peligrosa, Muy peligrosa.
+
+\begin{table}
+\begin{center}
+
+
+\begin{tabular}
+\hline
+Clasificac\'on & Incidencias \\
+\hline
+
+No Peligrosa & 7\\
+Poco Peligrosa & 0\\
+Peligrosa & 1\\
+Muy peligrosa & 17\\
+\hline
+\end{tabular}
+
+\caption{Resultados de muestreo de 25 conversaciones}
+\label{tab:resultadosM}
+\end{center}
+\end{table}
+
+En la figura \ref{fig:ClasificacionConv} podemos observar graficamente la tabla anterior. Los resultados del muestreo de 25 conversaciones muestran que la mayor\'ia de \'estas (17) fueron detectadas como peligrosas.
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[scale=.3]{images/grafica/ClasificacionConv}
+\caption{Resultados del muestro de 25 conversaciones}
+\label{fig:ClasificacionConv}
+\end{center}
+\end{figure}
+
+
