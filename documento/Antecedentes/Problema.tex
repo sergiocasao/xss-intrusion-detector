@@ -1,15 +1,47 @@
 %---------------------------------------------------------
 \section{Descripci\'on del problema}
-%En la actualidad se han desarrollado diversos sistemas que analizan textos  utilizando un conjunto de palabras filtro, si alguna palabra del texto cae dentro de ese grupo: se realiza una acci\'on. 
 
-%Sin embargo una palabra puede ser utilizada en diversas situaciones y puede obtener diversos significados dependiendo de su contexto. Por lo cual herramientas como las descritas anteriormente pueden no ser tan certeras como se esperar\'ia. 
+Un ataque XSS ocurre cuando un atacante es capaz de inyectar un script, normalmente JavaScript, en la salida de una aplicación
+web de forma que se ejecuta en el navegador del cliente. Los ataques se producen principalmente por validar incorrectamente datos
+de usuario, y se suelen inyectar mediante un formulario web o mediante un enlace alterado.\\
 
-%El desarrollo de un sistema que no analice \'unicamente una lista de palabras sino que pueda realizar un analisis del contexto en el cual se encuentra la palabra puede mejorar los resultados obtenidos.
+Existen tres tipos de ataques XSS: \\
 
-El ser humano a lo largo de su historia ha acumulado y sigue generando informaci\'on, de ah\'i que resulte complejo y se requiera de una gran cantidad de esfuerzo humano analizar, recuperar y clasficar informaci\'on.
+\begin{itemize}
+	\item XSS persistente o directo: este tipo de ataque consiste en embeber código HTML peligroso en sitios que lo permitan por
+medio de etiquetas \textit{<script>} o \textit{<iframe>}. Es la más grave de todas ya que el código se queda implantado en la web de
+manera interna y es ejecutado al abrir la aplicación web.\\
 
-% Por lo cual se necesita crear un sistema que realice el análisis de alguna conversación fuera de línea,  con esto nos referimos a que ha terminado el uso de una aplicación de intercambio de mensajes y  así poder clasificar el comportamiento de cada una de las fuentes (usuario que emitió el mensaje), utilizando reconocimiento de patrones. Una vez determinada la clasificación se podrá tomar una decisión.
+	\item XSS reflejado: en este tipo de ataque el código malicioso no queda almacenado en el servidor sino que se pasa
+directamente a la víctima. Es la forma más habitual de XSS. El ataque se lanza desde una fuente externa como un correo
+aparentemente inofensivo, un mensaje de chat u otro sitio web \cite{siete}.\\
 
-%En particular el caso de estudio que trataremos es conocido como online grooming, que es definido como el proceso mediante el cual una persona se hace amigo de un niño en línea, con el  fin de realizar acoso y posteriormente abuso sexual.\cite{grooming}
+	\item XSS basado en DOM: es una variable de XSS persistente y reflejado. En un ataque XSS basado en DOM, la cadena maligna no es realmente analizada por el navegador de la victima hasta que el JavaScript legítimo de la página web es ejecutado. Estos códigos son ejecutados del lado
+del cliente, por lo que los filtros utilizados en el servidor no funcionan para este tipo de vulnerabilidades.\\
+\end{itemize}
 
-%Actualmente surge el interés de crear sistemas que sirvan de apoyo al realizar el análisis de textos. Estos son algunos ejemplos de sistemas que se han desarrollado en diferentes partes del mundo.\\
+A la hora de lanzar un ataque de este tipo, los atacantes pueden utilizar varios tipos de inyección de código distinto. Los más utilizados son:\\
+
+\begin{itemize}
+	\item Inyección en un formulario: se trata del ataque más sencillo. Consiste en inyectar código en un formulario que después al
+enviarlo al servidor, será incluido en el código fuente de alguna página. Una vez insertado en el código fuente, cada vez
+que se cargue la página se ejecutará el código insertado en ella.
+
+	\item Inyección por medio de elementos: en este tipo de sistema de inyección de código se utiliza cualquier elemento que viaje
+entre el navegador y la aplicación, como pueden ser los atributos usados en las etiquetas HTML utilizadas en el diseño de
+la página.
+
+	\item Inyección por medio de recursos: Aparte de los elementos en la URL y los formularios, hay otras formas en la que se
+puede actuar como son las cabeceras HTTP. Estas cabeceras son mensajes con los que se comunican el navegador y el
+servidor. Aquí entran en juego las \textit{cookies}\footnote{Una cookie es un pequeño elemento de información que un servidor Web envía al navegador al visitar ciertas páginas web y que ambos comparten cada que este navegador vuelve a visitar \cite{cookie}.} y las sesiones \cite{ocho}.\\
+\end{itemize}
+
+Los daños potenciales que pueden causar un ataque XSS, pueden afectar tanto a los servidores en donde está contenida la
+aplicación web o pueden provocar serios problemas para el usuario final, éstos pueden varían en el grado de impacto, pueden ir
+desde una molestia para el usuario hasta un compromiso completo de la cuenta del mismo. Uno de los efectos más graves de los
+ataques XSS implica la divulgación de cookies de sesión del usuario, lo que permite a un atacante secuestrar la sesión del usuario y
+tomar control total de la cuenta. Otros ataques dañinos incluyen la divulgación de los archivos de los usuarios finales, la instalación
+de programas dañinos para el equipo del usuario final, redirigir al usuario a otra página o sitio web con fines malicioso, o modificar
+la presentación de los contenidos \cite{nueve}. Los ataques XSS explotan vulnerabilidades no en el navegador del usuario, sino en las
+aplicaciones Web de terceros a las que accede el usuario. En este tipo de ataque el navegador no puede distinguir entre el contenido
+que un usuario haya podido incluir en una petición Web, y el contenido inyectado a través de un ataque XSS \cite{diez}.\\
