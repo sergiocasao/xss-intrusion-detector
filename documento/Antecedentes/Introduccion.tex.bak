@@ -1,0 +1,30 @@
+%---------------------------------------------------------
+\section{Introducción}
+
+La seguridad informática ha sido y actualmente es un sector en el cual, empresas importantes de gran prestigio gastan cientos de
+millones de dólares para protegerse al estar conectados a una red \cite{uno}, tal es la preocupación que a nivel mundial se registró una
+inversión en la seguridad informática de 75 billones de dólares en 2015 \cite{dos}, mientras que, tanto chicas como medianas empresas
+suelen gastan un mínimo relacionado a este tema. En la actualidad, con la era de la revolución tecnológica por la que se está
+pasando, las empresas se han visto obligadas a contratar nueva tecnología para su producción, publicidad y/o servicios conectada al
+mundo de la Internet. Las empresas al estar conectadas a la Internet, están conectadas a millones de usuarios con cientos de
+posibilidades de acceso a los servicios de las empresas.\\
+
+Cuando los usuarios se conectan a la red de Internet, están conectados todos los usuarios de la misma simultáneamente, esto
+conlleva un alto riesgo de inseguridad. Para tratar de disminuir el impacto provocado por amenazas informáticas, existen
+programas de computadora enfocados a detectar y proteger a los usuarios de la red contra los impactos provocados por las
+amenazas \cite{tres}.\\
+
+Hoy en día, existen diversos tipos de amenazas en la red, algunas son muy conocidas como virus informáticos que son diseñados
+para infectar archivos, pero no sólo existen ese tipo de amenazas diseñadas cierta forma con una actuación “automatizada”.
+También existen las amenazas humanas o conocidos como Piratas informáticos, los cuáles, por medio de diversas técnicas de
+vulneración, pueden infectar, tomar el control o incluso obtener información o privilegios de computadoras o servidores con el fin
+de aprender o poner en práctica nuevas técnicas de vulneración, vender la información obtenida en el mercado negro o inclusive
+realizar un daño directo a los archivos o computadora objetivo \cite{cuatro}\cite{cinco}.\\
+
+Con el incremento de nuevos servicios web en Internet, se han creado y desarrollado diversos tipos de ataques hacia los servidores
+que proporcionan estos servicios. En los últimos años han ido en incremento los ataques web, aunque los que han tenido un mayor
+crecimiento y un gran impacto a nivel global, son los ataques tipo Cross-Site Scripting (de ahora en adelante XSS) \cite{seis}.
+
+
+
+\pagebreak
