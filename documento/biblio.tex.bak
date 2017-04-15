@@ -38,9 +38,15 @@ Recuperado 26 Septiembre 2016, de \url{http://www.symantec.com/connect/articles/
 
 \bibitem{dieciseis} González Márquez, V. (2009). "Sistema de detección de intrusos basado en sistema experto (Tesis de maestría)". Centro de Investigación en Computación. México.
 
-\bibitem{proxy} National Institute of Standards and Technology,. (2007). "Guidelines on Securing Public Web Servers" (p. 121). Carlos M. Gutiérrez.
+\bibitem{proxy} National Institute of Standards and Technology,. (2007). "Guidelines on Securing Public Web Servers" (p. 121). Washington.
 
-\bibitem{nist94} National Institute of Standards and Technology,. (2007). "Guite to Intrusion Detection and Prevention Systems (IDPS)" (p. 9). Karen S. \& Peter M.
+\bibitem{nist94} National Institute of Standards and Technology,. (2007). "Guide to Intrusion Detection and Prevention Systems (IDPS)" (p. 9). Washington.
+
+\bibitem{nist41} National Institute of Standards and Technology,. (2009). "Guidelines on Firewalls and Firewall Policy" (p. 7). Washington.
+
+\bibitem{nist33} National Institute of Standards and Technology,. (2001). "Underlying Technical Models for Information Technology Security" (p. 6). Washington.
+
+\bibitem{nist53} National Institute of Standards and Technology,. (2014). "Summary of NIST SP 800-53 Revision 4, Security and Privacy Controls for Federal Information Systems and Organizations" (p. 6). Washington.
 
 \end{thebibliography}
 
