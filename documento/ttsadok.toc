@@ -15,6 +15,11 @@
 \contentsline {subsection}{\numberline {2.1.2}Taxonom\IeC {\'\i }a de incidentes de seguridad}{7}{subsection.2.1.2}
 \contentsline {subsection}{\numberline {2.1.3}Modo de operaci\IeC {\'o}n}{7}{subsection.2.1.3}
 \contentsline {subsection}{\numberline {2.1.4}Justificaci\IeC {\'o}n de los Sistemas de Detecci\IeC {\'o}n de Intrusos}{8}{subsection.2.1.4}
-\contentsline {subsection}{\numberline {2.1.5}Modelos de IDSs}{8}{subsection.2.1.5}
-\contentsline {subsubsection}{\numberline {2.1.5.1}Modelo propuesto por Dorothy Denning}{8}{subsubsection.2.1.5.1}
+\contentsline {subsection}{\numberline {2.1.5}Arquitectura de IDSs}{8}{subsection.2.1.5}
+\contentsline {subsubsection}{\numberline {2.1.5.1}Dorothy Denning}{8}{subsubsection.2.1.5.1}
 \contentsline {subsubsection}{\numberline {2.1.5.2}Common Intrusion Detection Framework}{9}{subsubsection.2.1.5.2}
+\contentsline {subsubsection}{\numberline {2.1.5.3}Common Intrusion Specification Language}{10}{subsubsection.2.1.5.3}
+\contentsline {subsubsection}{\numberline {2.1.5.4}Autopost de AusCERT}{10}{subsubsection.2.1.5.4}
+\contentsline {subsubsection}{\numberline {2.1.5.5}Intrusion Detection Working Group}{11}{subsubsection.2.1.5.5}
+\contentsline {subsection}{\numberline {2.1.6}Componentes elementales de un IDS}{12}{subsection.2.1.6}
+\contentsline {subsection}{\numberline {2.1.7}Arquitecturas de Red}{13}{subsection.2.1.7}

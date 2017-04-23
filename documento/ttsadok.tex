@@ -1,4 +1,5 @@
 \documentclass[oneside,10pt]{book}
+%\documentclass[12pt]{report}
 \usepackage{cdtBook}
 \usepackage{usecases}
 \usepackage{amsmath}
@@ -9,6 +10,8 @@
 \usepackage[none]{hyphenat}
 \usepackage[utf8]{inputenc}
 \usepackage{chngcntr}
+\usepackage{enumerate}
+\usepackage{subcaption}
 \counterwithout{footnote}{chapter}
 \decimalpoint
 \usepackage{listings}
@@ -29,10 +32,10 @@ showtabs=false
 \organization{Escuela Superior de Cómputo, IPN}
 
 
-
 %%%%%%%%%%%%%%%%%%%%%%%\usepackage{longtable}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
 \sloppy 
+%\maketitle
 %\input{portada}
 
 
@@ -68,7 +71,13 @@ showtabs=false
 \input{Antecedentes/Justificacion}
 %=========================================================
 \chapter{Marco Teórico} %Título del capítulo
-\input{MarcoTeorico/IDS}
+\input{MarcoTeorico/IDS/Definicion}
+\input{MarcoTeorico/IDS/Taxonomia} %Falta llenar esta sección
+\input{MarcoTeorico/IDS/Modo_de_operacion}
+\input{MarcoTeorico/IDS/Justificacion}
+\input{MarcoTeorico/IDS/Arquitectura}
+\input{MarcoTeorico/IDS/Modulos}
+\input{MarcoTeorico/IDS/Arquitecturas_Red}
 %\input{MarcoTeorico/casodeestudio} %cfinput
 %\input{mineria/mineriatexto}
 %\input{MarcoTeorico/LenguajeNatural}

@@ -1,0 +1,17 @@
+\subsection{Componentes elementales de un IDS}
+
+Con las propuestas descritas de las arquitecturas y modelos de las buenas prácticas para el desarrollo de IDSs, y con base a las especificaciones que nos proporciona el documento NIST 800-94, se puede generar un esquema genérico de los componentes elementales que deben ser implementados en todo IDS. Dichos componentes elementales que deben estar en un IDS, son: \\
+
+\begin{itemize}
+	
+	\item \textbf{Sensor o Agente.} Los sensores y los agentes moniorean y analizan la actividad. El término \textit{sensor} es mayormente usado para IDPS que monitorean redes, incluyendo las basadas en red, no guiadas y tecnologías de análisis de comportamiento de red. El término \textit{agente} es usualmente utilizado para referirse a las tecnologías usadas para un análisis basado en host en un IDPS.
+	
+	\item \textbf{Servidor Administrador.} Este servidor administrador es el que recibe información de los agentes o sensores y administrarlos.Existen algunos servidores que hacen la función de análisis sobre la información enviada por los agentes o sensores e identificar eventos que por sí solos, los agentes o sensores no pueden identificarlos.
+	
+	\item \textbf{Servidor de Base de Datos.} Es un servidor en donde se va a almacenar toda la información registrada por los eventos o agentes, o también por el administrador. Esta información almacenada, no necesariamente será de eventos registrados, también puede ser del estado del sistema o de su comportamiento en su ejecución. Este componente es importante para los administradores ya que con la información contenida en este componente, se pueden identificar eventos no alertados o también conocidos como falso negativo para su posterior análisis o una proposición de modificaciones a los sensores o agentes.
+	
+	\item \textbf{Consola.} Es un programa que brinda una interfaz para el IDS para los usuarios y los administradores de éste. La consola es regularmente instalada de manera aislada en un equipo de cómputo común, como una computadora de escritorio o una computadora personal. Las consolas pueden ser usadas tanto para la administración de los agentes o sensores, como para un monitorear y analizar.
+	
+	\item \textbf{Respuesta.} El propósito de éste componente es proporcionar respuestas tanto Activas, Pasivas o Pro-activas. Las respuestas activas son aquellas en 
+
+\end{itemize}
