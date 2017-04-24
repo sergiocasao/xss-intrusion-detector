@@ -34,7 +34,7 @@ showtabs=false
 
 %%%%%%%%%%%%%%%%%%%%%%%\usepackage{longtable}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
-\sloppy 
+\sloppy
 %\maketitle
 %\input{portada}
 
@@ -65,7 +65,7 @@ showtabs=false
 \input{Antecedentes/Introduccion}
 \input{Antecedentes/Problema}
 \input{Antecedentes/Solucion}
-%kk\input{Antecedentes/EdoArte}
+\input{Antecedentes/EdoArte}
 \input{Antecedentes/Objetivo}
 %\cfinput{Antecedentes/Objetivo} %No aparece en la estructura con este comando
 \input{Antecedentes/Justificacion}
@@ -106,7 +106,7 @@ showtabs=false
 %\appendix
 %=========================================================
 %%\chapter{Prototipo 1: Almacenamiento de fuentes}
-%%\input{prototipos/prototipo1}	
+%%\input{prototipos/prototipo1}
 %%\input{cu1/cu}
 %%\input{cu2/cu}
 %%\input{cu5/cu}
@@ -241,7 +241,6 @@ showtabs=false
 %\cfinput{stop}
 %\chapter{Tablas de frecuencias de palabras en el idioma espa\~nol}
 %\cfinput{palabras}
-\input{biblio}	
+\input{biblio}
 
 \end{document}
-
