@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2017.4.16)  24 APR 2017 00:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2017.4.16)  24 APR 2017 18:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1111,7 +1111,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 68--69
 
 LaTeX Font Info:    Font shape `OT1/cmbr/m/it' in size <10> not available
 (Font)              Font shape `OT1/cmbr/m/sl' tried instead on input line 72.
-<images/headerInp.png, id=152, 1394.20876pt x 268.75406pt>
+<images/headerInp.png, id=157, 1394.20876pt x 268.75406pt>
 File: images/headerInp.png Graphic file (type png)
 
 <use images/headerInp.png>
@@ -1290,6 +1290,56 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 2.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 2.
+) (./Antecedentes/EdoArte.tex
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 2.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 2.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 2.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 2.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 2.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 2.
+
+
+Package caption Warning: \label without proper \caption on input line 22.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `table:tabla1estadodelarte' on page 5 undefined on inp
+ut line 5.
+
+
+Underfull \hbox (badness 1968) in paragraph at lines 13--13
+[]|\OT1/cmbr/m/sc/10 Se tra-ta de un sis-te-ma ba-sa-do en red que
+ []
+
+
+Underfull \hbox (badness 1248) in paragraph at lines 19--19
+[]|\OT1/cmbr/m/sc/10 Es un sis-te-ma que con-sis-te en va-rias de las
+ []
+
+
+Underfull \hbox (badness 1043) in paragraph at lines 19--19
+\OT1/cmbr/m/sc/10 tec-no-log^^S^^Pas de c^^Sodi-go abier-to de men-cio-na-das
+ []
+
+
+Underfull \hbox (badness 1448) in paragraph at lines 19--19
+\OT1/cmbr/m/sc/10 La pla-ta-for-ma ofre-ce una com-ple-ta de-tec-ci^^Son
+ []
+
+
+Overfull \hbox (81.32648pt too wide) in paragraph at lines 9--23
+[][]
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 ) (./Antecedentes/Objetivo.tex
 Package babel Info: Redefining spanish shorthand <<
 (babel)             in language  on input line 2.
@@ -1345,19 +1395,9 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 2.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 2.
-
-Underfull \hbox (badness 10000) in paragraph at lines 4--5
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 6--7
-
- []
-
 File: images/headerInp.png Graphic file (type png)
-<use images/headerInp.png>
-Package pdftex.def Info: images/headerInp.png used on input line 7.
+ <use images/headerInp.png>
+Package pdftex.def Info: images/headerInp.png used on input line 4.
 (pdftex.def)             Requested size: 181.55133pt x 35.0pt.
 
 
@@ -1367,35 +1407,80 @@ Package Fancyhdr Warning: \headheight is too small (30.0pt):
  This may cause the page layout to be inconsistent, however.
 
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 7.
+(babel)             in language  on input line 4.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 7.
+(babel)             in language  on input line 4.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 7.
+(babel)             in language  on input line 4.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 7.
+(babel)             in language  on input line 4.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 7.
+(babel)             in language  on input line 4.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 7.
+(babel)             in language  on input line 4.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 7.
+(babel)             in language  on input line 4.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 7.
+(babel)             in language  on input line 4.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 7.
+(babel)             in language  on input line 4.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 7.
+(babel)             in language  on input line 4.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 7.
+(babel)             in language  on input line 4.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 7.
+(babel)             in language  on input line 4.
 [5]
+Underfull \hbox (badness 10000) in paragraph at lines 4--5
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6--7
+
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 8--9
 
  []
 
-)
+File: images/headerInp.png Graphic file (type png)
+<use images/headerInp.png>
+Package pdftex.def Info: images/headerInp.png used on input line 9.
+(pdftex.def)             Requested size: 181.55133pt x 35.0pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (30.0pt): 
+ Make it at least 38.75003pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 9.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 9.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 9.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 9.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 9.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 9.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 9.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 9.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 9.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 9.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 9.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 9.
+[6])
 Underfull \hbox (badness 10000) in paragraph at lines 10--73
 
  []
@@ -1435,7 +1520,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 73.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 73.
-[6]
+[7]
 Cap\'{\i }tulo 2.
 Package babel Info: Redefining spanish shorthand <<
 (babel)             in language  on input line 73.
@@ -1531,7 +1616,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 1.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 1.
- [7
+ [8
 
 ]
 Package babel Info: Redefining spanish shorthand <<
@@ -1623,7 +1708,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 14.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 14.
-[8]
+[9]
 Underfull \hbox (badness 10000) in paragraph at lines 18--19
 
  []
@@ -1650,7 +1735,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 30--31
 
  []
 
-<images/Arq_CIDF.png, id=227, 767.86874pt x 562.35094pt>
+<images/Arq_CIDF.png, id=238, 767.86874pt x 562.35094pt>
 File: images/Arq_CIDF.png Graphic file (type png)
 
 <use images/Arq_CIDF.png>
@@ -1713,7 +1798,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 49.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 49.
-[9]
+[10]
 Underfull \hbox (badness 1107) in paragraph at lines 54--55
 []\OT1/cmbr/bx/n/10 Prescripciones de res-pues-ta: \OT1/cmbr/m/sc/10 Ac-cio-nes
  rea-li-za-das pa-ra de-te-ner un cier-tas ac-ti-vi-da-des an^^Soma-las
@@ -1786,7 +1871,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 68.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 68.
-[10 <./images/Arq_CIDF.png>]
+[11 <./images/Arq_CIDF.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 76--77
 
  []
@@ -1858,7 +1943,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 100.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 100.
-[11]
+[12]
 Underfull \hbox (badness 10000) in paragraph at lines 104--105
 
  []
@@ -1921,7 +2006,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 14.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 14.
-[12]) (./MarcoTeorico/IDS/Arquitecturas_Red.tex
+[13]) (./MarcoTeorico/IDS/Arquitecturas_Red.tex
 Package babel Info: Redefining spanish shorthand <<
 (babel)             in language  on input line 1.
 Package babel Info: Redefining spanish shorthand >>
@@ -1935,14 +2020,14 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 1.
 
-<images/red_admon.jpeg, id=268, 268.00125pt x 386.94562pt>
+<images/red_admon.jpeg, id=279, 268.00125pt x 386.94562pt>
 File: images/red_admon.jpeg Graphic file (type jpg)
 
 <use images/red_admon.jpeg>
 Package pdftex.def Info: images/red_admon.jpeg used on input line 10.
 (pdftex.def)             Requested size: 187.59958pt x 270.86008pt.
 
-<images/interfaz_admon.jpeg, id=269, 350.81062pt x 468.24937pt>
+<images/interfaz_admon.jpeg, id=280, 350.81062pt x 468.24937pt>
 File: images/interfaz_admon.jpeg Graphic file (type jpg)
 
 <use images/interfaz_admon.jpeg>
@@ -1990,7 +2075,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 2.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 2.
-[13]
+[14]
 File: images/headerInp.png Graphic file (type png)
  <use images/headerInp.png>
 Package pdftex.def Info: images/headerInp.png used on input line 2.
@@ -2026,7 +2111,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 2.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 2.
-[14 <./images/red_admon.jpeg> <./images/interfaz_admon.jpeg>]
+[15 <./images/red_admon.jpeg> <./images/interfaz_admon.jpeg>]
 LaTeX Font Info:    Try loading font information for OT1+cmtl on input line 5.
 
 (/usr/share/texlive/texmf-dist/tex/latex/cmbright/ot1cmtl.fd
@@ -2091,7 +2176,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 28.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 28.
-[15
+[16
 
 ])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 246.
@@ -2130,7 +2215,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 246.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 246.
-[16]
+[17]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 246.
  (./ttsadok.aux
 LaTeX Info: Redefining \. on input line 23.
@@ -2139,18 +2224,21 @@ LaTeX Info: Redefining \% on input line 23.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 246.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 246.
 Package rerunfilecheck Info: File `ttsadok.out' has not changed.
-(rerunfilecheck)             Checksum: 20CFE1879AAD4278D236373612C92083;1829.
+(rerunfilecheck)             Checksum: B45F32D9759ACAF7873892E2E1250334;1891.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
+
+LaTeX Warning: There were undefined references.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 246.
  ) 
 Here is how much of TeX's memory you used:
- 13549 strings out of 493105
- 193096 string characters out of 6137072
- 337716 words of memory out of 5000000
- 16659 multiletter control sequences out of 15000+600000
+ 13558 strings out of 493105
+ 193243 string characters out of 6137072
+ 337803 words of memory out of 5000000
+ 16662 multiletter control sequences out of 15000+600000
  14045 words of font info for 53 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  48i,16n,45p,1736b,1807s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2164,10 +2252,10 @@ hfbright/hfbrmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/hfbrigh
 t/hfbrsl10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/hfbright/hfbrs
 l8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/hfbright/hfbrsy10.pfb>
 </usr/share/texlive/texmf-dist/fonts/type1/public/hfbright/hftl10.pfb>
-Output written on ttsadok.pdf (17 pages, 328607 bytes).
+Output written on ttsadok.pdf (18 pages, 332177 bytes).
 PDF statistics:
- 382 PDF objects out of 1000 (max. 8388607)
- 343 compressed objects within 4 object streams
- 89 named destinations out of 1000 (max. 500000)
- 213 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 394 PDF objects out of 1000 (max. 8388607)
+ 354 compressed objects within 4 object streams
+ 92 named destinations out of 1000 (max. 500000)
+ 221 words of extra memory for PDF output out of 10000 (max. 10000000)
 
