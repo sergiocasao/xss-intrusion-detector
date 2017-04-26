@@ -1,0 +1,37 @@
+% \IUref{IUAdmPS}{Administrar Planta de Selección}
+% \IUref{IUModPS}{Modificar Planta de Selección}
+% \IUref{IUEliPS}{Eliminar Planta de Selección}
+
+% 
+
+
+% Copie este bloque por cada caso de uso:
+%-------------------------------------- COMIENZA descripción del caso de uso.
+
+%\begin{UseCase}[archivo de imágen]{UCX}{Nombre del Caso de uso}{
+	
+
+	\begin{UseCase}{CU1}{Recibir Mensajes}{El caso de uso permite a un contacto destino visualizar mensjaes enviados por otro contacto}
+		\UCitem{Versi\'on}{0.1}
+		\UCitem{Actor}{Contacto}
+		\UCitem{Prop\'osito}{Abrir una ventana de chat a un usuario destino}
+		\UCitem{Resumen}{Este caso de uso permite abrir abrir una ventana de comunicaci\'on a un usuario destino}
+		\UCitem{Precondiciones}{El usuario debe haberse registrado e iniciado sesion.}
+		\UCitem{Postcondiciones}{El usuario podr\'a ricibir y enviar mensajes al usuario remitente}		
+		\UCitem{Autor}{Guerrero Madrigal Andr\'es Emanuel}
+	\end{UseCase}
+
+	\begin{UCtrayectoria}{Principal}
+	
+		\UCpaso El sistema indica al usuario que otro usuario le est\'a enviando un mensaje
+
+		\UCpaso El sistema abre una ventana que muestra una caja de texto para enviar  nuevos mensajes, as\'i tambi\'en, mostrar\'a el historial de mensajes enviados y recibidos con este usuario.
+		
+
+		\UCpaso[] Fin del flujo.
+				
+	\end{UCtrayectoria}
+		
+		
+		
+%-------------------------------------- TERMINA descripción del caso de uso.

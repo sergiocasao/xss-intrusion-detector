@@ -1,0 +1,45 @@
+% \IUref{IUAdmPS}{Administrar Planta de Selección}
+% \IUref{IUModPS}{Modificar Planta de Selección}
+% \IUref{IUEliPS}{Eliminar Planta de Selección}
+
+% 
+
+
+% Copie este bloque por cada caso de uso:
+%-------------------------------------- COMIENZA descripción del caso de uso.
+
+%\begin{UseCase}[archivo de imágen]{UCX}{Nombre del Caso de uso}{
+	
+	\begin{UseCase}{CU6}{Visualizar contactos registrados}{El caso de uso permite al Administrador consultarla lista de usuarios registrados dentro del sistema de mensajer\'ia.
+	}
+		\UCitem{Versi\'on}{0.1}
+		\UCitem{Actor}{Administrador}
+		\UCitem{Prop\'osito}{Permitir que el Administrador consulte la lista de los Contactos que se han registrado dentro del sistema y pueda eliminar registros de contactos.}
+		\UCitem{Resumen}{
+		El caso de uso permite al Administrador visualizar la lista de los contactos que se encuentran dados de alta en la base de datos, as\'i como consultar los datos que proporcionaron al registrarse.}
+		\UCitem{Entradas}{Sin entradas
+}
+		\UCitem{Salidas}{Mensaje de alerta que notifique al Administrador que la consulta fue realizada exitosamente y que la lista de Contactos est\'a actualizada. }
+		\UCitem{Precondiciones}{El usuario debe tener permisos de Administrador.}
+		\UCitem{Postcondiciones}{El Administrador podr\'a visualizar los datos vinculados al Contacto.
+		El Administrador podr\'a eliminar al Contacto del sistema.}		
+		\UCitem{Autor}{Anahi Ruiz Diaz}
+	\end{UseCase}
+
+	\begin{UCtrayectoria}{Principal}
+		\UCpaso[\UCactor] El Administrador ingresa al sistema.
+		\UCpaso  El sistema muestra la opci\'on \IUbutton{Visualizar contactos registrados}.
+		\UCpaso[\UCactor] El Administrador da clic en el bot\'on \IUbutton{Visualizar contactos registrados}. 
+		\UCpaso  El sistema muestra una lista de todos los contactos registrados en la base de datos.\Trayref{A}.
+		\UCpaso El sistema muestra al Administrador un mensaje de alerta que notifica que la consulta est\'a actualizada y fue realizada exitosamente.
+		\UCpaso[\UCactor] El Administrador da clic en el bot\'on \IUbutton{Aceptar}. 	
+		\UCpaso[] Fin del flujo.
+				
+	\end{UCtrayectoria}
+		
+		\begin{UCtrayectoriaA}{A}{Error al consultar contactos registrados.}
+			\UCpaso El sistema muestra una alerta que notifica al usuario que el Administrador que ocurri\'o un error inesperado y que la consulta no se realiz\'o.
+			\UCpaso[\UCactor] El Administrador da clic en el bot\'on \IUbutton{Aceptar}. 			
+			\UCpaso[] Fin del flujo.
+		\end{UCtrayectoriaA}		
+%-------------------------------------- TERMINA descripción del caso de uso.

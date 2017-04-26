@@ -1,0 +1,48 @@
+% \IUref{IUAdmPS}{Administrar Planta de Selección}
+% \IUref{IUModPS}{Modificar Planta de Selección}
+% \IUref{IUEliPS}{Eliminar Planta de Selección}
+
+% 
+
+
+% Copie este bloque por cada caso de uso:
+%-------------------------------------- COMIENZA descripción del caso de uso.
+
+%\begin{UseCase}[archivo de imágen]{UCX}{Nombre del Caso de uso}{
+	
+
+	\begin{UseCase}{CU8}{Eliminar Contacto}{El caso de uso permite al Administrador eliminar el registro de alg\'un Contacto dentro de la base de datos.
+	}
+		\UCitem{Versi\'on}{0.1}
+		\UCitem{Actor}{Administrador}
+		\UCitem{Prop\'osito}{Permitir que el Administrador elimine los datos de alg\'un Contacto registrado en el sistema para que \'este no pueda ingresar en \'el.}
+		\UCitem{Resumen}{
+		El caso de uso permite al Administrador eliminar la informaci\'on que se encuentra vinculada a alg\'un Contacto en espec\'ifico.}
+		\UCitem{Entradas}{Contacto seleccionado.
+}
+		\UCitem{Salidas}{Mensaje de alerta que notifique al Administrador que el Contacto fue eliminado correctamente o de lo contrario, que el Contacto no pudo ser eliminado. }
+		\UCitem{Precondiciones}{El usuario debe tener permisos de Administrador.}
+		\UCitem{Postcondiciones}{El Contacto ya no se encontrar\'a en la lista de Contactos registrados. 
+		El Contacto eliminado no podr\'a ingresar al sistema.
+		}		
+		\UCitem{Autor}{Anahi Ruiz Diaz}
+	\end{UseCase}
+
+	\begin{UCtrayectoria}{Principal}
+		\UCpaso[\UCactor] El Administrador ingresa al sistema.
+		\UCpaso[\UCactor] El Administrador realiza la consulta de toda la lista de contactos registrados en el sistema.
+		\UCpaso  El sistema muestra la opci\'on \IUbutton{Visualizar informaci\'on de Contacto} y \IUbutton{Eliminar Contacto} .
+		\UCpaso[\UCactor] El Administrador da clic en el bot\'on \IUbutton{Eliminar Contacto}. 
+		\UCpaso  El sistema elimina de la base de datos al Contacto seleccionado, as\'i como toda la informaci\'on vinculada a \'este. \Trayref{A}.
+		\UCpaso El sistema muestra al Administrador un mensaje de alerta que notifica que el Contacto fue eliminado exitosamente.
+		\UCpaso[\UCactor] El Administrador da clic en el bot\'on \IUbutton{Aceptar}. 	
+		\UCpaso[] Fin del flujo.
+				
+	\end{UCtrayectoria}
+		
+		\begin{UCtrayectoriaA}{A}{Error al eliminar Contacto.}
+			\UCpaso El sistema muestra una alerta que notifica al Administrador que ocurri\'o un error inesperado y que el Contacto no se borr\'o del sistema.
+			\UCpaso[\UCactor] El Administrador da clic en el bot\'on \IUbutton{Aceptar}. 			
+			\UCpaso[] Fin del flujo.
+		\end{UCtrayectoriaA}		
+%-------------------------------------- TERMINA descripción del caso de uso.

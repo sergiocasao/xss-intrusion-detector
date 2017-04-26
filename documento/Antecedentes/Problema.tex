@@ -1,0 +1,51 @@
+%---------------------------------------------------------
+\section{Descripci\'on del problema}
+
+Un ataque XSS ocurre cuando un atacante es capaz de inyectar un script, normalmente JavaScript, en la salida de una aplicación
+web de forma que se ejecuta en el navegador del cliente. Los ataques se producen principalmente por validar incorrectamente datos
+de usuario, y se suelen inyectar mediante un formulario web o mediante un enlace alterado.\\
+
+Existen tres tipos de ataques XSS: \\
+
+\begin{itemize}
+	\item XSS persistente o directo: este tipo de ataque consiste en embeber código HTML peligroso en sitios que lo permitan por
+medio de etiquetas \textit{$<$script$>$ } o \textit{$<$iframe$>$}. Es la más grave de todas ya que el código se queda implantado en la web de
+manera interna y es ejecutado al abrir la aplicación web.\\
+
+	\item XSS reflejado: en este tipo de ataque el código malicioso no queda almacenado en el servidor sino que se pasa
+directamente a la víctima. Es la forma más habitual de XSS. El ataque se lanza desde una fuente externa como un correo
+aparentemente inofensivo, un mensaje de chat u otro sitio web \cite{siete}.\\
+
+	\item XSS basado en DOM: es una variable de XSS persistente y reflejado. En un ataque XSS basado en DOM, la cadena maligna no es realmente analizada por el navegador de la victima hasta que el JavaScript legítimo de la página web es ejecutado. Estos códigos son ejecutados del lado
+del cliente, por lo que los filtros utilizados en el servidor no funcionan para este tipo de vulnerabilidades.\\
+\end{itemize}
+
+A la hora de lanzar un ataque de este tipo, los atacantes pueden utilizar varios tipos de inyección de código distinto. Los más utilizados son:\\
+
+\begin{itemize}
+	\item Inyección en un formulario: se trata del ataque más sencillo. Consiste en inyectar código en un formulario que después al
+enviarlo al servidor, será incluido en el código fuente de alguna página. Una vez insertado en el código fuente, cada vez
+que se cargue la página se ejecutará el código insertado en ella.
+
+	\item Inyección por medio de elementos: en este tipo de sistema de inyección de código se utiliza cualquier elemento que viaje
+entre el navegador y la aplicación, como pueden ser los atributos usados en las etiquetas HTML utilizadas en el diseño de
+la página.
+
+	\item Inyección por medio de recursos: Aparte de los elementos en la URL y los formularios, hay otras formas en la que se
+puede actuar como son las cabeceras HTTP. Estas cabeceras son mensajes con los que se comunican el navegador y el
+servidor. Aquí entran en juego las \textit{cookies}\footnote{Una cookie es un pequeño elemento de información que un servidor Web envía al navegador al visitar ciertas páginas web y que ambos comparten cada que este navegador vuelve a visitar \cite{cookie}.} y las sesiones \cite{ocho}.\\
+\end{itemize}
+
+Los daños potenciales que pueden causar un ataque XSS, pueden afectar tanto a los servidores en donde está contenida la
+aplicación web o pueden provocar serios problemas para el usuario final, éstos pueden varían en el grado de impacto, pueden ir
+desde una molestia para el usuario hasta un compromiso completo de la cuenta del mismo. Uno de los efectos más graves de los
+ataques XSS implica la divulgación de cookies de sesión del usuario, lo que permite a un atacante secuestrar la sesión del usuario y
+tomar control total de la cuenta. Otros ataques dañinos incluyen la divulgación de los archivos de los usuarios finales, la instalación
+de programas dañinos para el equipo del usuario final, redirigir al usuario a otra página o sitio web con fines malicioso, o modificar
+la presentación de los contenidos \cite{nueve}. Los ataques XSS explotan vulnerabilidades no en el navegador del usuario, sino en las
+aplicaciones Web de terceros a las que accede el usuario. En este tipo de ataque el navegador no puede distinguir entre el contenido
+que un usuario haya podido incluir en una petición Web, y el contenido inyectado a través de un ataque XSS \cite{diez}.\\
+
+Se han desarrollado nuevas tecnologías que utilizan diferentes técnicas para poder detectar, contrarrestar y protegerse de los ataques tipo XSS \cite{once}, algunas de esas tecnologías son aplicadas en Cortafuegos de Aplicaciones Web (WAFs, por sus siglas en inglés), los Sistemas de Detección de Intrusos (IDSs, por sus siglas en inglés) e inclusive, las mismas empresas desarrolladoras de antivirus, han integrado nuevos módulos en sus sistemas en contra de este tipo de ataques \cite{doce}.\\
+
+Aunque se tiene registros de los problemas causados y el incremento que ha tenido este tipo de ataque, el principal objetivo de las tecnologías que se lanzan al mercado no es completamente enfocado a este ataque. Tal hecho provoca que al realizar auditorías de las herramientas en ésta parte de vulnerabilidades, se detecten fallos en el sistema, tales como falsos positivos o falsos negativos.\\

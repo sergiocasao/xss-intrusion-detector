@@ -1,0 +1,49 @@
+% \IUref{IUAdmPS}{Administrar Planta de Selección}
+% \IUref{IUModPS}{Modificar Planta de Selección}
+% \IUref{IUEliPS}{Eliminar Planta de Selección}
+
+% 
+
+
+% Copie este bloque por cada caso de uso:
+%-------------------------------------- COMIENZA descripción del caso de uso.
+
+%\begin{UseCase}[archivo de imágen]{UCX}{Nombre del Caso de uso}{
+	\begin{UseCase}{CU5}{Cerrar sesi\'on}{El caso de uso permite al Contacto salir del sistema.
+	}
+		\UCitem{Versi\'on}{0.1}
+		\UCitem{Actor}{Contacto}
+		\UCitem{Prop\'osito}{Permitir al usuario salir del sistema y que no se puede hacer uso de \'el hasta que vuelva a iniciar sesi\'on nuevamente.}
+		\UCitem{Resumen}{
+		El caso de uso permite al usuario cerrar sesi\'on dentro del sistema de mensajer\'ia.}
+		\UCitem{Entradas}{Sin entradas}
+		\UCitem{Salidas}{Mensaje de alerta que notifique al usuario que su sesi\'on finaliz\'o o de lo contrario, que su sesi\'on no pudo ser cerrada. }
+		\UCitem{Precondiciones}{El usuario debe haber iniciado sesi\'on previamente.}
+		\UCitem{Postcondiciones}{No se podr\'a hacer uso del sistema hasta que una nueva sesi\'on sea iniciada.}		
+		\UCitem{Autor}{Anah\'i Ruiz D\'iaz}
+	\end{UseCase}
+
+	\begin{UCtrayectoria}{Principal}
+	
+		\UCpaso[\UCactor] El inicia sesi\'on dentro del sistema.
+		\UCpaso  El sistema dentro de su interfaz muestra al usuario el bot\'on: \IUbutton{Cerrar Sesi\'on}.
+		\UCpaso[\UCactor] El usuario da clic en el bot\'on \IUbutton{Cerrar Sesi\'on}.
+		\UCpaso  El sistema cierra la sesi\'on del usuario.
+		\UCpaso  El sistema muestra una alerta que notifica al usuario que su sesi\'on se ha cerrado satisfactoriamente.\Trayref{A}.
+		\UCpaso[\UCactor] El usuario da clic en el bot\'on \IUbutton{Aceptar}.
+		\UCpaso  El sistema regresa a la p\'agina de inicio.
+	
+		\UCpaso[] Fin del flujo.
+				
+	\end{UCtrayectoria}
+		
+		\begin{UCtrayectoriaA}{A}{Error al cerrar la sesi\'on}
+			\UCpaso El sistema muestra una alerta que notifica al usuario que la sesi\'on no fue cerrada con \'exito.
+			\UCpaso[\UCactor] El usuario da clic en el bot\'on \IUbutton{Aceptar}. 			
+			\UCpaso[] Fin del flujo.
+		\end{UCtrayectoriaA}
+
+		
+		
+				
+%-------------------------------------- TERMINA descripción del caso de uso.

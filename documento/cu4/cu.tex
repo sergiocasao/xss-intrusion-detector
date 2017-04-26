@@ -1,0 +1,56 @@
+% \IUref{IUAdmPS}{Administrar Planta de Selección}
+% \IUref{IUModPS}{Modificar Planta de Selección}
+% \IUref{IUEliPS}{Eliminar Planta de Selección}
+
+% 
+
+
+% Copie este bloque por cada caso de uso:
+%-------------------------------------- COMIENZA descripción del caso de uso.
+
+%\begin{UseCase}[archivo de imágen]{UCX}{Nombre del Caso de uso}{
+	\begin{UseCase}{CU4}{Agregar Contacto}{El caso de uso permite al Contacto o al Administrador agregar a un Contacto previamente registrado y consultado dentro de la base de datos.
+	}
+		\UCitem{Versi\'on}{0.1}
+		\UCitem{Actor}{Contacto, Administrador}
+		\UCitem{Prop\'osito}{Permitir a los usuario interactuar con otros usuarios.}
+		\UCitem{Resumen}{
+		El caso de uso permite al usuario agregar a un Contacto a su lista de contactos.}
+		\UCitem{Entradas}{Sin entradas}
+		\UCitem{Salidas}{Mensaje de alerta que notifique al usuario si el Contacto ha sido o no ha sido agregado a su lista de contactos exitosamente. }
+		\UCitem{Precondiciones}{El usuario debe haber buscado previamente el Contacto que desea agregar. El Contacto no debe haber sido agregado previamente a la lista de contactos del usuario que realiza la operaci\'on.}
+		\UCitem{Postcondiciones}{El usuario podr\'a enviar y recibir mensajes de parte del Contacto agregado. El Contacto agregado se encontrar\'a en la lista de Contactos del usuario.}		
+		\UCitem{Autor}{Anahi Ruiz Diaz}
+	\end{UseCase}
+
+	\begin{UCtrayectoria}{Principal}
+		\UCpaso[\UCactor] El usuario realiza la b\'usqueda del Contacto al que desea agregar.
+		
+		\UCpaso[\UCactor] El sistema muestra al Contacto localizado y muestra la opci\'on \IUbutton{Agregar Contacto}
+		\UCpaso[\UCactor] El usuario da clic en el bot\'on \IUbutton{Agregar Contacto} para agregarlo a su lista de Contactos. 
+		\UCpaso[\UCactor] El sistema verifica que el Contacto no se encuentra en la lista de Contactos del usuario.\Trayref{A}
+		\UCpaso  El sistema agrega a la lista de Contactos del usuario al Contacto deseado. \Trayref{B}
+		\UCpaso  El sistema muestra una alerta indicando al usuario que el Contacto ha sido agregado exitosamente.
+		\UCpaso[\UCactor] El usuario da clic en el bot\'on \IUbutton{Aceptar}. 
+
+		\UCpaso[] Fin del flujo.
+				
+	\end{UCtrayectoria}
+		
+		\begin{UCtrayectoriaA}{A}{Contacto ya agregado previamente}
+	
+			\UCpaso[] Fin del flujo.
+			
+		\end{UCtrayectoriaA}
+
+		
+		\begin{UCtrayectoriaA}{B}{Error}
+			\UCpaso El sistema muestra una alerta que notifica al usuario que ocurri\'o alg\'un error en el intento de agregar al Contacto a su lista de Contactos.
+			\UCpaso[] El usuario da clic en el bot\'on \IUbutton{Aceptar} para concluir el registro.
+			\UCpaso[] Fin del flujo.
+		\end{UCtrayectoriaA}
+		
+		
+		
+				
+%-------------------------------------- TERMINA descripción del caso de uso.

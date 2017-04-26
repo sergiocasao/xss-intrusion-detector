@@ -1,0 +1,45 @@
+% \IUref{IUAdmPS}{Administrar Planta de Selección}
+% \IUref{IUModPS}{Modificar Planta de Selección}
+% \IUref{IUEliPS}{Eliminar Planta de Selección}
+
+% 
+
+
+% Copie este bloque por cada caso de uso:
+%-------------------------------------- COMIENZA descripción del caso de uso.
+
+%\begin{UseCase}[archivo de imágen]{UCX}{Nombre del Caso de uso}{
+	
+
+	\begin{UseCase}{CU1}{Abrir ventana de chat.}{El caso de uso permite al Contacto abrir una nueva ventana de chat}
+		\UCitem{Versi\'on}{0.1}
+		\UCitem{Actor}{Contacto}
+		\UCitem{Prop\'osito}{Abrir un canal de comunicaci\'on entre un usuario y otro el cual servir\'a de v\'ia de cominicaci\'on entre estos.}
+		\UCitem{Resumen}{Este caso de uso permite abrir  una ventana  de comunicaci\'on entre dos usuarios.}
+		\UCitem{Precondiciones}{El usuario debe haberse registrado e iniciado sesion.}
+		\UCitem{Postcondiciones}{El usuario podr\'a enviar y recibir mensajes del usuario que selccion\'o, a trav\'es del canal abierto.}		
+		\UCitem{Autor}{Guerrero Madrigal Andr\'es Emanuel}
+	\end{UseCase}
+
+	\begin{UCtrayectoria}{Principal}
+	
+		\UCpaso  El sistema muestra una lista de usuarios con sesi\'on abierta en ese momento al sistema.
+		\UCpaso[\UCactor] El usuario selecciona al usuario con el que dese\'e establecer una comunicaci\'on
+
+		\UCpaso[\UCactor]  El usuario da click al boton opcici\'on \IUbutton{Abrir Chat} con el usuario seleccionado.
+		
+		\UCpaso El sistema abre un canal de comunicaci\'on entre estos dos contactos.
+
+		\UCpaso El sistema abre una ventana que muestra una caja de texto para enviar nuevos mensajes as\'i tambi\'en mostrar\'a el historial de mensajes enviados y recibidos.
+
+		\UCpaso[] Fin del flujo.
+				
+	\end{UCtrayectoria}
+		
+		\begin{UCtrayectoriaA}{A}{Error}
+			\UCpaso El sistem notific\'a al usuario que no fue posible abrir el canal.
+			\UCpaso El sistema muestra nuevamente la lista de usuarios conectados al sistema.
+		\end{UCtrayectoriaA}
+		
+		
+%-------------------------------------- TERMINA descripción del caso de uso.

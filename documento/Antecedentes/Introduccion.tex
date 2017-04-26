@@ -1,0 +1,85 @@
+%---------------------------------------------------------
+\section{Introducción}
+
+La seguridad informática ha sido y actualmente es un sector en el cual, empresas importantes de gran prestigio gastan cientos de
+millones de dólares para protegerse al estar conectados a una red \cite{uno}, tal es la preocupación que a nivel mundial se registró una
+inversión en la seguridad informática de 75 billones de dólares en 2015 \cite{dos}, mientras que, tanto chicas como medianas empresas
+suelen gastan un mínimo relacionado a este tema. En la actualidad, con la era de la revolución tecnológica por la que se está
+pasando, las empresas se han visto obligadas a contratar nueva tecnología para su producción, publicidad y/o servicios conectada al
+mundo de la Internet. Las empresas al estar conectadas a la Internet, están conectadas a millones de usuarios con cientos de
+posibilidades de acceso a los servicios de las empresas.\\
+
+Cuando los usuarios se conectan a la red de Internet, están conectados todos los usuarios de la misma simultáneamente, esto
+conlleva un alto riesgo de inseguridad. Para tratar de disminuir el impacto provocado por amenazas informáticas, existen
+programas de computadora enfocados a detectar y proteger a los usuarios de la red contra los impactos provocados por las
+amenazas \cite{tres}.\\
+
+Hoy en día, existen diversos tipos de amenazas en la red, algunas son muy conocidas como virus informáticos que son diseñados
+para infectar archivos, pero no sólo existen ese tipo de amenazas diseñadas cierta forma con una actuación “automatizada”.
+También existen las amenazas humanas o conocidos como Piratas informáticos, los cuáles, por medio de diversas técnicas de
+vulneración, pueden infectar, tomar el control o incluso obtener información o privilegios de computadoras o servidores con el fin
+de aprender o poner en práctica nuevas técnicas de vulneración, vender la información obtenida en el mercado negro o inclusive
+realizar un daño directo a los archivos o computadora objetivo \cite{cuatro}\cite{cinco}.\\
+
+Con el incremento de nuevos servicios web en Internet, se han creado y desarrollado diversos tipos de ataques hacia los servidores
+que proporcionan estos servicios. En los últimos años han ido en incremento los ataques web, aunque los que han tenido un mayor
+crecimiento y un gran impacto a nivel global, son los ataques tipo Cross-Site Scripting (de ahora en adelante XSS) \cite{seis}.
+
+\subsection{Servicios de Seguridad}
+
+Es cuya función principal es mejorar la seguridad de un sistema de información y el flujo de información que pasa a través de una organización. Los servicios  de seguridad están orientados a evitar ataques de informáticos haciendo uso de distintos controles de seguridad para proveer el servicio. Cada control de seguridad está diseñado para realizar una función determinada dependiendo del servicio de seguridad que se desee otorgar.\\
+
+Los servicios de seguridad se dividen en seis clasificaciones: \\
+
+\begin{itemize}
+
+	\item Disponibilidad: Es un requerimiento destinado a asegurar que el sistema trabaja apropiadamente y el servicio no deniega a usuarios autorizados. Este servicio protege contra: 
+		\begin{itemize}
+		\item Intentos intencionales o accidentales de:
+			\begin{itemize}
+			\item eliminación no autorizada de datos o
+			\item de lo contrario causar una denegación de servicio o datos.
+			\end{itemize}
+		\item Intentos para usar el sistema o datos para propósitos no autorizados.
+		\end{itemize}
+	La disponibilidad es frecuentemente es el principal objetivo de seguridad de una organización.
+	
+	\item Integridad: Tiene dos facetas: 
+		\begin{itemize}
+			\item Integridad de datos (la propiedad de que los datos no han sido alterados en un manejo no autorizado) o
+			\item Integridad del sistema (la calidad que tiene un sistema al realizar la función deseada de manera intacta, libre de manipulación no autorizada).
+		\end{itemize}
+	La integridad es comúnmente el objetivo más importante dentro de una organización después de la disponibilidad.
+	
+	\item Confidencialidad: Consiste en que información dentro del sistema de una organización no sea accesada por personal no autorizado.
+	Por diversas razones, aún se pone la confidencialidad debajo de la disponibilidad e integridad en términos de importancia. Pero a pesar de esto, para algunos sistemas, de autenticación, por ejemplo, la confidencialidad es el objetivo más importante a considerar. 
+	
+	\item No repudio: Consiste en identificar al responsable de una acción (un ataque, por ejemplo) hacia un sistema, responsabilizándolo por los actos y sin la posibilidad de que éste niegue los hechos.
+	
+	\item Autenticación: Es un requerimiento que consiste la identificación de un personal para que no pueda ser suplantado, y así acceder a cierta información contenida en un sistema.
+
+\end{itemize}
+
+
+\subsection{Controles de Seguridad}
+
+Los controles de seguridad proveen un rango comprensivo de contra-medidas para organizaciones y sistemas de información. Los controles de seguridad son diseñados para ser tecnologías neutrales tal manera que se centre en las contra-medidas fundamentales necesitadas para proteger la información de la organización durante el procesamiento, almacenamiento o su transmisión \cite{nist53}. La implementación de los controles de seguridad dependen al nivel de protección que se desee tener en un sistema. Las buenas prácticas de seguridad hacen mención que para tener una buena protección en un sistema u organización, se deben de emplear los controles de seguridad en conjunto, haciendo referencia que se deben de emplear varios de estos controles para así complementar brechas de seguridad que se contengan en los controles.\\
+
+Mencionando algunos controles más populares empleados, tenemos los siguientes: \\
+
+\begin{itemize}
+
+	\item Cortafuegos: Su función es delimitar el área perimetral de la red filtrando el flujo de red, tanto de entrada como de salida e incluso entre la comunicación de diferentes áreas dentro de la misma red. Se tiene tres categorías, los cortafuegos de paquete, de estado y de aplicación, donde su modo de operación varía en que el primero sólo se fija en el algunos campos del encabezado de los paquetes de red, el segundo hace un análisis más profundo del encabezado y el último hace un análisis en el \textit{payload}\footnote{Los datos esenciales que es llevada dentro de un paquete de red y otra unidad de transmisión} del paquete de red.
+	
+	\item Proxy: Es una entidad que funciona como intermediario entre la comunicación entre redes de una organización.
+	
+	\item Antivirus: Programa que tiene como finalidad detectar código malicioso dentro de los sistemas de lo cuáles se encarga de analizar.
+	
+	\item Detección de Intrusos: Programas que se encargan de hacer un monitoreo de las entidades de las cuáles se encarga.
+	
+	\item Honey Pots (por su nombre en inglés): Entidad que se encarga se ser un señuelo específicamente diseñado para atraer atacantes y\/o ver el comportamiento de programas maliciosos, con la finalidad de utilizarse como fuente para estudiar las nuevas formas de intrusión.
+
+\end{itemize} 
+
+
+\pagebreak

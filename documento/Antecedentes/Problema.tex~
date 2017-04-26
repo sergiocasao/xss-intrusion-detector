@@ -1,0 +1,10 @@
+%---------------------------------------------------------
+\section{Descripci\'on del problema}
+Actualmente existen varios sistemas que analizan textos  utilizando un conjunto de palabras filtro, si alguna palabra del texto cae dentro de ese conjunto, se realiza una acción. Sin embargo, el desarrollo de un sistema que funcione con reconocimiento de patrones permite realizar una acción adecuada debido a la clasificación del texto. Por lo cual se necesita crear un sistema que realice el análisis de alguna conversación fuera de línea,  con esto nos referimos a que ha terminado el uso de una aplicación de intercambio de mensajes y  así poder clasificar el comportamiento de cada una de las fuentes (usuario que emitió el mensaje), utilizando reconocimiento de patrones. Una vez determinada la clasificación se podrá tomar una decisión.
+
+En particular el caso de estudio que trataremos es conocido como online grooming, que es definido como el proceso mediante el cual una persona se hace amigo de un niño en línea, con el  fin de realizar acoso y posteriormente abuso sexual.[3]  
+
+Actualmente surge el interés de crear sistemas que son  apoyo para realizar análisis de textos. Estos son algunos que se han desarrollado en varias partes del mundo.
+
+
+

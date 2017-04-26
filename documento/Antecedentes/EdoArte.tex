@@ -1,0 +1,32 @@
+%---------------------------------------------------------
+\section{Estado del arte}
+Anteriormente se han definido brevemente varios conceptos sobre los que se hablará en el resto del documento. Estos conceptos sirven para dar una idea muy básica al lector.\\
+
+En la presente sección, en la Tabla \ref{table:EdoArte} se entra en profundidad a definir el estado del arte y las caracteríticas mas relevantes de los IDS que existen actualmente en el mercado.\\
+
+
+\begin{table}[h]
+	\begin{center}
+		\begin{tabular}{|l|p{75mm}|l|l|l|l|}
+		\hline
+		Nombre & Descripción & Tipo & Año & Lugar de desarrollo & Escrito en \\
+		\hline
+	    SNORT & Se trata de un sistema basado en red que monitoriza todo un dominio de colisión y funciona detectando usos indebidos. Dispone de un lenguaje de creación de reglas en el que se pueden definir los patrones que se utilizarán a hora de monitorizar el sistema. Además, ofrece una serie de reglas y filtros ya predefinidos que se pueden ajustar durante su instalación y configuración. & Open Source & 1998 & Cisco Systems & C \\
+		\hline
+	    Suricata & Es un motor de detección de amenazas de red, maduro, rápido y robusto, de código abierto y gratuito. Es capaz de detectar intrusos en tiempo real, prevención de intrusiones en línea, supervisión de seguridad de red y procesamiento offline de pcap. & Open Source & 2009 & OISF & C \\
+		\hline
+	    Bro & Es un sistema de detección de intrusiones para UNIX/Linux que analiza el tráfico de red en busca de actividad sospechosa. Su característica principal es que sus reglas de detección están basados en su lenguaje nativo que supone políticas (policies) que son las encargadas de detectar, generar logs o eventos y acciones a nivel de sistema operativo. & Open Source & 2005 & ICSI and NCSA & C++ \\
+		\hline
+	    Security Onion & Es un sistema que consiste en varias de las tecnologías de código abierto de mencionadas anteriormente trabajando en concierto entre sí. La plataforma ofrece una completa detección de intrusos, monitoreo de seguridad de red y administración de registros combinando lo mejor de Snort, Suricata, Bro, así como otras herramientas como Sguil, Squert, Snorby, ELSA, Xplico, entre otras. & Open Source & 2010 & \- & \- \\
+		\hline
+		\end{tabular}
+		\caption{Comparativa de IDSs en el mercado}
+		\label{table:EdoArte}
+	\end{center}
+\end{table}
+
+
+
+
+
+Existen además otros sistemas como lo son: Kismet, SmartDefense, Symantec Network Security 7100, Cisco Secure IDS 4230. \\

@@ -1,0 +1,100 @@
+%Los objetivos que logramos durante el desarrollo de nuestro sistema son los siguientes:
+%
+%Aplicaci\'on para el intercambio de conversaciones
+%API para el an\'alisis de conversaciones
+%Aplicaci\'on para el procesamiento de texto
+%Aplicaci\'on que sirva como conexi\'on entre los m\'odulos del sistema
+%Un set de pruebas de desempeño del sistema para verificar su eficiencia
+%
+%Cumpliendo con estos objetivos se logra desarrollar un sistema capaz de analizar y clasificar texto en diferentes categorias a partir de un conjunto de datos estadisticos mediante reconocimiento de patrones, aprendizaje maquina y mineria de datos. Cuyo fin es el clasificar una conversaci\'on como no peligrosa o determinar un grado de peligrosidad de estas.  
+%
+%A trav\'es de los prototipos que desarrollamos fue posible alcanzar los objetivos. 
+%
+%Con el prototipo 1 logramos extrar las careceteristicas de una manera que permitiera generar datos para la desici\'on del clasificador.
+%
+%El prototipo 2 plantemos un esquema para buscar palabras de car\'acter sexual.
+%
+%En el prototipo 3 obtuvimos un clasificador con una efectividad en el valor de $F_1score= 0.9743$ conjunto de entrenamiento contra un valor de $F_1score= 0.87$ en el conjunto de validaci\'on.
+%
+%El prototipo 4 agrupo el clasificador del prototipo 3 para conjuntarlo con las caracter\'isticas que obtuvimos en el prototipo 1.
+%
+%En el  prototipo n\'umero 5 obtuvimos desarrollamos un sistema de mensajer\'ia y de manera exitosa logramos unir est\'e prototipo con la API de desici\'on.
+
+%PRIMERA CONCLUSION%
+
+%Consideramos que la metodolog\'ia que elegimos nos fue bastante \'util ya que nos proporciona la oportunidad de desarrollar primero las partes del sistema que son m\'as visibles y presentarlas para despu\'es continuar con el desarrollo del siguiente prototipo basandonos en la retroalimentaci\'on que recibamos. 
+
+%La parte del an\'alisis nos fue de gran ayuda y utilidad ya que nos da la oportunidad de visualizar aspectos del sistema que no ten\'iamos contemplados en primera instancia. Tambi\'en nos permite organizar de una manera m\'as optima el desarrollo del prototipo.
+
+%A pesar de que el M\'odulo 1 "Sistema de mensajer\'ia" no es el enfoque principal de nuestro Trabajo Terminal, nos tom\'o un lapso considerable de tiempo debido al aprendizaje de la herramienta en la que se pretend\'ia desarrollarse. 
+
+%Con respecto al procesamiento del texto, notamos que la eliminaci\'on de las stopwords nos ayuda a que la lista de palabras se haga m\'as peque\~na, lo cual mejora la eficiencia ya que hay una selecci\'on mejor de palabras claves que s\'i nos son \'utiles.
+
+%En cuanto al stemming y la lematizaci\'on se tiene la ventaja de que mejora la eficiencia, se comprimen los \'indices y se mejora el recall y la desventaja es que se puede perder la informaci\'on sobre los t\'erminos. 
+
+%Debido a que el lenguaje de programaci\'on que elegimos para desarrollar nuestro sistema fue Phyton, la documentaci\'on de Natural Language Toolkit (NLTK) fue una herramienta que nos ampli\'o la visi\'on de las cosas y nos ayud\'o en cuanto al procesamiento de texto.
+
+%Finalmente podemos agregar que la organizaci\'on, el trabajo en equipo, la comunicaci\'on y la convivencia son puntos culminantes para que se lleve acabo un buen y sano desarrollo de todo sistema.
+
+La API de este sistema puede ser utilizada como herramienta para la detecci\'on de conversaciones peligrosas (\textit{online grooming}) o ver como \'estas se  comportan de acuerdo a los 6 niveles de  caracterizaci\'on \cite{articulo}. Las conversaciones con las que se trabaj\'o y que  fueron marcadas como peligrosas en el conjunto de entrenamiento as\'i como para el conjunto de pruebas  fueron extra\'idas de un sitio alojado en Estados Unidos en el que son publicadas conversaciones reales de personas que se hacen pasar por ni\~nos para detectar y capturar pederastas en Internet. \cite{perverd}
+%Bajo estad\'isticas de palabras la b\'usqueda de frases de acuerdo a los niveles marcados en el art\'iculo ya antes citado, se pudieron an\'alizar y procesar aquellas conversaciones.
+
+Los objetivos logrados al desarrollar el presente trabajo terminal son:
+
+\begin{itemize}
+\item Una Aplicaci\'on para el procesamiento de texto, encargada de la b\'usqueda de frases y palabras relacionadas con nuestro caso de estudio (\textit{online grooming}).
+\item El desarrollo de una API para el an\'alisis de conversaciones, la cual aplica el algoritmo de regresi\'on log\'istica y Red Neuronal Perceptr\'on Multicapa entrenada con el algoritmo de \textit{backpropagation} para clasificar una conversaci\'on como: Muy Peligrosa, Peligrosa, Poco Peligrosa o No peligrosa. \'Esta se llev\'o acabo mediante el desarrollo de los siguientes prototipos:
+
+En el prototipo 1 se lograron extraer, contar y hacer una estad\'istica de las frases de los niveles 1,2,3,4 y 6 utilizando el \textit{stem} de palabras clave dependiendo del nivel que se quiera analizar.
+
+En el prototipo 2 se plante\'o un esquema para buscar, contar y hacer una estad\'istica de palabras de car\'acter sexual. En este prototipo se definieron los \textit{stems} de las palabras que son los descripto\'res del clasificador del prototipo 3.
+
+En el prototipo 3 se implement\'o un clasificador utilizando el algoritmo de regresi\'on log\'istica. 
+
+El prototipo 4 implementa una Red neuronal perceptr\'on multicapa para tomar la decisi\'on de clasificar las conversaciones como: muy peligrosa, peligrosa, poco peligrosa y no peligrosa. La red neuronal fue entrenada con el algoritmo de \textit{backpropagation}.
+
+En el  prototipo n\'umero 5 se hace la uni\'on de los clasificadores de conversaciones con contexto sexual y el clasificador de niveles de caracterizaci\'on de las conversaciones. Este prototipo es la integraci\'on de la API.
+
+
+\item Un set de pruebas de desempe\~no del sistema. En la cual se tienen metr\'icas para medir la eficiciencia del sistema. La efectividad del protocolo 3 puede ser comprobada con las matrices de validaci\'on.  Para el conjunto de entrenamiento se obtuvo una efectividad de 0.9743 para la m\'etrica  de $F_1score$ mientras que para el  conjunto de entrenamiento se obtuvo un valor de 0.87 para $F_1score$ en el conjunto de validaci\'on.
+La eficiencia del prototipo 4 medida con la m\'etrica de $F_1score$  es de 1.
+
+\item Una aplicaci\'on para el intercambio de conversaciones la cual sirve como un simulador de un \textit{chat} real. 
+
+\item Se lograron integrar diversas herramientas y tecnolog\'ias con ayuda de las cuales se pudieron cumplir los objetivos planteados al inicio del trabajo.
+
+\end{itemize}
+
+
+
+
+
+
+
+
+
+
+
+\section{Trabajo a Futuro}
+
+   \begin{itemize}
+\item Implementar un mecanismo que permita identificar la edad de acuerdo al vocabulario utilizado por los remitentes de los mensajes.
+\item Ampliar las restricciones para que esta herramienta pueda ser aplicada en alguna red social como: \textit{Facebook, Whatsapp, Telegram}, o en algun \textit{chat} p\'ublico.
+%\item Se us\'o la API con una aplicaci\'on m\'ovil.
+\item Definir una ontolog\'ia de catacter sexual que permita la clasificaci\'on de conversaciones peligrosas mediante el contexto.
+\item Definir una acci\'on de identificaci\'on al agresosr.
+\item Probar la API con otros algortimos de clasificaci\'on y comparar la eficiencia.
+\item Delimitar el diccionario de frases y palabras de acuerdo a regiones geogr\'aficas.
+\item Identificar abreviaciones y \textit{emoticones} populares en el texto e identificar su significado.
+
+
+
+
+%Integraci\'on de diversas herramientas (conclusion)
+
+%Dependencia en diagrama debajo del de clases
+%Diagrama de clases del clasificador
+\end{itemize}
+
+
+

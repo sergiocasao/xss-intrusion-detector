@@ -1,0 +1,43 @@
+% \IUref{IUAdmPS}{Administrar Planta de Selección}
+% \IUref{IUModPS}{Modificar Planta de Selección}
+% \IUref{IUEliPS}{Eliminar Planta de Selección}
+
+% 
+
+
+% Copie este bloque por cada caso de uso:
+%-------------------------------------- COMIENZA descripción del caso de uso.
+
+%\begin{UseCase}[archivo de imágen]{UCX}{Nombre del Caso de uso}{
+	
+
+	\begin{UseCase}{CU1}{Eliminaci\'on de Stopwords}{El caso de uso eliminar\'a las Stopwords de un texto.
+	}
+		\UCitem{Versi\'on}{0.1}
+		%\UCitem{Actor}{}
+		\UCitem{Prop\'osito}{Proporcionar una lista de palabras sin Stopwords de un texto.}
+		\UCitem{Resumen}{
+		El caso de uso permite obtener un texto limpio de Stopwords lo cual facilitar\'a su an\'alisis posteriormente.}
+		\UCitem{Entradas}{Texto}
+		\UCitem{Salidas}{Lista de palabras }
+		\UCitem{Precondiciones}{Existencia de un archivo llamado archivo.txt}
+		\UCitem{Postcondiciones}{Se generar\'a un archivo que contenga la lista de palabras del texto del "archivo.txt" sin contener stopwords.}		
+		%\UCitem{Autor}{Anahi Ruiz Diaz}
+	\end{UseCase}
+
+	\begin{UCtrayectoria}{Principal}
+	
+		\UCpaso  El sistema abre un archivo de texto llamado archivo.txt. \Trayref{A}
+                \UCpaso El sistema convierte el texto del archivo en una lista de palabras.
+		\UCpaso El sistema verifica palabra por palabra si se trata o no de una Stopword y en caso de ser Stopword la ignora.
+		\UCpaso  El sistema genera un nuevo archivo de texto \'unicamente con palabras que no se encuentran en la lista de Stopwords.
+				    \UCpaso[] Fin del flujo.
+	\end{UCtrayectoria}
+	
+			\begin{UCtrayectoriaA}{A}{Datos obligatorios}
+		    \UCpaso El fichero archivo.txt no existe
+		    \UCpaso[] Fin del flujo.
+    		\end{UCtrayectoriaA}
+
+		
+%-------------------------------------- TERMINA descripción del caso de uso.
