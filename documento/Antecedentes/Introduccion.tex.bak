@@ -63,15 +63,20 @@ Los servicios de seguridad se dividen en seis clasificaciones: \\
 
 \subsection{Controles de Seguridad}
 
-Los controles de seguridad proveen un rango comprensivo de contra-medidas para organizaciones y sistemas de información. Los controles de seguridad son diseñados para ser tecnologías neutrales tal manera que se centre en las contra-medidas fundamentales necesitadas para proteger la información de la organización durante el procesamiento, almacenamiento o su transmisión \cite{nist53}. La implementación de los controles de seguridad dependen al nivel de protección que se desee tener en un sistema. Las buenas prácticas de seguridad hacen mención que para tener una buena protección en un sistema u organización, se deben de emplear los controles de seguridad en conjunto, haciendo referencia que se deben de emplear varios de estos controles para así complementar brechas de seguridad que se contengan en los controles.
+Los controles de seguridad proveen un rango comprensivo de contra-medidas para organizaciones y sistemas de información. Los controles de seguridad son diseñados para ser tecnologías neutrales tal manera que se centre en las contra-medidas fundamentales necesitadas para proteger la información de la organización durante el procesamiento, almacenamiento o su transmisión \cite{nist53}. La implementación de los controles de seguridad dependen al nivel de protección que se desee tener en un sistema. Las buenas prácticas de seguridad hacen mención que para tener una buena protección en un sistema u organización, se deben de emplear los controles de seguridad en conjunto, haciendo referencia que se deben de emplear varios de estos controles para así complementar brechas de seguridad que se contengan en los controles.\\
 
-Mencionando algunos controles más populares empleados, tenemos los siguientes: 
+Mencionando algunos controles más populares empleados, tenemos los siguientes: \\
 
 \begin{itemize}
 
 	\item Cortafuegos: Su función es delimitar el área perimetral de la red filtrando el flujo de red, tanto de entrada como de salida e incluso entre la comunicación de diferentes áreas dentro de la misma red. Se tiene tres categorías, los cortafuegos de paquete, de estado y de aplicación, donde su modo de operación varía en que el primero sólo se fija en el algunos campos del encabezado de los paquetes de red, el segundo hace un análisis más profundo del encabezado y el último hace un análisis en el \textit{payload}\footnote{Los datos esenciales que es llevada dentro de un paquete de red y otra unidad de transmisión} del paquete de red.
+	
+	\item Proxy: Es una entidad que funciona como intermediario entre la comunicación entre redes de una organización.
+	
+	\item Antivirus: Programa que tiene como finalidad detectar código malicioso dentro de los sistemas de lo cuáles se encarga de analizar.
+	
+	\item Detección de Intrusos: Programas que se encargan de hacer un monitoreo de las entidades de las cuáles se encarga.
+	
+	\item Honey Pots (por su nombre en inglés): Entidad que se encarga se ser un señuelo específicamente diseñado para atraer atacantes y\/o ver el comportamiento de programas maliciosos, con la finalidad de utilizarse como fuente para estudiar las nuevas formas de intrusión.
 
 \end{itemize} 
-
-
-\pagebreak
