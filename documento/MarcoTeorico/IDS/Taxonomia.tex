@@ -1,4 +1,4 @@
-\subsection{Taxonomía de incidentes de seguridad}
+\subsection{Taxonomías}
 
 Debido a los extensos desarrollos e implementaciones de sistemas de detección de intrusos, han surgido diversas clasificaciones de acuerdo al tipo de respuesta que ofrecen ante las intrusiones,  aplicaciones, lugares en donde se sitúan, entre otros. El uso de la taxonomía depende de lo que el autor o el desarrollador del sistema de detección interprete o quiera dar a entender. En el presente trabajo se mencionarán tres taxonomías que se usan para la clasificación de los IDSs.\\
 
@@ -11,7 +11,6 @@ Unas de las taxonomías usadas para la clasificación de IDSs, son: \\
 	\begin{itemize}
 		\item Sistema de detección de intrusos basado en host (HIDS, por sus siglas en inglés)
 		\item Sistema de detección de intrusos basado en red (NIDS, por sus siglas en inglés)
-		\item Sistema de detección de intrusos basado en medios no guiados (WIDS, por sus siglas en inglés)
 	\end{itemize}
 	
 	\item Método de detección. Esta taxonomía hace referencia a los métodos que implementa el IDS para realizar la detección de una intrusión.
@@ -19,12 +18,6 @@ Unas de las taxonomías usadas para la clasificación de IDSs, son: \\
 		\item Firmas
 		\item Comportamiento
 		\item Anomalías
-	\end{itemize}
-	
-	\item Tiempo de análisis. Esta taxonomía toma en cuenta el tiempo que le toma al sistema de detección la detección de una intrusión.
-	\begin{itemize}
-		\item En línea
-		\item Pasiva
 	\end{itemize}
 \end{itemize}
 
@@ -41,9 +34,43 @@ Unas de las taxonomías usadas para la clasificación de IDSs, son: \\
 	\begin{itemize}
 		\item En línea (Inline). El sensor en línea consiste en una configuración en donde todo el tráfico de la rea a analizar pase a través de él, haciendo un simil con un cortafuegos con esa característica. De hecho, cuando se implementa un IDS con de esta manera, es muy común que se implemente en el mismo equipo de cómputo en donde se aloja el cortafuegos. El primer motivo de poner un cortafuegos y un IDS en el mismo equipo es para poder modificar las reglas del cortafuegos cuando el IDS detecte una intrusión y así evitar un incidente o detener un ataque en curso. Típicamente los IDS son puestos con o después de un cortafuegos, ya que se supone que el cortafuegos debería de ser quien detenga la mayor parte de los ataques al ser la primera línea de defensa.\\
 		
-		\item Pasivo. La característica que tienen los sensores pasivos es que el tráfico a analizar no pasa a través de él, como lo hacen los sensores en línea, sino que su análisis se basa en una copia del tráfico de la red. Los sensores pasivos son generalmente usados para el análisis de redes en específico; divisiones entre redes, segmentos clave de red, como lo puede ser el análisis a una subred que esté diseñada como zona desmilitarizada. Los sensores pasivos pueden analizar tráfico con diferentes métodos.
+		\item Pasivo. La característica que tienen los sensores pasivos es que el tráfico a analizar no pasa a través de él, como lo hacen los sensores en línea, sino que su análisis se basa en una copia del tráfico de la red. Los sensores pasivos son generalmente usados para el análisis de redes en específico; por ejemplo: divisiones entre redes, segmentos clave de red, como lo puede ser el análisis a una subred que esté diseñada como zona desmilitarizada. Los sensores pasivos pueden analizar tráfico con diferentes métodos, éstos son: \\
+		\begin{itemize}
+			\item Puerto de expansión (Spanning Port). Este método es usado por switches, es un puerto que tiene la capacidad de ver todo el tráfico de red que fluye en el switch. La desventaja que se presenta al implementar un sensor con este método, es que si no se configura correctamente el switch, el puerto de expansión no será posible ver todo el tráfico de la red. Otra gran desventaja que se presenta es debido a la cantidad de carga que presenta al analizar el tráfico, lo que puede provocar que si la carga es mucha no sea posible el analizar todo el tráfico de la red o provocar que el puerto de expansión sufra una inhabilitación temporal.\\
+			
+			\item Toma de Red (Network Tap). Es una conexión directa entre un sensor y el dispositivo físico de red, este puede estar conectado con fibra óptica, por ejemplo. El modo Tap provee una copia del tráfico de al red al sensor. A diferencia del puerto de expansión, que están presentes en cualquier organización, las tomas de red deben ser considerados como parte de un complemento a la red. \\
+		\end{itemize}
 	\end{itemize}
-	
 \end{itemize}
 
 
+\subsubsection{Taxonomía por métodos de detección}
+
+\begin{itemize}
+	\item \textbf{Basado en Firmas.}
+	Una firma es un patrón que corresponde a una amenaza conocida. La detección basada en firmas es el proceso de comparar firmas contra eventos observados para identificar un posible incidente \cite{nist94}. Algunos ejemplos de firmas son:
+	\begin{itemize}
+		\item En una red de servidores, una firma sería un paquete con protocolo ICMP tipo 8, que sería una petición \textit{ping}\footnote{Un ping es un programa de Internet que permite la verificación existente de una dirección IP en particular dentro de una red y si esta acepta peticiones.} a un servidor.\\
+		
+		\item En una transferencia de archivos por medio del protocolo FTP, la transferencia de archivos con extensión \textit{.exe}, que es una violación de las políticas de seguridad de una organización que solo permite la transferencia de archivos de texto, por ejemplo.\\
+	\end{itemize}
+	
+	La detección basada en firmas es muy efectiva cuando se hace el análisis sobre amenazas conocidas, pero es inefectiva si no se tiene identificada la amenaza previamente o no su estructura cambia. Por lo que con ésta detección, las amenazas que actualmente usan técnicas de evasión no serían identificadas.\\
+	
+	La detección basada en firmas es un método de los más sencillos y simple, debido a que se basa sólo en la comparación de las unidades de actividad actuales; como: paquetes o archivos de registro con una lista de firmas utilizando operaciones de comparación de cadenas.\\
+	
+	
+	\item \textbf{Basado en anomalías.}
+	La detección basada en anomalías es el proceso de comparar definiciones de qué actividades son consideradas normales contra eventos observados para identificar desviaciones significantes\cite{nist94}. Este tipo de detección está implementado con \textit{perfiles} que representan los comportamientos normales de una entidad; por ejemplo: usuarios, equipos de cómputo, conexiones de red e incluso aplicaciones. La causa de que este método sea más tardado de implementar, costoso monetariamente y efectivo con respecto al método basado en firmas, es porque cada perfil se tiene que \textit{entrenar} por un cierto tiempo, el cual depende de la organización que lo implementa. Lo que resulta que el IDS que usa el método de detección basado en anomalías no sea un sistema genérico como lo es el basado en firmas, al contrario, es un sistema que se personaliza a cada entidad. El entrenamiento de cada perfil puede ser considerado con diferentes atributos; por ejemplo: uso de procesador, uso de memoria, tiempo de actividad, intentos de inicio de sesión, etcétera.\\
+	
+	El beneficio que se obtiene con esta implementación es un reconocimiento de amenazas previamente desconocidas que afecten el comportamiento del sistema. Como lo que puede ocurrir cuando un sistema es infectado con \textit{malware}\footnote{Programa malicioso que su propósito es acceder a dispositivos de manera no autorizada y sin el conocimiento del usuario.}.\\
+	
+	Una de las notables desventajas que se presentan en esta técnica de análisis es la dificultad, en ocasiones, para determinar por qué una alerta fue generada y para validar que dicha alerta es acertada y no un falso positivo, esta desventaja se debe a la complejidad y número de eventos que pueden causar que la alerta sea generada.\\
+	
+	
+	\item \textbf{Basado en comportamiento.}
+	La detección basada en comportamiento o, como algunos documentos hacen referencia, Análisis de Protocolo con Estado (Stateful Protocol Analysis, por sus siglas en inglés), es el proceso de comparar perfiles predeterminados de definiciones generalmente aceptadas de actividad de un protocolo benigno para cada estado del protocolo contra eventos observados para identificar desviaciones. A diferencia  del análisis basado en anomalías, que usa perfiles adaptados a los equipos de cómputo o redes en específico, el basado en comportamiento depende del desarrollo del vendedor ya que este utiliza perfiles universales que especifican cómo protocolos particulares deberían y no deberían ser usados. El ''estado" en el análisis de comportamiento hace referencia a que el IDS tiene la capacidad de entender y rastrear el estado de los protocolos de red, transporte y aplicación que tienen una noción de ''estado".\\
+	
+	La principal desventaja de utilizar el análisis basado en comportamiento es que este utiliza más recursos que los anteriores debido a la complejidad del análisis y que tiene que hacer un rastreo de los estados de diferentes sesiones simultáneamente. Otro gran problema es que este análisis no puede detectar ataques que no violen las características de un comportamiento general aceptable de un protocolo.\\
+	
+\end{itemize}

@@ -70,8 +70,9 @@ showtabs=false
 \input{Antecedentes/Justificacion}
 %=========================================================
 \chapter{Marco Teórico} %Título del capítulo
+\input{MarcoTeorico/Seguridad/Estampa_tiempo}
 \input{MarcoTeorico/IDS/Definicion}
-\input{MarcoTeorico/IDS/Taxonomia} %Falta llenar esta sección
+\input{MarcoTeorico/IDS/Taxonomia}
 \input{MarcoTeorico/IDS/Modo_de_operacion}
 \input{MarcoTeorico/IDS/Justificacion}
 \input{MarcoTeorico/IDS/Arquitectura}

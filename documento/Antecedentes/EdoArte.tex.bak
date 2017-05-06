@@ -2,11 +2,7 @@
 \section{Estado del arte}
 Anteriormente se han definido brevemente varios conceptos sobre los que se hablará en el resto del documento. Estos conceptos sirven para dar una idea muy básica al lector.\\
 
-<<<<<<< HEAD
 En la presente sección, en la Tabla \ref{table:EdoArte} se entra en profundidad a definir el estado del arte y las caracteríticas mas relevantes de los IDS que existen actualmente en el mercado.\\
-=======
-En la presente sección, en la tabla \ref{table:edo_art} se entra en profundidad a definir el estado del arte y las caracteríticas mas relevantes de los IDS que existen actualmente en el mercado.\\
->>>>>>> fab0a34e4b3d716efa2b6beb754f676485d314f6
 
 
 \begin{table}[h]
@@ -24,43 +20,13 @@ En la presente sección, en la tabla \ref{table:edo_art} se entra en profundidad
 	    Security Onion & Es un sistema que consiste en varias de las tecnologías de código abierto de mencionadas anteriormente trabajando en concierto entre sí. La plataforma ofrece una completa detección de intrusos, monitoreo de seguridad de red y administración de registros combinando lo mejor de Snort, Suricata, Bro, así como otras herramientas como Sguil, Squert, Snorby, ELSA, Xplico, entre otras. & Open Source & 2010 & \- & \- \\
 		\hline
 		\end{tabular}
-<<<<<<< HEAD
 		\caption{Comparativa de IDSs en el mercado}
 		\label{table:EdoArte}
-=======
-		\label{table:edo_art}
-		\caption{Comparativa de IDSs en el mercado}
->>>>>>> fab0a34e4b3d716efa2b6beb754f676485d314f6
 	\end{center}
 \end{table}
 
 
-<<<<<<< HEAD
 
 
-=======
-El inter\'es por desarrollar sistemas que apoyan el an\'alisis de textos se ha incrementado. En la tabla \ref{table:tabla1estadodelarte} se mencionan algunos sistemas que hacen uso de estos aplicado a diferentes problem\'aticas sociales.   
-
-
-\begin{center}
-\begin{table}[h]
-\begin{tabular}{|l|p{75mm}|l|l|p{25mm}|}
-\hline
-Nombre & Descripci\'on & Tipo & A\~no & Lugar de desarrollo \\
-\hline
-ChildDefence & La aplicaci\'on ChildDefence permite recolectar conversaciones (escritas en ingl\'es) que un ni\~no ha tenido con una persona,  provenientes de mensajes de texto o chats en l\'inea, y luego hacer que se analicen en el propio tel\'efono. La aplicaci\'on, ha sido entrenada para identificar si la persona es un ni\~no o un adulto. & Gratuita & 2011 & Isis Forensics \\
-\hline
-LIWC & Es un programa de computadora analizador de textos, que determina el porcentaje de emociones expresadas en un texto, con base en diversas categor\'ias. & Comercial & 2001 & Austin Texas University, EUA \\
-\hline
-KidsWatch & Es un programa de control parental. Funciona de tal manera que cuando en la  conversaci\'on de un chat encuentra palabras referentes al sexo, drogadicci\'on, armas, suicidio entre otros se les avisa a los padres acerca del comportamiento sospechoso. & Comercial & 2002 & Computer Business Solutions \\
-\hline
-
-\end{tabular}
-\label{table:tabla1estadodelarte}
-\caption{Comparativa de Sistemas que realizan análisis de textos}
-\end{table}
-\end{center}
-
->>>>>>> fab0a34e4b3d716efa2b6beb754f676485d314f6
 
 Existen además otros sistemas como lo son: Kismet, SmartDefense, Symantec Network Security 7100, Cisco Secure IDS 4230. \\
