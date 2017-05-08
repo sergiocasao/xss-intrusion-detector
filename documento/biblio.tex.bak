@@ -20,7 +20,7 @@
 
 \bibitem{ocho} (2016). "Qué es y cómo funciona un ataque Cross - Site Scripting". Hostalia. Recuperado 19 Diciembre 2016, de \url{http://pressroom.hostalia.com/wp-content/themes/hostalia\_pressroom/images/cross-site-scripting-wp-hostalia.pdf}
 
-\bibitem{nueve} Ramos Pereira, K. (2016). "Cross-Site Scripting". Revistasbolivianas.org.bo. Recuperado 20 Noviembre 2016, de \url{http://www.revistasbolivianas.org.bo/scielo.php?pid=S1997-40442013000100023\&script=sci\_arttext}
+\bibitem{nueve} Ramos Pereira, K. (2016). ''Cross-Site Scripting". Revistasbolivianas.org.bo. Recuperado 20 Noviembre 2016, de \url{http://www.revistasbolivianas.org.bo/scielo.php?pid=S1997-40442013000100023\&script=sci\_arttext}
 
 \bibitem{diez} (2014). "Su navegador esta desnudo: por qué los navegadores protegidos siguen siendo vulnerables.". Panda Security. Recuperado 27 Noviembre 2016, de \url{http://resources.pandasecurity.com/enterprise/solutions/7.\%20WP\%20PCIP\%20ESP\%20Su\%20Navegador\%20esta\%20desnudo.pdf}
 
@@ -44,17 +44,20 @@ Recuperado 26 Septiembre 2016, de \url{http://www.symantec.com/connect/articles/
 
 \bibitem{nist41} National Institute of Standards and Technology,. (2009). "Guidelines on Firewalls and Firewall Policy" (p. 7). Washington.
 
-\bibitem{nist33} National Institute of Standards and Technology,. (2001). "Underlying Technical Models for Information Technology Security" (p. 6). Washington.
+\bibitem{nist33} National Institute of Standards and Technology,. (2001). ''Underlying Technical Models for Information Technology Security" (p. 6). Washington.
 
 \bibitem{nist53} National Institute of Standards and Technology,. (2014). "Summary of NIST SP 800-53 Revision 4, Security and Privacy Controls for Federal Information Systems and Organizations" (p. 6). Washington.
 
-\bibitem{CIDF} Tung, B. (1999). "Common Intrusion Detection Framework". Gost.isi.edu. Recuperado 15 Abril 2017, de \url{http://gost.isi.edu/cidf/}
+\bibitem{CIDF} Tung, B. (1999). ''Common Intrusion Detection Framework". Gost.isi.edu. Recuperado 15 Abril 2017, de \url{http://gost.isi.edu/cidf/}
 
-\bibitem{arquitecturas} Mira, J. (2017). "Implantación de un Sistema de Detección de Intrusos en la Universidad de Valencia" (1ra ed., p. 15-21). Valencia: Recuperado de \url{http://rediris.es/cert/doc/pdf/ids-uv.pdf}
+\bibitem{arquitecturas} Mira, J. (2017). ''Implantación de un Sistema de Detección de Intrusos en la Universidad de Valencia" (1ra ed., p. 15-21). Valencia: Recuperado de \url{http://rediris.es/cert/doc/pdf/ids-uv.pdf}
 
-\bibitem{IEFT} Anónimo. (2017). "Internet Engineering Task Force (IETF)". Ietf.org. Recuperado 16 Abril 2017, de \url{https://www.ietf.org/}
+\bibitem{IEFT} Anónimo. (2017). ''Internet Engineering Task Force (IETF)". Ietf.org. Recuperado 16 Abril 2017, de \url{https://www.ietf.org/}
 
-\bibitem{XML} Anónimo. "Extensible Markup Language (XML)". (2017). W3.org. Recuperado 21 Abril 2017, de \url{https://www.w3.org/XML/}
+\bibitem{XML} Anónimo. ''Extensible Markup Language (XML)". (2017). W3.org. Recuperado 21 Abril 2017, de \url{https://www.w3.org/XML/}
+
+\bibtem{def\_mach} Tsai, J., \& Yu, Z. (2011). "Intrusion detection" (1st ed.). London: Imperial College Press.
+%(1st ed., pp. 2-33)
 
 
 \end{thebibliography}

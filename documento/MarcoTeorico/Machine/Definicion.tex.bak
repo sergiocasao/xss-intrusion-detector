@@ -1,0 +1,5 @@
+\section{Aprendizaje Automático}
+
+\subsubsection{Definicion}
+El aprendizaje automático o \textit{machine learning},por su nombre en inglés, es el estudio que se encarga de saber cómo realizar programas computacionales que puedan mejorar su desempeño a través de experiencias. El aprendizaje automático ha sido probado y clasificado como una buena herramienta en particulares casos, como son: (a) en donde existe poco entendimiento del dominio del problema que ocasiona un poco conocimiento por parte de los humanos para desarrollar algoritmos efectivos que lo resuelvan; (b) dominios en donde se tenga una extensa base de datos que contenga regularidades implícitas a ser descubiertas; o (c) dominios en donde los mismos programas deban estar en un cambio constante de adaptación a ciertas condiciones. El aprendizaje máquina se relaciona con el diseño y desarrollo de algoritmos que, de forma autónoma, sean capaces de adquirir e implementar conocimiento previo para mejorar la efectividad de sus tareas y que éstas sean eficientes \cite{defmach}.
+

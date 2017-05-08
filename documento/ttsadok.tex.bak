@@ -1,4 +1,4 @@
-\documentclass[oneside,10pt]{book}
+\documentclass[oneside,12pt]{book}
 %\documentclass[12pt]{report}
 \usepackage{cdtBook}
 \usepackage{usecases}
@@ -78,6 +78,9 @@ showtabs=false
 \input{MarcoTeorico/IDS/Arquitectura}
 \input{MarcoTeorico/IDS/Modulos}
 \input{MarcoTeorico/IDS/Arquitecturas_Red}
+\input{MarcoTeorico/Machine/Definicion}
+\input{MarcoTeorico/Machine/Aprendizaje/Definicion}
+\input{MarcoTeorico/Machine/Aprendizaje/Tipos}
 %\input{MarcoTeorico/casodeestudio} %cfinput
 %\input{mineria/mineriatexto}
 %\input{MarcoTeorico/LenguajeNatural}
@@ -97,8 +100,8 @@ showtabs=false
 
 %=========================================================
 
-\chapter{Especificaciones del proyecto}
-\input{Especificaciones/Objetivo}
+%\chapter{Especificaciones del proyecto}
+%\input{Especificaciones/Objetivo}
 %\input{especificaciones/Objetivo}
 %\input{especificaciones/metodologia}
 %\input{especificaciones/descripcion}

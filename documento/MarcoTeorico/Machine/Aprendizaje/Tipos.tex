@@ -1,0 +1,41 @@
+\subsection{Métodos de aprendizaje}
+
+
+	\subsubsection{Árboles de Decisión}
+
+	La búsqueda en el aprendizaje de árboles de decisión suele estar guiada por una medida de ganancia de información basada en entropía que indica la cantidad de información que una prueba en un atributo produce. Los algoritmos de aprendizaje usualmente tiene una inclinación por los árboles de decisiones. El uso de éste método de aprendizaje puede provocar el ruido en los datos por una sobre alimentación en los árboles. Esto se debe a que no se puede tener un control sobre el acomodo del conocimiento previo que se adquirió durante el proceso. Se dice que este método de aprendizaje es ansioso, supervisado e inestable.\\ \\
+	
+
+	\subsubsection{Redes Neuronales}
+
+	En el aprendizaje de redes neuronales, el aprendizaje de una función objetivo se asemeja a encontrar pesos de una red de tal manera que las salidas de las redes sean las mismas que los resultados esperados como fueron especificados en los datos de entrenamiento, siempre que sea dada una estructura fija de red. Lo se considera como un vector de pesos, se define como una función objetivo. Tal consideración hace que la interpretación y lectura de la función objetivo sea difícil para el ser humano. Este método de aprendizaje aproximado es ansioso, supervisado e inestable, y además no puede acomodar conocimientos previos.\\ \\
+	
+
+	\subsubsection{Aprendizaje Bayesiano}
+
+	El aprendizaje Bayesiano ofrece un enfoque probabilístitco a la interferencia basada en suposiciones, cuya cantidad de interés es dictado por la distribución de probabilidad, y para alcanzar las óptimas decisiones o clasificaciones deben ser realizadas haciendo un razonamiento de las probabilidades junto con la observación de los datos. Este método de aprendizaje se conforma de dos grandes grupos, ambos basados en los resultados de un aprendiz: el primer grupo que produce el mayor hipótesis dado los datos de entrenamiento, el segundo grupo que produce la mayor clasificación de una nueva instancia dado los datos de entrenamiento. Una función objetivo es así explícitamente representada en el primer grupo, pero implícitamente definida en el segundo grupo. La ventaja que se tiene con éste método es la capacidad de acomodar los conocimientos previos (en forma de red Bayesiana, probabilidades previas para cada hipóstesis candidata, o a una distribución de probabilidad sobre los datos observados para una posible hipótesis). Si llega a suceder que ocurra un casi invisible para este método, dicho caso se clasifica basado en predicciones de múltiples hipótesis. Este puede aumentar proporcionalmente bien con datos largos. La ventaja al no tener problemas con el acomodo de conocimientos previos es que no tiene problemas con el ruido de los datos, lo que provocaría una mala clasificación. Una desventaja que se presenta es la dificultad de clasificación con los pequeños conjuntos de datos. Este método de aprendizaje es ansioso y supervisado y no requiere búsquedas durante el proceso de aprendizaje. También adopta una inclinación que se basa en el principio de longitud mínima de descripción.\\ \\
+	
+
+	\subsubsection{Algoritmos Genéticos y Programación Genética}
+
+	Estos métodos de clasificación han sido inspirados por la biología. Una función objetivo es representada como una cadena de \textit{bit}\footnote{Unidad mínima de información en un sistema de cómputo.} en algoritmos genéticos, o como programas en programación genética. El proceso de búsqueda inicia con una población basada en una hipótesis inicial. Para darle un incremento de exactitud a los siguientes miembros de la siguiente generación de población, los actuales deben ser sometidos a operaciones de intercambio (crossover) y mutación. Con cada iteración de la población, las hipótesis de la población actual es evaluada con la consideración a una medida dada de aptitud, siendo hipótesis más apta seleccionada como un miembro de la siguiente generación. El proceso de búsqueda termina cuando los valores de aptitud de la población actual ha superado los límites de algún umbral.Los algoritmos son generacionales y de estado estable (\textit{steady-state}).\\ \\
+	
+
+	\subsubsection{Basado en Instancias}
+
+	Este método de aprendizaje es un aprendizaje perezoso en el sentido de que se enfoca en la generalización más allá de los datos de  entrenamiento que se difieren hasta que un caso no visto necesite ser clasificado. Se dice que la función objetivo no es definida, sin embargo, el aprendiz regresa un valor de una función objetivo cuando se clasifica un caso no visto. El proceso de búsqueda es basado en razonamientos estadísticos. Consiste en identificar los datos de entrenamiento que están cerca al caso no visto y con ellos producir el valor de la función objetivo basada en sus vecinos. Los algoritmos populares para este método son: \textit{K-nearest neighbors, cas-based reasoning} y \textit{locally weighted regression}.\\ \\
+	
+
+	\subsubsection{Aprendizaje Reforzado}
+
+	El aprendizaje reforzado es el método de aprendizaje más general. Aborda el problema de cómo aprender una secuencia de acciones llamada una estrategia de control de información de recompensa indirecta y demorada (refuerzo). Este método es ansioso y de aprendizaje no supervisado. Su búsqueda es llevada a cabo a través de episodios de entrenamiento. Dos enfoques principales que existen para el aprendizaje reforzado son: basado en modelo y libre de modelo. El algoritmo más conocido para el enfoque libre de modelo y el basado en modelo es el \textit{Q-learning}, en donde las acciones con máximo valor \textit{Q} son las preferidas.\\ \\
+	
+
+	\subsubsection{Aprendizaje de Múltiples Instancias}
+
+	El aprendizaje múltiples instancias negocia con la situación en la que cada ejemplo de entrenamiento podría tener diversas variantes de instancias. Es propuesto como una variante del aprendizaje supervisado con un conocimiento incompleto acerca de las etiquetas de los ejemplos de entrenamiento. En el lenguaje supervisado, cada instancia de entrenamiento se establece específicamente con etiquetas de valores reales o con etiquetas discretas, mientras que en el aprendizaje de múltiples instancias las etiquetas son únicamente asignadas a bolsas de instancias. En el caso binario (el más usual en la implementación de éste método), una bolsa es etiquetada como positiva si al menos una instancia de la misma en ésa bolsa es positiva, y la bolsa es etiquetada negativa si todas las instancias de ella son negativas.\\ \\
+	
+
+	\subsubsection{Aprendizaje No Supervisado}
+
+	En el aprendizaje no supervisado, el aprendiz está para analizar un conjunto de objetos que no tienen una clase de etiqueta, y discierne de categorías a la que cada objeto pertenece. Dado un conjunto de objetos, se tiene dos grupos de enfoques en un aprendizaje no supervisado: métodos de estimación de densidad que pueden ser usados para crear modelos estadísticos para capturar o explicar patrones reconocidos o estructuras interesantes detrás de la entrada, y métodos de extracción de características que pueden ser usados para recoger características estadísticas, ya sean regularidades o irregularidades, de la entrada. La desventaja que se presenta con este tipo de aprendizaje es que no tienen una cantidad o medida de éxitos debido a que se es muy difícil de establecer y validar. \\ \\
