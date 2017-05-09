@@ -1,12 +1,13 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2017.4.16)  8 MAY 2017 03:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  9 MAY 2017 07:36
 entering extended mode
  restricted \write18 enabled.
+ file:line:error style messages enabled.
  %&-line parsing enabled.
 **Metodologia.tex
 (./Metodologia.tex
-LaTeX2e <2014/05/01>
-Babel <3.9l> and hyphenation patterns for 79 languages loaded.
-! Undefined control sequence.
+LaTeX2e <2016/03/31>
+Babel <3.9r> and hyphenation patterns for 83 language(s) loaded.
+./Metodologia.tex:1: Undefined control sequence.
 l.1 \section
             {Metodolog√≠a}
 The control sequence at the end of the top line
@@ -16,7 +17,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-! LaTeX Error: Missing \begin{document}.
+./Metodologia.tex:1: LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -45,7 +46,7 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 1--2
  []
 
 
-! LaTeX Error: Missing \begin{document}.
+./Metodologia.tex:3: LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -53,7 +54,6 @@ Type  H <return>  for immediate help.
                                                   
 l.3 S
      e consider√≥ utilizar el modelo de desarrollo evolutivo o prototipo evo...
-
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -596,7 +596,7 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 3--9
  []
 
 
-! LaTeX Error: Missing \begin{document}.
+./Metodologia.tex:10: LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -1180,7 +1180,7 @@ Missing character: There is no m in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no . in font nullfont!
 
-! LaTeX Error: Environment figure undefined.
+./Metodologia.tex:25: LaTeX Error: Environment figure undefined.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -1192,7 +1192,7 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-! Undefined control sequence.
+./Metodologia.tex:27: Undefined control sequence.
 l.27 	\includegraphics
                       [scale=.7]{images/metodologia}
 The control sequence at the end of the top line
@@ -1230,7 +1230,7 @@ Missing character: There is no g in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no a in font nullfont!
 
-! LaTeX Error: \caption outside float.
+./Metodologia.tex:28: LaTeX Error: \caption outside float.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -1282,7 +1282,7 @@ Missing character: There is no o in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no . in font nullfont!
 
-! LaTeX Error: \begin{document} ended by \end{figure}.
+./Metodologia.tex:30: LaTeX Error: \begin{document} ended by \end{figure}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -1461,6 +1461,30 @@ Missing character: There is no n in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no s in font nullfont!
+Missing character: There is no C in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no √ in font nullfont!
+Missing character: There is no ≥ in font nullfont!
+Missing character: There is no n in font nullfont!
 )
 ! Emergency stop.
 <*> Metodologia.tex
@@ -1469,10 +1493,10 @@ Missing character: There is no s in font nullfont!
 
  
 Here is how much of TeX's memory you used:
- 9 strings out of 493105
- 188 string characters out of 6137072
- 54476 words of memory out of 5000000
- 3574 multiletter control sequences out of 15000+600000
+ 9 strings out of 493014
+ 174 string characters out of 6133351
+ 55601 words of memory out of 5000000
+ 3652 multiletter control sequences out of 15000+600000
  3640 words of font info for 14 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  9i,1n,6p,152b,58s stack positions out of 5000i,500n,10000p,200000b,80000s

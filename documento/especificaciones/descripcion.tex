@@ -1,76 +1,87 @@
-\section{Descripci\'on de prototipos}
+\section{Descripción}
 
-La tabla \ref{tablaprototipos} muestra el nombre de los prototipos y sus caracter\'isticas generales.
+Una vez definidos lo que son los IDS procederemos a los requisitos funcionales de cada componente del proyecto. \\
 
+\subsection{Descripción Sensor IDS}
 
+Requisitos funcionales \\
 
-\begin{table}[h]
+\begin{itemize}
+    \item Se debe poder especificar los puertos de lectura de paquetes en el servidor.
+    \item Los parametros de configuración del sensor deben estar ubicados en un archivo de configuración .conf
+    \item Solo se interceptaran y monitorearán paquetes HTTP/HTTPS.
+    \item Para el caso del protocólo HTTPS el sistema deberá poder decodificiar el paquete usando las llaves generadas por el servidor.
+    \item Implementar un algoritmo de \textit{machine learning} para identificar y asignar un rating de peligrosidad.
+    \item Generar archivos logs con la fecha del evento, conexión o ID de sesión, conexión TCP, tipo de alerta, rating, protocolo, IP fuente y destino, puertos fuente y destino, cantidad de bytes transferidos, información del paquete decodificada.
+    \item Utilizar concurrencia para ir liberando la carga de lectura de paquetes y aumentar la velocidad del sensor.
+\end{itemize}
 
-\begin{center}
+Requisitos no funcionales \\
 
+% \begin{itemize}
+%     \item Se debe poder especificar los puertos de lectura de paquetes en el servidor.
+% \end{itemize}
 
-\begin{tabular}{|l|p{45mm}|p{80mm}|}
-\hline
+\subsection{Descripción registrador de eventos}
 
-N & Nombre & Descripcici\'on \\
+Requisitos funcionales \\
 
-\hline
+\begin{itemize}
+    \item Se debe poder especificar la ruta donde se generarán los logs que vienen desde el IDS del sensor.
+    \item Se debe poder especificar la conexión a base de datos en la que se guardarán los eventos obtenidos de los logs.
+    \item Se debe poder especificar la conexión a un servicio de caché que permita conectarse a un servidor de websockets para enviar notificaciones.
+    \item Se debe poder especificar la conexión a un servicio de mail que permita enviar correos a los administradores del IDS.
+    \item Los parametros de configuración del registrador de eventos tales como conexión a base de datos, url de los logs, etc. deben estar ubicados en un archivo de configuración .conf
+    \item Leer archivos logs que provengan del IDS sensor
+    \item Analizar estructura de logs coincida con la estructura de un evento
+    \item Guardar eventos obtenidos desde los logs en una base de datos local o remota.
+    \item Guardar eventos obtenidos desde los logs en una servicio de caché local o remoto.
+    \item Enviar mail de acuerdo a las configuraciones por administrador de la consola para cada evento.
+    \item El envío de mails debe de implementar concurrencia para evitar la carga de recursos al sistema.
+\end{itemize}
 
-P1 & Identificador y clasificador de frases del Online grooming & \begin{itemize}
-\item Hacer una clasificaci\'on de frases.
-\item Generar vector de clases de frases.
-\item Almacenamiento de vectores.
-\end{itemize} \\
+Requisitos no funcionales \\
 
-\hline 
+% \begin{itemize}
+%
+% \end{itemize}
 
-P2 & Generador de Vectores de palabras de car\'acter sexual & \begin{itemize}
-\item Extracci\'on de caracter\'isticas de car\'acter sexual.
-\item Generar vectores de frecuencias de nivel 5.
-\item Almacenamiento de vectores. 
+\subsection{Descripción consola de administración}
 
-\end{itemize} \\
+Requisitos funcionales \\
 
-\hline 
+\begin{itemize}
+    \item Se deberán poder administrar usuarios para el sistema.
+    \item Los usuarios del sistema pueden iniciar sesión.
+    \item La contraseña de los usuarios tiene que estar encriptada con un algoritmo sha256.
+    \item Deberán existir permisos para la realización de actividades dentro del sistema.
+    \item Deberá existir siempre forzozamente un usuario de tipo superuser encargado de administrar todo el sistema, es decir contará con todos los permisos del sistema.
+    \item Puede existir más de un superuser.
+    \item Los usuarios superusers, podrán dar de alta otros usuarios superusers.
+    \item Existe de la posibilidad de que haya usuarios tipo administrador con permisos especificos dentro del sistema.
+    \item Los usuarios superusers, podrán dar de alta, modificar y eliminar a los usuarios adiministradores y administrar sus permisos.
+    \item Los usuarios no se eliminan en su totalidad, solo se desactivan y se almacena la fecha que se desactivó.
+    \item Los usuarios superusers, podrán eliminar otros usuarios superuser pero no a él mismo.
+    \item Los usuarios podrán cambiar su contraseña en cualquier momento.
+    \item Deberán existir grupos para así asignar permisos a un grupo y relacionar los usuarios con ese grupo.
+    \item Deberán poderse administrar los permisos de los grupos.
+    \item El sistema debe ser capaz de conectarse a la base de datos del IDS para obtener los eventos registrados.
+    \item Deberá existir un permiso para ver los eventos del sistema.
+    \item No se pueden eliminar eventos de la base de datos del IDS
+    \item Se puede cambiar el estatus de los eventos en la base de datos del IDS y asignar una acción preventiva al evento.
+    \item Todas las acciones de los usuarios se deben almacenar con la fecha, la acción y un mensaje del porqué se realizó ese cambio.
+    \item Deberá existir un permiso para recibir notificaciones.
+    \item Los usuarios superuser siempre tendrán permisos para recibir notificaciones.
+    \item Si se tiene permiso para recibir notificaciones se deben poder administrar estás notificaciones según el tipo.
+    \item Deberá existir un permiso para generar reportes.
+    \item Los usuarios superuser siempre tendrán permisos para generar reportes.
+    \item Los reportes se deben poder descargar en formato PDF.
+    \item Deberá exsitir una vista con el índice de todos los eventos generados por el IDS y se deberá poder filtrar por ranking, status, protocólo y fecha.
+    \item Es necesario que exista un monitoreo de eventos en tiempo real.
+\end{itemize}
 
+Requisitos no funcionales \\
 
-P3 & Clasificador de conversaciones con incidencia en Nivel 5 & \begin{itemize}
-\item Implementaci\'on de algoritmos de clasificaci\'on.
-\item Entrenamiento de clasificador.
-\item Pruebas del clasificador.
-\end{itemize} \\
-
-\hline 
-
-
-
-P4 & Clasificador de comportamiento de conversaciones & \begin{itemize}
-\item An\'alisis de vector de incidencias de Nivel 1, 2, 3, 4 y 6.
-\item Clasificador: Red Neuronal.
-\end{itemize} \\
-
-\hline 
-
-P5 & API de An\'alisis & \begin{itemize}
-\item Integraci\'on de clasificadores.
-\item M\'odulo de decisi\'on.
-\end{itemize} \\
-
-\hline 
-
-P6 & Sistema de Mensajer\'ia & \begin{itemize}
-\item Sistema que simula conversaciones.
-\item Sistema de pruebas fuera de l\'inea
-\item Integraci\'on con la API de an\'alisis. 
-\end{itemize} \\
-
-\hline 
-
-
-\end{tabular}
-\caption{Prototipos y Funcionalidades Generales}
-\label{tablaprototipos}
-
-\end{center}
-
-\end{table}
+% \begin{itemize}
+%
+% \end{itemize}
