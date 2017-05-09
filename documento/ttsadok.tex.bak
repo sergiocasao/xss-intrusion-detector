@@ -104,7 +104,9 @@ showtabs=false
 \input{Especificaciones/Objetivo}
 \input{Especificaciones/Metodologia}
 %\input{especificaciones/descripcion}
-\input{Especificaciones/arquitectura}
+\input{Especificaciones/Arquitectura}
+\input{Especificaciones/Viabilidad}
+\input{Especificaciones/Generacion_Ataques}
 
 %\appendix
 %=========================================================

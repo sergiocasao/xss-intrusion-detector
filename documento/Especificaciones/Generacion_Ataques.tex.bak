@@ -1,0 +1,29 @@
+\section{Generación de Ataques}
+
+Como todo sistema en producción, éste tiene que ser probado. Las pruebas que se van a realizar sobre el IDS, y así evaluar la efectividad del análisis del IDS, se va a hacer uso de herramientas que generan ataques de tipo XSS de forma automatizada. Dichas herramientas son generadas por terceros, cuyo objetivo principal son: (a) realizar una prueba de seguridad del sitio sobre el cuál se hace dicha prueba y (b) vulnerar la página web con los tipos de ataques seleccionados. Como se deduce, dependiendo del tipo de enfoque que la herramienta tenga, va a ser la efectividad y profundidad del ataque a realizar. En la Tabla \ref{table:herramientasxss} se muestran las herramientas consideradas para las pruebas efectuadas sobre el IDS.\\
+
+
+\begin{table}[h]
+	\begin{center}
+		\begin{tabular}{|l|p{75mm}|l|l|}
+		\hline
+		Nombre & Descripción & Fuente & Licencia \\
+		\hline
+	    BeEF & Framework orientado a la explotación de vulnerabilidades en los navegadores web. Herramienta de penetración que se enfoca en  los navegadores web. & \url{http://beefproject.com/} & Libre \\
+		\hline
+		acunetix & Escaner de vulnerabilidades web usado por 500 compañías y ampliamente aclamado para incluir los más avanzados ataques de inyección de  SQL y tecnologías de escaneo de caja negras de ataques XSS. Esta herramienta rastrea automáticamente tu sitio web y realiza técnicas de hacking de caja negra y caja gris para encontrar vulnerabilidades peligrosas que pueden comprometer tu sitio y datos. & Paga/Prueba \\
+		\hline
+		XSSer & Cross Site "Scripter" (también conocido como XSSer) es un framework de trabajo automático para detectar, explotar y reportar vulnerabilidades XSS en aplicaciones basadas en web. & \url{https://xsser.03c8.net/} & Libre \\
+		\hline
+		XSSSNIPER & Xsssniper es una práctica herramienta de descubrimiento xss con funcionalidades de escaneo masivo. & \url{https://github.com/gbrindisi/xsssniper} & Libre \\
+		\hline
+		IBM Security AppScan & Es una aplicación web y solución de penetración de servicios web para los especialistas de seguridad. & \url{https://www.ibm.com/developerworks/downloads/r/appscan/index.html} & Paga/Libre \\
+		\hline
+		 OWASP Zed Attack Proxy (ZAP) & Puede ayudarle a encontrar automáticamente vulnerabilidades de seguridad en sus aplicaciones web mientras desarrolla y prueba sus aplicaciones. Su también una gran herramienta para pentesters experimentados para utilizar para las pruebas manuales de seguridad. & \url{https://www.owasp.org/index.php/OWASP_Zed_Attack_Proxy_Project} & Libre \\
+		 \hline
+		 
+		\end{tabular}
+		\caption{Herramientas consideradas para pruebas de ataques XSS.}
+		\label{table:herramientasxss}
+	\end{center}
+\end{table}
