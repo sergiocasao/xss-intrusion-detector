@@ -2,21 +2,21 @@
 
 Una vez definidos lo que son los IDS procederemos a los requisitos funcionales de cada componente del proyecto. \\
 
-\subsection{Descripción Sensor IDS}
+\subsection{Descripción Agente IDS}
 
-Requisitos funcionales \\
+% Requisitos funcionales \\
 
 \begin{itemize}
     \item Se debe poder especificar los puertos de lectura de paquetes en el servidor.
-    \item Los parametros de configuración del sensor deben estar ubicados en un archivo de configuración .conf
+    \item Los parametros de configuración del sensor deben estar ubicados en un archivo de configuración \textit{.conf}
     \item Solo se interceptaran y monitorearán paquetes HTTP/HTTPS.
     \item Para el caso del protocólo HTTPS el sistema deberá poder decodificiar el paquete usando las llaves generadas por el servidor.
     \item Implementar un algoritmo de \textit{machine learning} para identificar y asignar un rating de peligrosidad.
     \item Generar archivos logs con la fecha del evento, conexión o ID de sesión, conexión TCP, tipo de alerta, rating, protocolo, IP fuente y destino, puertos fuente y destino, cantidad de bytes transferidos, información del paquete decodificada.
-    \item Utilizar concurrencia para ir liberando la carga de lectura de paquetes y aumentar la velocidad del sensor.
+    \item Utilizar concurrencia para ir liberando la carga de lectura de paquetes y aumentar la velocidad del agente.
 \end{itemize}
 
-Requisitos no funcionales \\
+% Requisitos no funcionales \\
 
 % \begin{itemize}
 %     \item Se debe poder especificar los puertos de lectura de paquetes en el servidor.
@@ -24,23 +24,23 @@ Requisitos no funcionales \\
 
 \subsection{Descripción registrador de eventos}
 
-Requisitos funcionales \\
+% Requisitos funcionales \\
 
 \begin{itemize}
-    \item Se debe poder especificar la ruta donde se generarán los logs que vienen desde el IDS del sensor.
+    \item Se debe poder especificar la ruta donde se generarán los logs que vienen desde el agente del IDS.
     \item Se debe poder especificar la conexión a base de datos en la que se guardarán los eventos obtenidos de los logs.
     \item Se debe poder especificar la conexión a un servicio de caché que permita conectarse a un servidor de websockets para enviar notificaciones.
     \item Se debe poder especificar la conexión a un servicio de mail que permita enviar correos a los administradores del IDS.
-    \item Los parametros de configuración del registrador de eventos tales como conexión a base de datos, url de los logs, etc. deben estar ubicados en un archivo de configuración .conf
-    \item Leer archivos logs que provengan del IDS sensor
-    \item Analizar estructura de logs coincida con la estructura de un evento
+    \item Los parametros de configuración del registrador de eventos tales como conexión a base de datos, url de los logs, etc. deben estar ubicados en un archivo de configuración \textit{.conf}
+    \item Leer archivos logs que provengan del agente IDS.
+    \item Analizar estructura de logs coincida con la estructura de un evento.
     \item Guardar eventos obtenidos desde los logs en una base de datos local o remota.
     \item Guardar eventos obtenidos desde los logs en una servicio de caché local o remoto.
     \item Enviar mail de acuerdo a las configuraciones por administrador de la consola para cada evento.
     \item El envío de mails debe de implementar concurrencia para evitar la carga de recursos al sistema.
 \end{itemize}
 
-Requisitos no funcionales \\
+% Requisitos no funcionales \\
 
 % \begin{itemize}
 %
@@ -48,7 +48,7 @@ Requisitos no funcionales \\
 
 \subsection{Descripción consola de administración}
 
-Requisitos funcionales \\
+% Requisitos funcionales \\
 
 \begin{itemize}
     \item Se deberán poder administrar usuarios para el sistema.
@@ -80,7 +80,7 @@ Requisitos funcionales \\
     \item Es necesario que exista un monitoreo de eventos en tiempo real.
 \end{itemize}
 
-Requisitos no funcionales \\
+% Requisitos no funcionales \\
 
 % \begin{itemize}
 %

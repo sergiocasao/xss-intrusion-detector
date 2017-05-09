@@ -51,9 +51,9 @@
 \contentsline {subsection}{\numberline {3.1.2}Objetivos espec\IeC {\'\i }ficos}{24}{subsection.3.1.2}
 \contentsline {section}{\numberline {3.2}Metodolog\IeC {\'\i }a}{24}{section.3.2}
 \contentsline {section}{\numberline {3.3}Descripci\IeC {\'o}n}{25}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Descripci\IeC {\'o}n Sensor IDS}{25}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.1}Descripci\IeC {\'o}n Agente IDS}{25}{subsection.3.3.1}
 \contentsline {subsection}{\numberline {3.3.2}Descripci\IeC {\'o}n registrador de eventos}{26}{subsection.3.3.2}
 \contentsline {subsection}{\numberline {3.3.3}Descripci\IeC {\'o}n consola de administraci\IeC {\'o}n}{26}{subsection.3.3.3}
-\contentsline {section}{\numberline {3.4}Arquitectura}{28}{section.3.4}
-\contentsline {section}{\numberline {3.5}Viabilidad}{28}{section.3.5}
-\contentsline {section}{\numberline {3.6}Generaci\IeC {\'o}n de Ataques}{28}{section.3.6}
+\contentsline {section}{\numberline {3.4}Arquitectura}{27}{section.3.4}
+\contentsline {section}{\numberline {3.5}Viabilidad}{30}{section.3.5}
+\contentsline {section}{\numberline {3.6}Generaci\IeC {\'o}n de Ataques}{30}{section.3.6}
