@@ -1,0 +1,15 @@
+\subsection{Tipos de Cross-Site Scripting}
+
+\cite{typexss} Primero, se identificaron dos tipos principales de XSS, XSS almacenado y XSS reflejado. En 2005, Amit Klein definió un tercer tipo de XSS, que acuñó XSS basado en DOM. Estos 3 tipos de XSS se definen de la siguiente manera: \\
+
+    \subsubsection{XSS almacenado (AKA persistente o tipo I)}
+
+    XSS almacenado generalmente se produce cuando la entrada del usuario se almacena en el servidor de destino, como en una base de datos, en un foro de mensajes, registro de visitantes, campo de comentarios, etc Y entonces una víctima es capaz de recuperar los datos almacenados de la aplicación web sin que la información sea segura para el navegador. Con la llegada de HTML5 y otras tecnologías de navegación, podemos ver que la carga útil del ataque se almacena permanentemente en el navegador de la víctima, como una base de datos HTML5, y nunca se envía al servidor en absoluto. \\
+
+    \subsubsection{XSS reflejado (AKA no persistente o tipo II)}
+
+    XSS reflejado se produce cuando la entrada del usuario es devuelta inmediatamente por una aplicación web en un mensaje de error, resultado de búsqueda o cualquier otra respuesta que incluya parte o la totalidad de la entrada proporcionada por el usuario como parte de la solicitud, sin que dichos datos se hagan seguros. Renderizar en el navegador, y sin almacenar permanentemente los datos proporcionados por el usuario. En algunos casos, los datos proporcionados por el usuario nunca pueden salir del navegador. \\
+
+    \subsubsection{XSS basado en DOM (AKA tipo-0)}
+
+    Como define Amit Klein, XSS basado en DOM es una forma de XSS donde el flujo entero de datos contaminados desde la fuente al destino tiene lugar en el navegador, es decir, la fuente de los datos es el DOM, el destino está también en el DOM, y el flujo de datos nunca sale del navegador. \\

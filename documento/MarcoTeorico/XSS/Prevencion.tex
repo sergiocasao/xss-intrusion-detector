@@ -1,0 +1,25 @@
+\subsection{Prevención}
+
+Recordando que un ataque XSS es un tipo de inyección de código: la entrada del usuario se interpreta erróneamente como código de programa malicioso. Para evitar este tipo de inyección de código, es necesario realizar un manejo de entrada seguro. \\
+
+\begin{itemize}
+    \item \textbf{Codificación}: La mayoría de las veces, la codificación se debe realizar siempre que se incluya la entrada del usuario en una página. Escapa la entrada del usuario para que el navegador lo interprete sólo como datos, no como código.
+    \item \textbf{Validación}: En algunos casos, la codificación tiene que ser reemplazada o complementada con validación. Filtra la entrada del usuario para que el navegador lo interprete como código sin comandos maliciosos.
+    \item \textbf{Contexto}: El manejo seguro de las entradas debe tener en cuenta el contexto de una página en la que se inserta la entrada del usuario. El manejo seguro de las entradas debe realizarse de manera diferente dependiendo del lugar en el que se inserte la entrada del usuario en una página.
+    \item \textbf{Manejo de entrada Entrante/Saliente}: Para evitar todos los tipos de ataques XSS, el manejo de entrada segura debe realizarse tanto en el lado del cliente como en el código del lado del servidor. El manejo seguro de las entradas puede realizarse cuando su sitio web recibe la entrada (entrada) o justo antes de que su sitio web inserte la entrada en una página (saliente).
+    \item \textbf{Servidor/Cliente}: El manejo seguro de las entradas se puede realizar tanto en el lado del cliente como en el lado del servidor, los cuales son necesarios bajo diferentes circunstancias.
+    \item \textbf{Política de seguridad de contenido}: La Política de seguridad de contenido proporciona una capa adicional de defensa cuando falla el manejo de entrada segura. Es un mecanismo del lado del navegador que te permite crear listas blancas de origen para los recursos del lado del cliente de tu aplicación web, p. JavaScript, CSS, imágenes, etc. CSP a través de una cabecera HTTP especial ordena al navegador que sólo ejecute o procese recursos de esas fuentes.
+    \item \textbf{HTTPOnly cookies}: Usar cookies que únicamente sean accesibles mediante HTTP usando la bandera HTTPOnly. Cualquier cookie que se tenga no se podrá acceder mediante ningún código Javascript escrito.
+\end{itemize}
+
+% Incluso con la codificación, será posible introducir cadenas maliciosas en algunos contextos. Un ejemplo notable de esto es cuando la entrada del usuario se utiliza para proporcionar URL, como en el siguiente ejemplo:
+%
+% \begin{lstlisting}
+%
+% document.querySelector('a').href = userInput
+%
+% \end{lstlisting}
+%
+% \\ Aunque asignar un valor a la propiedad href de un elemento de anclaje lo codifica automáticamente para que se convierta en nada más que un valor de atributo, esto en sí mismo no impide que el atacante inserte una URL que empiece por \textit{"javascript:"}. Cuando se hace clic en el enlace, cualquier JavaScript incrustado dentro de la URL se ejecutará. \\
+%
+% La codificación es también una solución inadecuada cuando realmente desea que el usuario defina parte del código de una página. Un ejemplo es una página de perfil de usuario donde el usuario puede definir HTML personalizado. Si se codificó este HTML personalizado, la página de perfil podría consistir sólo en texto sin formato.

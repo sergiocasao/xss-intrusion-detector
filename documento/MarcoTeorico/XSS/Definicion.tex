@@ -1,0 +1,21 @@
+\section{Cross-site Scripting (XSS)}
+
+\subsection{Definición}
+
+Los ataques \textit{Cross-Site Scripting (XSS)} son un tipo de inyección, en la que se insertan secuencias de comandos maliciosas en sitios web benignos y de confianza. Los ataque XSS se producen cuando un atacante utiliza una aplicación web para enviar un código malicioso, generalmente en forma de una secuencia de comandos del navegador, a un usuario final diferente. Las fallas que permiten que estos ataques tengan éxito son bastante generalizadas y se producen en cualquier lugar donde un aplicación utiliza la entrada de un usuario dentro de la salida que genera sin validarla o codificarla. \\
+
+Un atacante puede usar XSS para enviar una secuencua de comando malicioso a un usuario desprevenido. El navegador del usuario final no tiene forma de saber que el script no es de confianza, y ejecutará el script. Debido a que piensa que el script proviene de una fuente de confianza, el script malicioso puede acceder a cualquier cookie, token de session, u otra información confidencial que el navegador mantenga y que se utilice en el sitio. Estos scripts pueden incluso reescribir el contenido de la página HTML. \cite{defxss}. \\
+
+\subsection{Actores en un ataque XSS}
+
+Antes de describir detalladamente cómo funciona un ataque XSS, necesitamos definir a los actores involucrados en un ataque XSS. En general, un ataque XSS involucra a tres actores: el sitio web, la víctima y el atacante. \\
+
+\begin{itemize}
+
+    \item El \textbf{sitio web} ofrece páginas HTML a los usuarios que las soliciten. La base de datos del sitio web es una base de datos que almacena parte de la entrada del usuario incluida en las páginas del sitio web.
+
+    \item La \textbf{víctima} es un usuario normal del sitio web que solicita sus páginas usando su navegador.
+
+    \item El \textbf{atacante} es un usuario malintencionado del sitio web que intenta lanzar un ataque contra la víctima mediante la explotación de una vulnerabilidad XSS en el sitio web. El servidor del atacante es un servidor web controlado por el atacante con el único propósito de robar la información delicada de la víctima.
+
+\end{itemize}

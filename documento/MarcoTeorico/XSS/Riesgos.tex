@@ -1,0 +1,13 @@
+\subsection{Riesgos de los ataques XSS}
+
+Las consecuencias de lo que un atacante puede hacer con la capacidad de ejecutar JavaScript en una página web no pueden destacarse inmediatamente, sobre todo porque los navegadores ejecutan JavaScript en un entorno muy controlado y que JavaScript tiene acceso limitado al sistema operativo del usuario y los archivos del usuario. \\
+
+Sin embargo, al considerar que JavaScript tiene acceso a casi todas las herramientas disponibles por el navegador web, es más fácil entender cómo los atacantes creativos pueden obtener con JavaScript. \\
+
+\begin{itemize}
+    \item JavaScript malicioso tiene acceso a todos los mismos objetos que el resto de la página web tiene, incluyendo el acceso a las cookies. Las cookies se usan a menudo para almacenar fichas de sesión, si un atacante puede obtener una cookie de sesión de un usuario, pueden hacerse pasar por ese usuario.
+    \item JavaScript puede leer y hacer modificaciones arbitrarias en el DOM del navegador (dentro de la página que JavaScript está ejecutando). El atacante puede insertar un formulario de inicio de sesión falso en la página utilizando la manipulación DOM, establecer el atributo de acción del formulario para orientar su propio servidor y, a continuación, engañar al usuario para que envíe información confidencial.
+    \item JavaScript puede utilizar XMLHttpRequest para enviar peticiones HTTP con contenido arbitrario a destinos arbitrarios.
+    \item JavaScript en los navegadores modernos puede aprovechar las APIs HTML5, como acceder a la geolocalización de un usuario, cámara web, micrófono e incluso los archivos específicos del sistema de archivos del usuario. Mientras que la mayoría de estas API requieren el opt-in del usuario, XSS junto con ingeniería social ingeniosa puede traer a un atacante un largo camino.
+    \item El atacante puede registrar un detector de eventos de teclado mediante addEventListener y luego enviar todas las pulsaciones del usuario a su propio servidor, registrando potencialmente información confidencial como contraseñas y números de tarjetas de crédito.
+\end{itemize}

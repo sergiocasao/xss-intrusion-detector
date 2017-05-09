@@ -24,21 +24,30 @@
 \contentsline {subsubsection}{\numberline {2.2.5.5}Intrusion Detection Working Group}{16}{subsubsection.2.2.5.5}
 \contentsline {subsection}{\numberline {2.2.6}Componentes elementales de un IDS}{17}{subsection.2.2.6}
 \contentsline {subsection}{\numberline {2.2.7}Arquitecturas de Red}{18}{subsection.2.2.7}
-\contentsline {section}{\numberline {2.3}Aprendizaje Autom\IeC {\'a}tico}{19}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}Definicion}{19}{subsection.2.3.1}
-\contentsline {subsection}{\numberline {2.3.2}Concepto}{19}{subsection.2.3.2}
-\contentsline {subsection}{\numberline {2.3.3}M\IeC {\'e}todos de aprendizaje}{19}{subsection.2.3.3}
-\contentsline {subsubsection}{\numberline {2.3.3.1}\IeC {\'A}rboles de Decisi\IeC {\'o}n}{19}{subsubsection.2.3.3.1}
-\contentsline {subsubsection}{\numberline {2.3.3.2}Redes Neuronales}{19}{subsubsection.2.3.3.2}
-\contentsline {subsubsection}{\numberline {2.3.3.3}Aprendizaje Bayesiano}{19}{subsubsection.2.3.3.3}
-\contentsline {subsubsection}{\numberline {2.3.3.4}Algoritmos Gen\IeC {\'e}ticos y Programaci\IeC {\'o}n Gen\IeC {\'e}tica}{20}{subsubsection.2.3.3.4}
-\contentsline {subsubsection}{\numberline {2.3.3.5}Basado en Instancias}{20}{subsubsection.2.3.3.5}
-\contentsline {subsubsection}{\numberline {2.3.3.6}Aprendizaje Reforzado}{20}{subsubsection.2.3.3.6}
-\contentsline {subsubsection}{\numberline {2.3.3.7}Aprendizaje de M\IeC {\'u}ltiples Instancias}{21}{subsubsection.2.3.3.7}
-\contentsline {subsubsection}{\numberline {2.3.3.8}Aprendizaje No Supervisado}{21}{subsubsection.2.3.3.8}
-\contentsline {chapter}{\numberline {3}Especificaciones del proyecto}{22}{chapter.3}
-\contentsline {section}{\numberline {3.1}Objetivo}{22}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}Objetivo general}{22}{subsection.3.1.1}
-\contentsline {subsection}{\numberline {3.1.2}Objetivos espec\IeC {\'\i }ficos}{22}{subsection.3.1.2}
-\contentsline {section}{\numberline {3.2}Metodolog\IeC {\'\i }a}{22}{section.3.2}
-\contentsline {section}{\numberline {3.3}Arquitectura}{23}{section.3.3}
+\contentsline {section}{\numberline {2.3}Cross-site Scripting (XSS)}{19}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Definici\IeC {\'o}n}{19}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Actores en un ataque XSS}{19}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.3}Tipos de Cross-Site Scripting}{19}{subsection.2.3.3}
+\contentsline {subsubsection}{\numberline {2.3.3.1}XSS almacenado (AKA persistente o tipo I)}{19}{subsubsection.2.3.3.1}
+\contentsline {subsubsection}{\numberline {2.3.3.2}XSS reflejado (AKA no persistente o tipo II)}{19}{subsubsection.2.3.3.2}
+\contentsline {subsubsection}{\numberline {2.3.3.3}XSS basado en DOM (AKA tipo-0)}{20}{subsubsection.2.3.3.3}
+\contentsline {subsection}{\numberline {2.3.4}Riesgos de los ataques XSS}{20}{subsection.2.3.4}
+\contentsline {subsection}{\numberline {2.3.5}Prevenci\IeC {\'o}n}{20}{subsection.2.3.5}
+\contentsline {section}{\numberline {2.4}Aprendizaje Autom\IeC {\'a}tico}{21}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}Definici\IeC {\'o}n}{21}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.2}Concepto}{21}{subsection.2.4.2}
+\contentsline {subsection}{\numberline {2.4.3}M\IeC {\'e}todos de aprendizaje}{22}{subsection.2.4.3}
+\contentsline {subsubsection}{\numberline {2.4.3.1}\IeC {\'A}rboles de Decisi\IeC {\'o}n}{22}{subsubsection.2.4.3.1}
+\contentsline {subsubsection}{\numberline {2.4.3.2}Redes Neuronales}{22}{subsubsection.2.4.3.2}
+\contentsline {subsubsection}{\numberline {2.4.3.3}Aprendizaje Bayesiano}{22}{subsubsection.2.4.3.3}
+\contentsline {subsubsection}{\numberline {2.4.3.4}Algoritmos Gen\IeC {\'e}ticos y Programaci\IeC {\'o}n Gen\IeC {\'e}tica}{22}{subsubsection.2.4.3.4}
+\contentsline {subsubsection}{\numberline {2.4.3.5}Basado en Instancias}{23}{subsubsection.2.4.3.5}
+\contentsline {subsubsection}{\numberline {2.4.3.6}Aprendizaje Reforzado}{23}{subsubsection.2.4.3.6}
+\contentsline {subsubsection}{\numberline {2.4.3.7}Aprendizaje de M\IeC {\'u}ltiples Instancias}{23}{subsubsection.2.4.3.7}
+\contentsline {subsubsection}{\numberline {2.4.3.8}Aprendizaje No Supervisado}{23}{subsubsection.2.4.3.8}
+\contentsline {chapter}{\numberline {3}Especificaciones del proyecto}{24}{chapter.3}
+\contentsline {section}{\numberline {3.1}Objetivo}{24}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Objetivo general}{24}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}Objetivos espec\IeC {\'\i }ficos}{24}{subsection.3.1.2}
+\contentsline {section}{\numberline {3.2}Metodolog\IeC {\'\i }a}{24}{section.3.2}
+\contentsline {section}{\numberline {3.3}Arquitectura}{25}{section.3.3}

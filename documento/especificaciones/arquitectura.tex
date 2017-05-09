@@ -1,26 +1,26 @@
-\section{Arquitectura del sistema}
+\section{Arquitectura}
 
-El sistema contendr\'a los siguientes modulos:
-\begin{description}
-\item[Sistema de Mensajer\'ia] Este modulo del sistema ser\'a el encargado de generar informaci\'on de pruebas para posteriormente ser procesada.
-
-\item[Procesamiento de texto] Este m\'odulo tiene como objetivo el recibir un archivo de texto con la conversaci\'on a analizar el cual fue generado en el m\'odulo de mensajer\'ia. La salida de \'este ser\'a una estructura invariante para poder ser analizada.
-
-\item[API de an\'alisis] Ser\'a el módulo que mediante reconocimiento de patrones, har\'a una revisión de los textos para poder clasificar a una fuente en un comportamiento.
-
-\item[M\'odulo integrador]Este m\'odulo es el encargado de presentar de forma visual los resultados obtenidos del proceso de clasificación de conversaciones. 
-
-\item[Base de conocimiento] Contendr\'a  un conjunto de datos referentes al caso de estudio, que son necesarios para la clasificación de las fuentes. 
-
-\end{description}
+En la Figura \ref{fig:arqui_IDS} puede observar un esquema del proceso por el cual el sistema se sometería al estar en funcionamiento. La descripción del proceso es el que se especifica debajo de la figura.\\
 
 
-La figura \ref{arquitectura} muestra la arquitectura general del sistema de an\'alisis de texto.
-\begin{figure}[h]
-\begin{center}
-
-    \includegraphics[scale=.5]{images/arquitectura}
-  \caption{Arquitectura general del sistema}
-  \label{arquitectura}
-  \end{center}
+\begin{figure}
+	\centering
+	\includegraphics[scale=.6]{images/arquitectura_IDS}
+	\caption{Esquema de la arquitectura a implementar.}
+	\label{fig:arqui_IDS}
 \end{figure}
+
+
+El ataque XSS será ejecutado sobre una página web vulnerable. Al llegar el ataque al servidor, el tráfico generado por este será analizado dentro del mismo por el agente.\\
+
+Al ser detectado el ataque, el agente envía los datos del ataque al servidor administrador.\\
+
+El servidor administrador registra el evento en una base de datos y envía las notificaciones del ataque. La primera notificación será en la interfaz de monitoreo del sistema y la otra notificación se enviará a las cuentas configuradas de SMS y correo electrónico del administrador encargado.\\
+
+El evento será almacenado en una base de datos para su posterior análisis por el administrador encargado.\\
+
+El administrador recibirá las notificaciones correspondientes por parte del sistema con la información necesaria del evento.\\
+
+El administrador una vez notificado, podrá ver los registros de los eventos ocurridos para tomar las medidas necesarias a la seguridad de sus aplicaciones web.\\
+
+%A futuro se espera que el sistema pueda ser escalable haciendo un sistema más robusto para la detección de ataques XSS e inclusive se pueda agregar módulos para una mayor cobertura de ataques.
